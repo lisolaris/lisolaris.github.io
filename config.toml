@@ -1,4 +1,5 @@
 baseURL = 'http://lisolaris.github.org/'
 languageCode = 'zh-cn'
-title = 'lisolaris's blog'
-publishDir = docs
+title = "lisolaris's blog"
+publishDir = 'docs'
+theme = 'hugo-PaperMod'
