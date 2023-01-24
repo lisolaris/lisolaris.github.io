@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://lisolaris.github.org/categories/</loc>
+    <loc>http://lisolaris.github.io/categories/</loc>
   </url><url>
-    <loc>http://lisolaris.github.org/</loc>
+    <loc>http://lisolaris.github.io/</loc>
   </url><url>
-    <loc>http://lisolaris.github.org/tags/</loc>
+    <loc>http://lisolaris.github.io/tags/</loc>
   </url>
 </urlset>

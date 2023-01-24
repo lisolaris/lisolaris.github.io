@@ -1,4 +1,4 @@
-baseURL = 'http://lisolaris.github.org/'
+baseURL = 'http://lisolaris.github.io/'
 languageCode = 'zh-cn'
 title = "lisolaris's blog"
 publishDir = 'docs'
