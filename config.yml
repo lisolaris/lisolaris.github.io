@@ -26,7 +26,7 @@ params:
   keywords: [Blog, Portfolio, PaperMod]
   author: lisolaris
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448"]
   DateFormat: "January 6, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -35,7 +35,7 @@ params:
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
