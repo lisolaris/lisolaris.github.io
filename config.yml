@@ -2,7 +2,7 @@ baseURL: "https://blog.sorali.org/"
 relativeurls: true
 title: lisolaris's blog
 paginate: 5
-theme: LoveIt
+theme: PaperMod
 
 languageCode: zh-cn
 
@@ -49,9 +49,9 @@ params:
   showtoc: false
   tocopen: false
 
-  # assets:
+  assets:
+    disableFingerprinting: true
   #   # disableHLJS: true # to disable highlight.js
-  #   # disableFingerprinting: true
   #   favicon: "<link / abs url>"
   #   favicon16x16: "<link / abs url>"
   #   favicon32x32: "<link / abs url>"
