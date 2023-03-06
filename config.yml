@@ -86,7 +86,7 @@ params:
     #   url: "https://twitter.com/"
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
-    - name: mail
+    - name: email
       url: "mailto:sorali@sorali.org"
     - name: github
       url: "https://github.com/lisolaris"
@@ -122,11 +122,11 @@ params:
 menu:
   main:
     - identifier: categories
-      name: categories
+      name: 目录
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: 标签
       url: /tags/
       weight: 20
     # - identifier: example
