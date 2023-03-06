@@ -8,8 +8,6 @@ languageCode: zh-cn
 
 publishDir: docs
 
-
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -34,7 +32,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -84,10 +82,12 @@ params:
     Content: 欢迎来到lisolaris的博客！
 
   socialIcons:
-    - name: twitter
+    # - name: twitter
     #   url: "https://twitter.com/"
     # - name: stackoverflow
     #   url: "https://stackoverflow.com"
+    - name: mail
+      url: "mailto:sorali@sorali.org"
     - name: github
       url: "https://github.com/lisolaris"
 
