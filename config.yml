@@ -2,7 +2,7 @@ baseURL: "https://blog.sorali.org/"
 relativeurls: true
 title: lisolaris's blog
 paginate: 5
-theme: PaperMod
+theme: LoveIt
 
 languageCode: zh-cn
 
