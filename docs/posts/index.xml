@@ -5,19 +5,23 @@
     <link>https://blog.sorali.org/posts/</link>
     <description>Recent content in Posts on lisolaris&#39;s blog</description>
     <image>
-      <url>https://blog.sorali.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://blog.sorali.org/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
+      <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Jan 2023 14:27:41 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Mar 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HelloWorld</title>
+      <title>Hello World</title>
       <link>https://blog.sorali.org/posts/helloworld/</link>
-      <pubDate>Wed, 25 Jan 2023 14:27:41 +0800</pubDate>
+      <pubDate>Mon, 06 Mar 2023 18:00:00 +0800</pubDate>
       
       <guid>https://blog.sorali.org/posts/helloworld/</guid>
-      <description>Hello World! 这是第一篇由Hugo生成的帖子，使用了PaperMod主题。谢谢！</description>
+      <description>Hello World! 你好!欢迎来到我的博客!
+在拖延好几个星期后，我终于完成了个人页面的搭建（通过Github Pages托管）。今后应该会不定期更新一些感想和发现……也希望你能看得开心:D
+关于我 我不太喜欢做自我介绍，这部分就略过吧。
+致谢 本站使用Hugo搭建，并使用了PaperMod主题。感谢原作者！
+其实作为第一篇博文应该写长一些的，但我还没想到要写什么……就先这样吧</description>
     </item>
     
   </channel>
