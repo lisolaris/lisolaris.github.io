@@ -2,17 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.sorali.org/posts/helloworld/</loc>
-    <lastmod>2023-03-06T18:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/</loc>
-    <lastmod>2023-03-06T18:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/posts/</loc>
-    <lastmod>2023-03-06T18:00:00+08:00</lastmod>
+    <loc>https://blog.sorali.org/tags/2023-03/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/categories/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/minecraft/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/posts/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8windows%E6%9C%BA%E5%99%A8%E4%B8%8A%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/2023/03/hello-world/</loc>
+    <lastmod>2023-03-06T18:00:00+08:00</lastmod>
   </url>
 </urlset>

@@ -10,14 +10,23 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 06 Mar 2023 18:00:00 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 12:53:17 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>教程：如何在Windows机器上架设Minecraft服务器</title>
+      <link>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8windows%E6%9C%BA%E5%99%A8%E4%B8%8A%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Tue, 14 Mar 2023 12:53:17 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8windows%E6%9C%BA%E5%99%A8%E4%B8%8A%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description>施工中 施工中 本来是打算写给群友用的 但是我现在摸了（</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
-      <link>https://blog.sorali.org/posts/helloworld/</link>
+      <link>https://blog.sorali.org/2023/03/hello-world/</link>
       <pubDate>Mon, 06 Mar 2023 18:00:00 +0800</pubDate>
       
-      <guid>https://blog.sorali.org/posts/helloworld/</guid>
-      <description>你好!欢迎来到我的博客!
+      <guid>https://blog.sorali.org/2023/03/hello-world/</guid>
+      <description>你好，欢迎来到我的博客!
 在拖延好几个星期后，我终于完成了个人页面的搭建（通过Github Pages托管）。今后应该会不定期更新一些感想和发现……也希望你能看得开心:D
 关于我 我不太喜欢做自我介绍，这部分就先略过好了。
 致谢 本站使用Hugo搭建，并使用了PaperMod主题。感谢原作者！
