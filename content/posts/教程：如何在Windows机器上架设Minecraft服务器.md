@@ -4,7 +4,7 @@ date: 2023-03-14T12:53:17+08:00
 tags: ["2023-03", "教程", "Minecraft"]
 categories: ["如何架设Minecraft服务器"]
 toc: true
-draft: true
+draft: false
 ---
 
 本篇是应群友需求，来介绍一下如何在Windows机器上启动Minecraft服务端供内网用户游玩，以使用服务端上才能运行的插件之类的。关于如何让别人远程连接到你的服务器，可以参见下一篇[教程：如何在服务器上使用内网穿透](https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%EF%BC%9A%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/)
