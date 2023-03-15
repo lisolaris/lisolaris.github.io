@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>2023-03 on lisolaris&#39;s blog</title>
-    <link>https://blog.sorali.org/tags/2023-03/</link>
-    <description>Recent content in 2023-03 on lisolaris&#39;s blog</description>
+    <title>如何架设Minecraft服务器 on lisolaris&#39;s blog</title>
+    <link>https://blog.sorali.org/categories/%E5%A6%82%E4%BD%95%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+    <description>Recent content in 如何架设Minecraft服务器 on lisolaris&#39;s blog</description>
     <image>
       <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
       <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 14 Mar 2023 20:40:35 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/tags/2023-03/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Mar 2023 20:40:35 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/categories/%E5%A6%82%E4%BD%95%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>教程：如何在服务器上使用内网穿透</title>
       <link>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
@@ -65,19 +65,6 @@ chcp 65001 ipconfig /all &amp;#34;D:\MinecraftServer\jdk-19.0.2\bin\java.exe&amp
 打开F3调试选项，左上角可以看到进入了&amp;quot;Paper&amp;quot;服务器。
 配置服务端 在控制台输入stop后回车停止服务端。然后打开服务端目录下的server.properties，对服务端进行配置。这里可以参考我的：
 #Minecraft server properties #Mon Jan 16 16:16:38 CST 2023 allow-flight=true allow-nether=true broadcast-console-to-ops=true broadcast-rcon-to-ops=true debug=false difficulty=normal enable-command-block=true enable-jmx-monitoring=false enable-query=false enable-rcon=false enable-status=true enforce-secure-profile=true enforce-whitelist=false entity-broadcast-range-percentage=100 force-gamemode=false function-permission-level=2 gamemode=survival generate-structures=true generator-settings={} hardcore=false hide-online-players=false initial-disabled-packs= initial-enabled-packs=vanilla level-name=world level-seed= level-type=default max-chained-neighbor-updates=1000000 max-players=20 max-tick-time=60000 max-world-size=29999984 motd= network-compression-threshold=256 online-mode=false op-permission-level=4 player-idle-timeout=0 prevent-proxy-connections=false previews-chat=false pvp=true query.</description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://blog.sorali.org/2023/03/hello-world/</link>
-      <pubDate>Mon, 06 Mar 2023 18:00:00 +0800</pubDate>
-      
-      <guid>https://blog.sorali.org/2023/03/hello-world/</guid>
-      <description>你好，欢迎来到我的博客!
-在拖延好几个星期后，我终于完成了个人页面的搭建（通过Github Pages托管）。今后应该会不定期更新一些感想和发现……也希望你能看得开心:D
-关于我 我不太喜欢做自我介绍，这部分就先略过好了。
-致谢 本站使用Hugo搭建，并使用了PaperMod主题。感谢原作者！
-其实作为第一篇博文应该写长一些的，但我还没想到要写什么……就先这样吧:)</description>
     </item>
     
   </channel>
