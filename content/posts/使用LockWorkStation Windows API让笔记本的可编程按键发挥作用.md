@@ -17,7 +17,7 @@ draft: false
 
 因为并不是多么复杂的程序，所以只需要如果对这部分不感兴趣可以直接拉到文章底部，下载编译好的程序并为编程键设置按下启动即可。
 
-首先可以看看这个API在[MSDN上的文档](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation):它于Windows XP中引入，功能有且只有一个：锁定工作站（名字都直接写出来了==）。你可以在命令行中使用`rundll32`直接调用到`user32.dll`（对应的头文件为`winuser.h`）中的这个API：
+首先可以看看这个API在[MSDN上的文档](https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-lockworkstation):它于Windows XP中引入，功能有且只有一个：以类似于Windows键+L的方式锁定工作站（名字都直接写出来了==）。你可以在命令行中使用`rundll32`直接调用到`user32.dll`（对应的头文件为`winuser.h`）中的这个API：
 
 ```powershell
 rundll32.exe user32.dll,LockWorkStation

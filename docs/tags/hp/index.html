@@ -3,7 +3,7 @@
 <a href=index.xml title=RSS aria-label=RSS><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" height="23"><path d="M4 11a9 9 0 019 9"/><path d="M4 4a16 16 0 0116 16"/><circle cx="5" cy="19" r="1"/></svg></a></h1></header><article class="post-entry tag-entry"><header class=entry-header><h2>使用LockWorkStation让笔记本的可编程按键发挥作用</h2></header><div class=entry-content><p>总感觉已经许久没有写过blog了……虽然有在给域名续费，但都做的是DDNS方面的用途（顺便推荐一下Cloudflare的DNS解析服务，虽然在国内比较慢但还算方便）。写这个文章主要是想起来之前曾就怎么利用惠普笔记本上自带的F12可编程按键（可以通过系统中的HP Progrommable Key的UWP程序来编辑功能）实现按下即锁定计算机折腾过一番，特来灌水一篇（
 已经忘记git和hugo该怎么用了，还是临时去查的
 准备工作 因为并不是多么复杂的程序，所以只需要如果对这部分不感兴趣可以直接拉到文章底部，下载编译好的程序并为编程键设置按下启动即可。
-首先可以看看这个API在MSDN上的文档:它于Windows XP中引入，功能有且只有一个：锁定工作站（名字都直接写出来了==）。你可以在命令行中使用rundll32直接调用到user32.dll（对应的头文件为winuser.h）中的这个API：
+首先可以看看这个API在MSDN上的文档:它于Windows XP中引入，功能有且只有一个：以类似于Windows键+L的方式锁定工作站（名字都直接写出来了==）。你可以在命令行中使用rundll32直接调用到user32.dll（对应的头文件为winuser.h）中的这个API：
 rundll32.exe user32.dll,LockWorkStation 当然，惠普的这个可编程键并不支持在启动程序时附加参数，也不支持调用bat或者vbs之类的脚本……想要使用可编程键直接锁定电脑只能编译一个程序间接调用这个API了。
 使用 将下面的代码在Windows平台上使用gcc或msvc编译后，在HP Programmable Key中设置为按下后启动即可。
 #include &lt;Windows.h> #include &lt;winuser.h> int main(){ return(!LockWorkStation()); } 使用gcc编译时不需要额外的静态库链接，gcc应当会自动处理与系统自带的user32.dll的动态链接：
