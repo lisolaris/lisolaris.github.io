@@ -12,7 +12,7 @@ toc: true
 
 ## 关于我  
 
-呃啊 没什么好说的。  
+~~这个人很懒，什么都没有留下……~~  
 
 ## 关于本站  
 
@@ -20,6 +20,6 @@ toc: true
 
 ## 致谢  
 
-本站使用[Hugo](https://github.com/gohugoio/hugo)搭建，并使用了[PaperMod](https://github.com/adityatelange/hugo-PaperMod)主题。感谢原作者！  
+本站使用[Hugo](https://github.com/gohugoio/hugo)搭建，并使用了[PaperMod](https://github.com/adityatelange/hugo-PaperMod)主题。感谢你们！  
 
 其实作为第一篇博文应该写长一些的，但我还没想到要写什么……就先这样吧:)  
