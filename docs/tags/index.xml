@@ -10,7 +10,43 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Mar 2024 16:22:45 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 18:59:24 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024-06</title>
+      <link>https://blog.sorali.org/tags/2024-06/</link>
+      <pubDate>Wed, 26 Jun 2024 18:59:24 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/tags/2024-06/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://blog.sorali.org/tags/javascript/</link>
+      <pubDate>Wed, 26 Jun 2024 18:59:24 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>油猴</title>
+      <link>https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/</link>
+      <pubDate>Wed, 26 Jun 2024 18:59:24 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>知乎</title>
+      <link>https://blog.sorali.org/tags/%E7%9F%A5%E4%B9%8E/</link>
+      <pubDate>Wed, 26 Jun 2024 18:59:24 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/tags/%E7%9F%A5%E4%B9%8E/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>2024-03</title>
       <link>https://blog.sorali.org/tags/2024-03/</link>
@@ -50,7 +86,7 @@
     <item>
       <title>2023-03</title>
       <link>https://blog.sorali.org/tags/2023-03/</link>
-      <pubDate>Tue, 14 Mar 2023 12:53:17 +0800</pubDate>
+      <pubDate>Tue, 14 Mar 2023 20:40:35 +0800</pubDate>
       
       <guid>https://blog.sorali.org/tags/2023-03/</guid>
       <description></description>
@@ -59,16 +95,25 @@
     <item>
       <title>Minecraft</title>
       <link>https://blog.sorali.org/tags/minecraft/</link>
-      <pubDate>Tue, 14 Mar 2023 12:53:17 +0800</pubDate>
+      <pubDate>Tue, 14 Mar 2023 20:40:35 +0800</pubDate>
       
       <guid>https://blog.sorali.org/tags/minecraft/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>内网穿透</title>
+      <link>https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <pubDate>Tue, 14 Mar 2023 20:40:35 +0800</pubDate>
+      
+      <guid>https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>教程</title>
       <link>https://blog.sorali.org/tags/%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Tue, 14 Mar 2023 12:53:17 +0800</pubDate>
+      <pubDate>Tue, 14 Mar 2023 20:40:35 +0800</pubDate>
       
       <guid>https://blog.sorali.org/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
