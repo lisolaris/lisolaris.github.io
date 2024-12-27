@@ -2,7 +2,7 @@
 title: "教程：如何在Windows机器上架设Minecraft服务器"
 date: 2023-03-14T12:53:17+08:00
 tags: ["2023-03", "教程", "Minecraft"]
-categories: ["如何架设Minecraft服务器"]
+categories: ["教程"]
 toc: true
 draft: false
 ---
