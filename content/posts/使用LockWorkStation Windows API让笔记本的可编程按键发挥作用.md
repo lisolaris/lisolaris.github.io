@@ -11,7 +11,11 @@ draft: false
 
 ~~已经忘记git和hugo该怎么用了，还是临时去查的~~
 
-![在HP Programmable Key中编辑F12键的功能](https://s3.bmp.ovh/imgs/2024/03/22/f455559c421b87f7.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2024/03/22/f455559c421b87f7.png"
+    caption="在HP Programmable Key中编辑F12键的功能"
+    align=center
+>}}
 
 ## 准备工作
 

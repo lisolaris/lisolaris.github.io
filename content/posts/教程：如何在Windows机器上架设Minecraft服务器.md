@@ -14,7 +14,11 @@ draft: false
 
 首先呢我们需要准备一个服务端，这里选用[PaperMC](https://papermc.io/)，访问官网后点进右上角Downloads按需下载版本就行了。下载后得到的一个jar文件，先放着。  
 
-![下载PaperMC服务端](https://s3.bmp.ovh/imgs/2023/03/14/083a5e19459dc903.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/083a5e19459dc903.png"
+    caption="下载PaperMC服务端"
+    align=center
+>}}
 
 PaperMC属于Bukkit系的服务端，兼容大部分Bukkit和Spigot的插件，同时应用了许多针对原版的优化，令其运行速度大大快于原版vanilla；但代价就是许多原版的~~bug~~特性在Paper端不再可用，需要在高级配置中开启或是安装额外的插件（比如用于造刷沙机的跨世界实体方块更新逻辑在Paper端就需要安装[这个插件](https://github.com/Nats-ji/paper-sand-dupe-unpatched)）。  
 
@@ -24,7 +28,11 @@ PaperMC属于Bukkit系的服务端，兼容大部分Bukkit和Spigot的插件，�
 
 此外，从Minecraft 1.17开始，Mojang就要求玩家使用16及更高版本的JRE，因此我推荐你下载最新的JDK。从我个人的使用体验而言，OpenJDK和Oracle JDK并没有察觉到明显的差异，下载哪个都无所谓了……不过我推荐下载zip打包的JDK，可以省去配置环境变量这一步，后续要升级也很方便。  
 
-![OpenJDK Windows版下载](https://s3.bmp.ovh/imgs/2023/03/14/d790612a511af346.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/d790612a511af346.png"
+    caption="OpenJDK Windows版下载"
+    align=center
+>}}
 
 ## 让服务器跑起来  
 
@@ -32,11 +40,19 @@ PaperMC属于Bukkit系的服务端，兼容大部分Bukkit和Spigot的插件，�
 
 现在我们就有了一个.zip的JDK压缩包，一个.jar的Java软件包。我们找个文件夹把它们装起来，解压JDK，看起来像是这样的：  
 
-![文件列表](https://s3.bmp.ovh/imgs/2023/03/14/04cae75d09bef35d.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/04cae75d09bef35d.png"
+    caption="文件列表"
+    align=center
+>}}
 
 打开得到的jdk文件夹，进入bin目录内，找到java.exe，__按住Shift的同时右键它__，在弹出的菜单中选择『复制文件地址』：  
 
-![复制文件地址](https://s3.bmp.ovh/imgs/2023/03/14/6895b0ce3da56561.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/6895b0ce3da56561.png"
+    caption="复制文件地址"
+    align=center
+>}}
 
 如果想运行安装了Forge或者Fabric的Mod服务器，之后我有空会再补充的。这里先介绍原版。
 
@@ -60,15 +76,27 @@ pause
 
 保存文件，将后缀名改为bat，双击运行一次；第一次的运行会自动下载原版的服务端并在它的基础上修改（为了规避版权问题不能直接提供修改好的服务端），需要一些时间。等它下完开始滚动日志后没一会就会报错停止，这是正常的，因为我们还没有同意最终用户许可协议（同样是版权问题）。  
 
-![第一次运行](https://s3.bmp.ovh/imgs/2023/03/14/aa08d529a007c044.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/aa08d529a007c044.png"
+    caption="第一次运行"
+    align=center
+>}}
 
 这时在游戏文件夹里已经生成了一堆文件和文件夹，暂时不管。我们打开eula.txt，把最后一行的```false```改成```true```，保存，再次启动服务端，正常运行。
 
-![EULA](https://s3.bmp.ovh/imgs/2023/03/14/e39bf04e4bf76753.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/e39bf04e4bf76753.png"
+    caption="EULA"
+    align=center
+>}}
 
 弹出防火墙提示的话记得允许放行。
 
-![防火墙](https://s3.bmp.ovh/imgs/2023/03/14/26dfa7f3cd600c9d.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/26dfa7f3cd600c9d.png"
+    caption="防火墙"
+    align=center
+>}}
 
 这个时候可以看到命令行窗口最后一行日志是```Timings reset```，并有一个```>```命令提示符等待用户输入。以后可以从这里输入Minecraft指令了。
 
@@ -76,7 +104,11 @@ pause
 
 我们打开游戏，启动多人模式，添加一个服务器为```127.0.0.1:25565```看看能不能正常进去：
 
-![第一次进入](https://s3.bmp.ovh/imgs/2023/03/14/4d11790f64c060ff.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/4d11790f64c060ff.png"
+    caption="第一次进入"
+    align=center
+>}}
 
 打开F3调试选项，左上角可以看到进入了"Paper"服务器。  
 
@@ -169,7 +201,11 @@ white-list=false
 
 这里我们启动刚刚写好的启动服务端的脚本，向上滚动命令行窗口旁边的滚动条直到最顶端，看到第二行的命令```ipconfig /all```产生的输出：
 
-![ipconfig](https://s3.bmp.ovh/imgs/2023/03/14/119cbbaee405462f.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/119cbbaee405462f.png"
+    caption="ipconfig"
+    align=center
+>}}
 
 找到我们正在用的适配器（一般是以太网或者WLAN，会显示得非常详细，这里我把右边的输出全部隐去了）所对应的IPv4地址，那么就是这个了。让其他玩家在他们的客户端中输入这个IP和之前设置的端口，就可以连上了。
 
@@ -193,9 +229,17 @@ white-list=false
 
 打开浏览器登陆到路由器后台（对于小米路由器，一般是<http://192.168.31.1>），选择高级设置-端口转发，添加规则：  
 
-![端口转发](https://s3.bmp.ovh/imgs/2023/03/14/6c8363ca429d2e30.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/6c8363ca429d2e30.png"
+    caption="端口转发"
+    align=center
+>}}
 
-![设置规则](https://s3.bmp.ovh/imgs/2023/03/14/81a30ec78ecb1486.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/81a30ec78ecb1486.png"
+    caption="设置规则"
+    align=center
+>}}
 
 各个项目的解释如下：  
 
@@ -209,7 +253,11 @@ white-list=false
 
 然后打开路由器后台的常用设置-上网设置，可以看到上网信息一栏，记下这个IP地址。  
 
-![上网信息](https://s3.bmp.ovh/imgs/2023/03/14/142975bf2873d1a8.png)
+{{< figure
+    src="https://s3.bmp.ovh/imgs/2023/03/14/142975bf2873d1a8.png"
+    caption="上网信息"
+    align=center
+>}}
 
 对于校园网内的其他用户，在你设置好端口转发后使用刚刚记下的IP地址和外部端口一般就可以连接到你的服务器了，但如果你的校园网重新拨号导致IP地址变动则需要重新在他们的客户端里填入新的IP，稍微有点麻烦。  
 
