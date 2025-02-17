@@ -5,20 +5,20 @@
     <link>https://blog.sorali.org/tags/2025-02/</link>
     <description>Recent content in 2025-02 on lisolaris&#39;s blog</description>
     <image>
+      <title>lisolaris&#39;s blog</title>
       <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
       <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Feb 2025 18:30:41 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/tags/2025-02/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 18:30:41 +0800</lastBuildDate>
+    <atom:link href="https://blog.sorali.org/tags/2025-02/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NVIDIA矿卡折腾记</title>
       <link>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
       <pubDate>Sat, 15 Feb 2025 18:30:41 +0800</pubDate>
-      
       <guid>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -5,20 +5,27 @@
     <link>https://blog.sorali.org/categories/</link>
     <description>Recent content in Categories on lisolaris&#39;s blog</description>
     <image>
+      <title>lisolaris&#39;s blog</title>
       <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
       <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.144.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Aug 2024 14:32:33 +0800</lastBuildDate><atom:link href="https://blog.sorali.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Feb 2025 02:06:51 +0800</lastBuildDate>
+    <atom:link href="https://blog.sorali.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深夜闲谈</title>
+      <link>https://blog.sorali.org/categories/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
+      <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
+      <guid>https://blog.sorali.org/categories/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</guid>
+      <description></description>
+    </item>
     <item>
       <title>教程</title>
       <link>https://blog.sorali.org/categories/%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 29 Aug 2024 14:32:33 +0800</pubDate>
-      
       <guid>https://blog.sorali.org/categories/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

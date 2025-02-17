@@ -2,25 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.sorali.org/categories/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/posts/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/2025/02/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%880x01/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
     <loc>https://blog.sorali.org/tags/2025-02/</loc>
     <lastmod>2025-02-15T18:30:41+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/diy/</loc>
     <lastmod>2025-02-15T18:30:41+08:00</lastmod>
   </url><url>
-    <loc>https://blog.sorali.org/</loc>
-    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-  </url><url>
     <loc>https://blog.sorali.org/tags/nvidia/</loc>
     <lastmod>2025-02-15T18:30:41+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</loc>
-    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/posts/</loc>
-    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/</loc>
     <lastmod>2025-02-15T18:30:41+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/%E9%AD%94%E6%94%B9/</loc>
@@ -42,9 +54,6 @@
     <lastmod>2024-12-27T00:35:30+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/2024-07/</loc>
-    <lastmod>2024-08-29T14:32:33+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/categories/</loc>
     <lastmod>2024-08-29T14:32:33+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/mff/</loc>
