@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>内网穿透 on lisolaris&#39;s blog</title>
-    <link>https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+    <link>http://localhost:1313/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
     <description>Recent content in 内网穿透 on lisolaris&#39;s blog</description>
     <image>
       <title>lisolaris&#39;s blog</title>
@@ -10,14 +10,14 @@
       <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
     <generator>Hugo -- 0.144.0</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Tue, 14 Mar 2023 20:40:35 +0800</lastBuildDate>
-    <atom:link href="https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>教程：如何在服务器上使用内网穿透</title>
-      <link>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
+      <link>http://localhost:1313/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</link>
       <pubDate>Tue, 14 Mar 2023 20:40:35 +0800</pubDate>
-      <guid>https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
+      <guid>http://localhost:1313/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</guid>
       <description>&lt;p&gt;上一篇文章讲到了&lt;a href=&#34;https://blog.sorali.org/2023/03/%E6%95%99%E7%A8%8B%E5%A6%82%E4%BD%95%E5%9C%A8windows%E6%9C%BA%E5%99%A8%E4%B8%8A%E6%9E%B6%E8%AE%BEminecraft%E6%9C%8D%E5%8A%A1%E5%99%A8/&#34;&gt;如何在Windows机器上架设Minecraft服务器&lt;/a&gt;，现在我们来看看如何在内网环境下让其他朋友也能访问到自己的服务器。本篇也同样适用于一些其他支持局域网联机的游戏。&lt;/p&gt;
 &lt;h2 id=&#34;前置知识&#34;&gt;前置知识&lt;/h2&gt;
 &lt;h3 id=&#34;ip地址&#34;&gt;IP地址&lt;/h3&gt;

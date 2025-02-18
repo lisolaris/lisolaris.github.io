@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NVIDIA on lisolaris&#39;s blog</title>
-    <link>https://blog.sorali.org/tags/nvidia/</link>
+    <link>http://localhost:1313/tags/nvidia/</link>
     <description>Recent content in NVIDIA on lisolaris&#39;s blog</description>
     <image>
       <title>lisolaris&#39;s blog</title>
@@ -10,14 +10,14 @@
       <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
     </image>
     <generator>Hugo -- 0.144.0</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 15 Feb 2025 18:30:41 +0800</lastBuildDate>
-    <atom:link href="https://blog.sorali.org/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/nvidia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NVIDIA矿卡折腾记</title>
-      <link>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
+      <link>http://localhost:1313/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
       <pubDate>Sat, 15 Feb 2025 18:30:41 +0800</pubDate>
-      <guid>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
       <description></description>
     </item>
   </channel>
