@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>油猴 on lisolaris&#39;s blog</title>
-    <link>http://localhost:1313/tags/%E6%B2%B9%E7%8C%B4/</link>
+    <link>https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/</link>
     <description>Recent content in 油猴 on lisolaris&#39;s blog</description>
     <image>
       <title>lisolaris&#39;s blog</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.144.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 26 Jun 2024 18:59:24 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%B2%B9%E7%8C%B4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用额外的JavaScript脚本优化知乎推荐流的浏览体验</title>
-      <link>http://localhost:1313/2024/06/%E4%BD%BF%E7%94%A8%E9%A2%9D%E5%A4%96%E7%9A%84javascript%E8%84%9A%E6%9C%AC%E4%BC%98%E5%8C%96%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E7%9A%84%E6%B5%8F%E8%A7%88%E4%BD%93%E9%AA%8C/</link>
+      <link>https://blog.sorali.org/2024/06/%E4%BD%BF%E7%94%A8%E9%A2%9D%E5%A4%96%E7%9A%84javascript%E8%84%9A%E6%9C%AC%E4%BC%98%E5%8C%96%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E7%9A%84%E6%B5%8F%E8%A7%88%E4%BD%93%E9%AA%8C/</link>
       <pubDate>Wed, 26 Jun 2024 18:59:24 +0800</pubDate>
-      <guid>http://localhost:1313/2024/06/%E4%BD%BF%E7%94%A8%E9%A2%9D%E5%A4%96%E7%9A%84javascript%E8%84%9A%E6%9C%AC%E4%BC%98%E5%8C%96%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E7%9A%84%E6%B5%8F%E8%A7%88%E4%BD%93%E9%AA%8C/</guid>
+      <guid>https://blog.sorali.org/2024/06/%E4%BD%BF%E7%94%A8%E9%A2%9D%E5%A4%96%E7%9A%84javascript%E8%84%9A%E6%9C%AC%E4%BC%98%E5%8C%96%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E7%9A%84%E6%B5%8F%E8%A7%88%E4%BD%93%E9%AA%8C/</guid>
       <description>&lt;p&gt;最近刷知乎的时候实在受不了首页给我推荐的低质量内容了，故学习了一番JavaScript，写了一个脚本（&lt;a href=&#34;https://greasyfork.org/zh-CN/scripts/498139-%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E4%BC%98%E5%8C%96&#34;&gt;知乎推荐流优化&lt;/a&gt;）来改善知乎网页端的浏览体验。现将学习过程记录一二，希望以后能够用上……&lt;/p&gt;
 &lt;p&gt;&lt;del&gt;其实这篇文章已经在编辑器里躺了很久了，一直没有来写完&lt;/del&gt;&lt;/p&gt;</description>
     </item>

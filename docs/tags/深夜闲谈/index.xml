@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>深夜闲谈 on lisolaris&#39;s blog</title>
-    <link>http://localhost:1313/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
+    <link>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
     <description>Recent content in 深夜闲谈 on lisolaris&#39;s blog</description>
     <image>
       <title>lisolaris&#39;s blog</title>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.144.0</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 18 Feb 2025 02:06:51 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>深夜闲谈0x01</title>
-      <link>http://localhost:1313/2025/02/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%880x01/</link>
+      <link>https://blog.sorali.org/2025/02/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%880x01/</link>
       <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
-      <guid>http://localhost:1313/2025/02/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%880x01/</guid>
+      <guid>https://blog.sorali.org/2025/02/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%880x01/</guid>
       <description>&lt;p&gt;之前创建这个博客的时候想的是当日记来写的，但是后来不知不觉就写成了某种教程集合……感觉不是很有用的东西就不想放上来了。最近又想起来写博客的目的，遂打算开始一个新的节分类专门放闲扯淡的内容。这一篇是第一篇，所以是0x01.&lt;/p&gt;</description>
     </item>
   </channel>
