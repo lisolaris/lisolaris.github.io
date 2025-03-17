@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.sorali.org/categories/</loc>
-    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+    <loc>https://blog.sorali.org/2025/03/control-theory-review-01/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/</loc>
-    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/posts/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/posts/</loc>
-    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/</loc>
     <lastmod>2025-02-18T02:06:51+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>

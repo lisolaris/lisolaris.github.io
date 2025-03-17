@@ -18,7 +18,8 @@
       <link>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</link>
       <pubDate>Sat, 15 Feb 2025 18:30:41 +0800</pubDate>
       <guid>https://blog.sorali.org/2025/02/nvidia%E7%9F%BF%E5%8D%A1%E6%8A%98%E8%85%BE%E8%AE%B0/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;背景介绍&#34;&gt;背景介绍&lt;/h2&gt;
+&lt;p&gt;从比特币、以太坊到现在的各种山寨币和meme币，基本都使用了一种被称为“工作量证明”的机制来激励矿工，保证整个虚拟币交易网络可以持续运行下去。这个过程需要进行大量的重复计算，而GPU在处理这种问题上具有天然的优势。早期矿工使用的是消费级显卡，后来NVIDIA（据说是）为了缓解显卡不足推出了CMP系列的矿卡&lt;/p&gt;</description>
     </item>
     <item>
       <title>硬改联想M910q小主机增加第二个M.2接口</title>
