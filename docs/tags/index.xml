@@ -14,10 +14,59 @@
     <lastBuildDate>Mon, 17 Mar 2025 16:43:01 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Posts</title>
-      <link>https://blog.sorali.org/tags/posts/</link>
+      <title>2025-03</title>
+      <link>https://blog.sorali.org/tags/2025-03/</link>
       <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/posts/</guid>
+      <guid>https://blog.sorali.org/tags/2025-03/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>复习</title>
+      <link>https://blog.sorali.org/tags/%E5%A4%8D%E4%B9%A0/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E5%A4%8D%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>学习笔记</title>
+      <link>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>拉普拉斯变换</title>
+      <link>https://blog.sorali.org/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>控制理论</title>
+      <link>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>自动控制原理</title>
+      <link>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2025-02</title>
+      <link>https://blog.sorali.org/tags/2025-02/</link>
+      <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/2025-02/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>杂谈</title>
+      <link>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</link>
+      <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</guid>
       <description></description>
     </item>
     <item>
@@ -25,20 +74,6 @@
       <link>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
       <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
       <guid>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>闲谈</title>
-      <link>https://blog.sorali.org/tags/%E9%97%B2%E8%B0%88/</link>
-      <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/%E9%97%B2%E8%B0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>2025-02</title>
-      <link>https://blog.sorali.org/tags/2025-02/</link>
-      <pubDate>Sat, 15 Feb 2025 18:30:41 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/2025-02/</guid>
       <description></description>
     </item>
     <item>
@@ -140,24 +175,24 @@
       <description></description>
     </item>
     <item>
-      <title>HP</title>
-      <link>https://blog.sorali.org/tags/hp/</link>
+      <title>C&#43;&#43;</title>
+      <link>https://blog.sorali.org/tags/c&#43;&#43;/</link>
       <pubDate>Fri, 22 Mar 2024 16:22:45 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/hp/</guid>
+      <guid>https://blog.sorali.org/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
-      <title>Tips</title>
-      <link>https://blog.sorali.org/tags/tips/</link>
+      <title>笔记本</title>
+      <link>https://blog.sorali.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</link>
       <pubDate>Fri, 22 Mar 2024 16:22:45 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/tips/</guid>
+      <guid>https://blog.sorali.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</guid>
       <description></description>
     </item>
     <item>
-      <title>可编程键</title>
-      <link>https://blog.sorali.org/tags/%E5%8F%AF%E7%BC%96%E7%A8%8B%E9%94%AE/</link>
+      <title>键盘</title>
+      <link>https://blog.sorali.org/tags/%E9%94%AE%E7%9B%98/</link>
       <pubDate>Fri, 22 Mar 2024 16:22:45 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/%E5%8F%AF%E7%BC%96%E7%A8%8B%E9%94%AE/</guid>
+      <guid>https://blog.sorali.org/tags/%E9%94%AE%E7%9B%98/</guid>
       <description></description>
     </item>
     <item>

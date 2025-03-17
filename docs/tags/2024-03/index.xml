@@ -15,9 +15,9 @@
     <atom:link href="https://blog.sorali.org/tags/2024-03/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用LockWorkStation让笔记本的可编程按键发挥作用</title>
-      <link>https://blog.sorali.org/2024/03/%E4%BD%BF%E7%94%A8lockworkstation%E8%AE%A9%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%9A%84%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8C%89%E9%94%AE%E5%8F%91%E6%8C%A5%E4%BD%9C%E7%94%A8/</link>
+      <link>https://blog.sorali.org/articles/2024/03/programming-key-on-laptop-as-lockscreen-key/</link>
       <pubDate>Fri, 22 Mar 2024 16:22:45 +0800</pubDate>
-      <guid>https://blog.sorali.org/2024/03/%E4%BD%BF%E7%94%A8lockworkstation%E8%AE%A9%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%9A%84%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8C%89%E9%94%AE%E5%8F%91%E6%8C%A5%E4%BD%9C%E7%94%A8/</guid>
+      <guid>https://blog.sorali.org/articles/2024/03/programming-key-on-laptop-as-lockscreen-key/</guid>
       <description>&lt;p&gt;总感觉已经许久没有写过blog了……虽然有在给域名续费，但都做的是DDNS方面的用途（顺便推荐一下Cloudflare的DNS解析服务，虽然在国内比较慢但还算方便）。写这个文章主要是想起来之前曾就怎么利用惠普笔记本上自带的F12可编程按键（可以通过系统中的HP Progrommable Key的UWP程序来编辑功能）实现按下即锁定计算机折腾过一番，特来灌水一篇（&lt;/p&gt;</description>
     </item>
   </channel>

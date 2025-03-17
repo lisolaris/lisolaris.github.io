@@ -1,7 +1,7 @@
 ---
 title: "使用LockWorkStation让笔记本的可编程按键发挥作用"
 date: 2024-03-22T16:22:45+08:00
-tags: ["2024-03", "tips", "HP", "可编程键"]
+tags: ["2024-03", "笔记本", "C++", "键盘"]
 categories: [""]
 toc: true
 draft: false

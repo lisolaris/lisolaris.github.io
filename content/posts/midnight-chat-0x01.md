@@ -1,7 +1,7 @@
 ---
 title: "深夜闲谈0x01"
 date: 2025-02-18T02:06:51+08:00
-tags: ["闲谈", "深夜闲谈"]
+tags: ["2025-02", "杂谈", "深夜闲谈"]
 categories: ["深夜闲谈"]
 toc: true
 draft: false
