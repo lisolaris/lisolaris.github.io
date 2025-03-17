@@ -38,7 +38,7 @@
       <pubDate>Mon, 06 Mar 2023 18:00:00 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2023/03/helloworld/</guid>
       <description>&lt;p&gt;你好，欢迎来到我的博客!&lt;br&gt;
-在拖延好几个星期后，我终于完成了个人页面的搭建（通过Github Pages托管）。今后应该会不定期更新一些感想和发现……也希望你能看得开心:D&lt;/p&gt;</description>
+在拖延好几个星期后，我终于完成了个人页面的搭建（通过&lt;del&gt;Github Pages&lt;/del&gt; Cloudflare Pages托管）。今后应该会不定期更新一些感想和发现……也希望你能看得开心:D&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
