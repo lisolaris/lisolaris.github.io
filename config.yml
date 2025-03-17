@@ -1,0 +1,168 @@
+baseURL: "https://blog.sorali.org/"
+relativeurls: true
+title: lisolaris's blog
+theme: PaperMod
+
+languageCode: zh-CN
+hasCJKLanguage: true
+
+publishDir: docs
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-WJLMR8Z8YH
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# paginate:
+#   pagerSize: 5
+
+pagination:
+  disableAliases: false
+  pagerSize: 7
+  path: page
+
+title: "lisolaris's blog" # - 去抓住它吧 你所期望的那颗星"
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  subtitle: 去抓住它吧 你所期望的那颗星
+  description: "lisolaris的个人博客 - 分享感想与发现"
+  keywords: [Blog, Portfolio, PaperMod, Technology]
+  author: lisolaris
+  # author: ["Me", "You"] # multiple authors
+  images: ["https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableFingerprinting: true
+  #   # disableHLJS: true # to disable highlight.js
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
+
+  # profile-mode
+  # profileMode:
+  #   enabled: false # needs to be explicitly set
+  #   title: ExampleSite
+  #   subtitle: "This is subtitle"
+  #   imageUrl: "<img location>"
+  #   imageWidth: 120
+  #   imageHeight: 120
+  #   imageTitle: my image
+  #   buttons:
+  #     - name: Posts
+  #       url: posts
+  #     - name: Tags
+  #       url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "欢迎来到lisolaris的博客ﾟ ∀ﾟ)ノ"
+    Content: "去抓住它吧 你所期望的那颗星"
+
+  socialIcons:
+    # - name: twitter
+    #   url: "https://twitter.com/"
+    # - name: stackoverflow
+    #   url: "https://stackoverflow.com"
+    - name: email
+      url: "mailto:sorali@sorali.org"
+    - name: github
+      url: "https://github.com/lisolaris"
+
+  analytics:
+    google:
+      SiteVerificationTag: "njbU0_AKubmw8PZ2_M8dRqYdxfHTDAJSiIIMg8183Gg"
+    bing:
+      SiteVerificationTag: "2F130D8888E169C0FEDC8FD74C542EB9"
+    # yandex:
+    #   SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/lisolaris/lisolaris.github.io/issues/new"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: false # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  mainSections:
+    - posts
+    - tutorials
+
+menu:
+  main:
+    - identifier: categories
+      name: 目录
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: 关于
+      url: https://blog.sorali.org/posts/helloworld/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+permalinks:
+  page:
+    posts: /articles/:year/:month/:filename/
+    tutorials: /tutorials/:year/:month/:filename/
+  section:
+    posts: /articles/
+    tutorials: /tutorials/
