@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>复习 on lisolaris&#39;s blog</title>
+    <link>http://localhost:1313/tags/%E5%A4%8D%E4%B9%A0/</link>
+    <description>Recent content in 复习 on lisolaris&#39;s blog</description>
+    <image>
+      <title>lisolaris&#39;s blog</title>
+      <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
+      <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
+    </image>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 17 Mar 2025 16:43:01 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%A4%8D%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自动控制原理 - 01 - 一般概念，数学模型与拉普拉斯变换</title>
+      <link>http://localhost:1313/articles/2025/03/control-theory-review-01/</link>
+      <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
+      <guid>http://localhost:1313/articles/2025/03/control-theory-review-01/</guid>
+      <description>&lt;p&gt;打算开个系列内容记录一下学习自动控制原理时我的一些理解和体会，也顺便在这个过程中再复习一遍经典控制理论。学习进程主要跟着西北工业大学卢京潮老师的录播课程&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;进行的（相信大部分同学也是看这个课程学习的自控），使用的教材是卢老师主编的《自动控制原理》，后面的文章也会基本按照卢老师教材中的目录安排；当然还有一些其他的图书值得参考，附列在这篇文章的最后。可以自行查阅。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
