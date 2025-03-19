@@ -24,6 +24,6 @@ draft: true
 
 由于我并没怎么去做SEO，这个博客的权重应当非常低，所以很感谢你能够点进来！  
 
-本站使用[Hugo](https://github.com/gohugoio/hugo)搭建，并使用了[PaperMod](https://github.com/adityatelange/hugo-PaperMod)主题。感谢你们！  
+本站使用[Hugo](https://github.com/gohugoio/hugo)搭建，并使用了我个人魔改的[PaperMod-Square](https://github.com/lisolaris/PaperMod-Square)主题。感谢你们！  
 
 其实作为第一篇博文应该写长一些，但我还没想到要写什么……就先这样吧:-)  

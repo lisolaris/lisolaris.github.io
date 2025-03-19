@@ -1,7 +1,7 @@
 baseURL: "https://blog.sorali.org/"
 relativeurls: true
 title: lisolaris's blog
-theme: PaperMod
+theme: PaperMod-Square
 
 languageCode: zh-CN
 hasCJKLanguage: true
@@ -32,13 +32,14 @@ title: "lisolaris's blog" # - 去抓住它吧 你所期望的那颗星"
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   subtitle: 去抓住它吧 你所期望的那颗星
+  subtitleForAllPages: false
   description: "lisolaris的个人博客 - 分享感想与发现"
   keywords: [Blog, Portfolio, PaperMod, Technology]
   author: lisolaris
   # author: ["Me", "You"] # multiple authors
   images: ["https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: light # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -48,19 +49,20 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
+  UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
   hidemeta: false
   hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
   math: true
+  # externalHLJS: true
 
   assets:
     disableFingerprinting: true
-  #   # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js
   #   favicon: "<link / abs url>"
   #   favicon16x16: "<link / abs url>"
   #   favicon32x32: "<link / abs url>"
@@ -135,6 +137,7 @@ params:
     - posts
     - tutorials
 
+
 menu:
   main:
     - identifier: categories
@@ -151,14 +154,22 @@ menu:
       weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
+
 markup:
   highlight:
+    anchorLineNos: false
+    codeFences: false
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    style: github
+    tabWidth: 4
+    wrapperClass: highlight
 
 permalinks:
   page:

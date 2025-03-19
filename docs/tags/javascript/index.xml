@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.144.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 26 Jun 2024 18:59:24 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 18:33:26 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为PaperMod主题增加代码语法高亮适应亮/暗模式</title>
+      <link>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</link>
+      <pubDate>Wed, 19 Mar 2025 18:33:26 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</guid>
+      <description>&lt;p&gt;既然都改了模板，就打算一改到底了。PaperMod原生的代码块只有黑色背景，在白色主题下看起来相当丑；查了一番后发现Hugo使用的是一个叫做&lt;code&gt;highlight.js&lt;/code&gt;[^3]的项目，并且可以直接在网页头部导入这个JavaScript：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用额外的JavaScript脚本优化知乎推荐流的浏览体验</title>
       <link>https://blog.sorali.org/articles/2024/06/optimize-zhihu-web-page-with-additional-javascript/</link>

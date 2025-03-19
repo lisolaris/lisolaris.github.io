@@ -1,240 +1,161 @@
-   <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2025-03/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/categories/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E5%A4%8D%E4%B9%A0/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/categories/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2025/03/control-theory-review-01/</loc>
-      <lastmod>2025-03-17T16:43:01+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2025-02/</loc>
-      <lastmod>2025-02-18T02:06:51+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</loc>
-      <lastmod>2025-02-18T02:06:51+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
-      <lastmod>2025-02-18T02:06:51+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/categories/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
-      <lastmod>2025-02-18T02:06:51+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2025/02/midnight-chat-0x01/</loc>
-      <lastmod>2025-02-18T02:06:51+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/diy/</loc>
-      <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/nvidia/</loc>
-      <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2025/02/nvidia-mining-card/</loc>
-      <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E9%AD%94%E6%94%B9/</loc>
-      <lastmod>2025-02-15T18:30:41+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2024-12/</loc>
-      <lastmod>2024-12-27T00:35:30+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/ham/</loc>
-      <lastmod>2024-12-27T00:35:30+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/</loc>
-      <lastmod>2024-12-27T00:35:30+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2024/12/amateur-radio-from-examing-to-set-up-station/</loc>
-      <lastmod>2024-12-27T00:35:30+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%95%99%E7%A8%8B/</loc>
-      <lastmod>2024-12-27T00:35:30+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2024-07/</loc>
-      <lastmod>2024-08-29T14:32:33+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/mff/</loc>
-      <lastmod>2024-08-29T14:32:33+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/categories/%E6%95%99%E7%A8%8B/</loc>
-      <lastmod>2024-08-29T14:32:33+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2024/08/add-second-m2-slot-on-lenovo-m910q/</loc>
-      <lastmod>2024-08-29T14:32:33+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2024-06/</loc>
-      <lastmod>2024-06-26T18:59:24+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/javascript/</loc>
-      <lastmod>2024-06-26T18:59:24+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2024/06/optimize-zhihu-web-page-with-additional-javascript/</loc>
-      <lastmod>2024-06-26T18:59:24+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/</loc>
-      <lastmod>2024-06-26T18:59:24+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E7%9F%A5%E4%B9%8E/</loc>
-      <lastmod>2024-06-26T18:59:24+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2024-03/</loc>
-      <lastmod>2024-03-22T16:22:45+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/c&#43;&#43;/</loc>
-      <lastmod>2024-03-22T16:22:45+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2024/03/programming-key-on-laptop-as-lockscreen-key/</loc>
-      <lastmod>2024-03-22T16:22:45+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
-      <lastmod>2024-03-22T16:22:45+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E9%94%AE%E7%9B%98/</loc>
-      <lastmod>2024-03-22T16:22:45+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/2023-03/</loc>
-      <lastmod>2023-03-14T20:40:35+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/minecraft/</loc>
-      <lastmod>2023-03-14T20:40:35+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tutorials/</loc>
-      <lastmod>2023-03-14T20:40:35+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-      <lastmod>2023-03-14T20:40:35+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tutorials/2023/03/howto-using-intranet-passing-on-server/</loc>
-      <lastmod>2023-03-14T20:40:35+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/tutorials/2023/03/howto-set-up-minecraft-server-on-windows/</loc>
-      <lastmod>2023-03-14T12:53:17+08:00</lastmod>
-   </url>
-   
-   <url>
-      <loc>https://blog.sorali.org/articles/2023/03/helloworld/</loc>
-      <lastmod>2023-03-06T18:00:00+08:00</lastmod>
-   </url>
-   
-   </urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://blog.sorali.org/tags/2025-03/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/hugo/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/javascript/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/papermod/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</loc>
+    <lastmod>2025-03-19T18:33:26+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/cloudflare/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/03/midnight-chat-0x02/</loc>
+    <lastmod>2025-03-18T00:50:15+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E5%A4%8D%E4%B9%A0/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%8F%98%E6%8D%A2/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/03/control-theory-review-01/</loc>
+    <lastmod>2025-03-17T16:43:01+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2025-02/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/02/midnight-chat-0x01/</loc>
+    <lastmod>2025-02-18T02:06:51+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/diy/</loc>
+    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/nvidia/</loc>
+    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/02/nvidia-mining-card/</loc>
+    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E9%AD%94%E6%94%B9/</loc>
+    <lastmod>2025-02-15T18:30:41+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2024-12/</loc>
+    <lastmod>2024-12-27T00:35:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/ham/</loc>
+    <lastmod>2024-12-27T00:35:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5/</loc>
+    <lastmod>2024-12-27T00:35:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2024/12/amateur-radio-from-examing-to-set-up-station/</loc>
+    <lastmod>2024-12-27T00:35:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-12-27T00:35:30+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2024-07/</loc>
+    <lastmod>2024-08-29T14:32:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/mff/</loc>
+    <lastmod>2024-08-29T14:32:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2024-08-29T14:32:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2024/08/add-second-m2-slot-on-lenovo-m910q/</loc>
+    <lastmod>2024-08-29T14:32:33+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2024-06/</loc>
+    <lastmod>2024-06-26T18:59:24+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2024/06/optimize-zhihu-web-page-with-additional-javascript/</loc>
+    <lastmod>2024-06-26T18:59:24+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%B2%B9%E7%8C%B4/</loc>
+    <lastmod>2024-06-26T18:59:24+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E7%9F%A5%E4%B9%8E/</loc>
+    <lastmod>2024-06-26T18:59:24+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2024-03/</loc>
+    <lastmod>2024-03-22T16:22:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/c&#43;&#43;/</loc>
+    <lastmod>2024-03-22T16:22:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2024/03/programming-key-on-laptop-as-lockscreen-key/</loc>
+    <lastmod>2024-03-22T16:22:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/</loc>
+    <lastmod>2024-03-22T16:22:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E9%94%AE%E7%9B%98/</loc>
+    <lastmod>2024-03-22T16:22:45+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/2023-03/</loc>
+    <lastmod>2023-03-14T20:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/minecraft/</loc>
+    <lastmod>2023-03-14T20:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tutorials/</loc>
+    <lastmod>2023-03-14T20:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
+    <lastmod>2023-03-14T20:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tutorials/2023/03/howto-using-intranet-passing-on-server/</loc>
+    <lastmod>2023-03-14T20:40:35+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tutorials/2023/03/howto-set-up-minecraft-server-on-windows/</loc>
+    <lastmod>2023-03-14T12:53:17+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2023/03/helloworld/</loc>
+    <lastmod>2023-03-06T18:00:00+08:00</lastmod>
+  </url>
+</urlset>

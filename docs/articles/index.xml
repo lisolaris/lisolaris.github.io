@@ -11,8 +11,24 @@
     </image>
     <generator>Hugo -- 0.144.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 17 Mar 2025 16:43:01 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 18:33:26 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为PaperMod主题增加代码语法高亮适应亮/暗模式</title>
+      <link>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</link>
+      <pubDate>Wed, 19 Mar 2025 18:33:26 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</guid>
+      <description>&lt;p&gt;既然都改了模板，就打算一改到底了。PaperMod原生的代码块只有黑色背景，在白色主题下看起来相当丑；查了一番后发现Hugo使用的是一个叫做&lt;code&gt;highlight.js&lt;/code&gt;[^3]的项目，并且可以直接在网页头部导入这个JavaScript：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>深夜闲谈 0x02</title>
+      <link>https://blog.sorali.org/articles/2025/03/midnight-chat-0x02/</link>
+      <pubDate>Tue, 18 Mar 2025 00:50:15 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/03/midnight-chat-0x02/</guid>
+      <description>&lt;h3 id=&#34;0x02&#34;&gt;0x02&lt;/h3&gt;
+&lt;p&gt;又到了晚上闲谈时间——&lt;/p&gt;
+&lt;p&gt;打算重新把自动控制原理捡起来，虽然以前学过但总归是印象不深，现在打算再照着课本复习一遍，顺便把以前学习时的心得体会记录在博客上。其实这门学科可以说是工科课程的代表：用（相对来说）不那么严谨的数学去解决具有强现实意义的工程问题，同一个问题可以有许多方法相互验证，殊途同归，当然还少不了大量充满奇怪参数的经验公式XD&lt;/p&gt;</description>
+    </item>
     <item>
       <title>自动控制原理 - 01 - 一般概念，数学模型与拉普拉斯变换</title>
       <link>https://blog.sorali.org/articles/2025/03/control-theory-review-01/</link>
@@ -21,11 +37,12 @@
       <description>&lt;p&gt;打算开个系列内容记录一下学习自动控制原理时我的一些理解和体会，也顺便在这个过程中再复习一遍经典控制理论。学习进程主要跟着西北工业大学卢京潮老师的录播课程&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;进行的（相信大部分同学也是看这个课程学习的自控），使用的教材是卢老师主编的《自动控制原理》，后面的文章也会基本按照卢老师教材中的目录安排；当然还有一些其他的图书值得参考，附列在这篇文章的最后。可以自行查阅。&lt;/p&gt;</description>
     </item>
     <item>
-      <title>深夜闲谈0x01</title>
+      <title>深夜闲谈 0x01</title>
       <link>https://blog.sorali.org/articles/2025/02/midnight-chat-0x01/</link>
       <pubDate>Tue, 18 Feb 2025 02:06:51 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2025/02/midnight-chat-0x01/</guid>
-      <description>&lt;p&gt;之前创建这个博客的时候想的是当日记来写的，但是后来不知不觉就写成了某种教程集合……感觉不是很有用的东西就不想放上来了。最近又想起来写博客的目的，遂打算开始一个新的节分类专门放闲扯淡的内容。这一篇是第一篇，所以是0x01.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;0x01&#34;&gt;0x01&lt;/h3&gt;
+&lt;p&gt;之前创建这个博客的时候想的是当日记来写的，但是后来不知不觉就写成了某种教程集合……感觉不是很有用的东西就不想放上来了。最近又想起来写博客的目的，遂打算开始一个新的节分类专门放闲扯淡的内容。这一篇是第一篇，所以是0x01.&lt;/p&gt;</description>
     </item>
     <item>
       <title>NVIDIA矿卡折腾记</title>
