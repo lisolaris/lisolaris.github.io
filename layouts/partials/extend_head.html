@@ -1,8 +1,8 @@
 {{ if or .Params.math .Site.Params.math }}
 <!-- Enable KaTeX math render -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.css" integrity="sha384-zh0CIslj+VczCZtlzBcjt5ppRcsAmDnRem7ESsYwWwg3m/OaJ2l4x7YBZl9Kxxib" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/katex.min.js" integrity="sha384-Rma6DA2IPUwhNxmrB/7S3Tno0YY7sFu9WSYMCuulLhIqYSGZ2gKCJWIqhBWqMQfh" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js" integrity="sha512-LQNxIMR5rXv7o+b1l8+N1EZMfhG7iFZ9HhnbJkTp4zjNr5Wvst75AqUeFDxeRUa7l5vEDyUiAip//r+EFLLCyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js" integrity="sha512-iWiuBS5nt6r60fCz26Nd0Zqe0nbk1ZTIQbl3Kv7kYsX+yKMUFHzjaH2+AnM6vp2Xs+gNmaBAVWJjSmuPw76Efg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     onload="renderMathInElement(document.body);"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -16,37 +16,34 @@
 </script>
 {{ end }}
 
+{{if site.Params.useExternalHLJS}}
 <!-- Enable highlight.js code syntax highlighter -->
-{{if or (eq site.Params.defaultTheme "dark") (eq site.Params.defaultTheme "auto")}}
-<link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-{{else}}
-<link id="hljs-theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-{{end}}
+<link id="hljs-theme" rel="stylesheet" href=""/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){
-        hljs.highlightAll();
+        function SelectThemeAndRefresh(){
+            if (document.body.classList.contains("dark")) document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css";
+            else document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css";
+            hljs.highlightAll();
+        }
+        SelectThemeAndRefresh();
         const observer = new MutationObserver(mutations => {
             mutations.forEach(mutation => {
                 if (mutation.attributeName === "class"){
                     for (let pre of document.getElementsByTagName("pre")){
-                        let code = pre.querySelector("code");
-                        code.classList.remove("hljs");
-                        code.removeAttribute("data-highlighted");
+                        pre.querySelector("code").classList.remove("hljs");
+                        pre.querySelector("code").removeAttribute("data-highlighted");
                     }
+                    SelectThemeAndRefresh();
                 }
-                if (document.body.classList.contains("dark"))
-                    document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css";
-                else
-                    document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css";
-                hljs.highlightAll();
             });
         });
         
-        // 2. 监听 body 的属性变化
         observer.observe(document.body, {
-            attributes: true,  // 监听属性变动
-            attributeFilter: ["class"]  // 只监听 class 变化
+            attributes: true,
+            attributeFilter: ["class"]
         });
     });
 </script>
+{{end}}

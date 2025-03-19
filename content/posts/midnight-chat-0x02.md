@@ -124,11 +124,10 @@ params:
 
 ### 为PaperMod主题增加代码块高亮适应亮/暗模式
 
-本来只是自己嫌丑想加这个功能的，结果弄着弄着发现内容还不少，新开了一个文章讲了。可以移步：<>
+本来只是自己嫌丑想加这个功能的，结果弄着弄着发现内容还不少，新开了一个文章讲了。可以移步：[为PaperMod主题增加代码语法高亮适应亮/暗模式](https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/)
 
 
 ---
 
 [^1]:<https://developers.cloudflare.com/fundamentals/reference/network-ports/>
 [^2]:<https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#custom-head--footer>
-[^3]:<https://highlightjs.org/>

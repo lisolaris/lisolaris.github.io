@@ -58,7 +58,7 @@ params:
   showtoc: true
   tocopen: false
   math: true
-  # externalHLJS: true
+  useExternalHLJS: true
 
   assets:
     disableFingerprinting: true
