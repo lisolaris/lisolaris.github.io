@@ -4,7 +4,7 @@ date: 2025-03-18T00:50:15+08:00
 tags: ["2025-03", "杂谈", "深夜闲谈", "Cloudflare", "Hugo", "PaperMod"]
 categories: ["深夜闲谈"]
 toc: false
-draft: true
+draft: false
 ---
 
 ### 0x02
@@ -56,7 +56,9 @@ permalinks:
     tutorials: /tutorials/
 ```
 
-当然旧中文格式的文件我也都没删，全部保留了。新的`sitemap.xml`中不会包含这些内容，因此它们应该会慢慢被搜索引擎遗忘（
+~~当然旧中文格式的文件我也都没删，全部保留了。新的`sitemap.xml`中不会包含这些内容，因此它们应该会慢慢被搜索引擎遗忘（~~
+
+刚刚发现旧中文格式的文件似乎用的是我最后一次执行`hugo server -D`时的生成，导致文章内的本站链接全部是<http://localhost:1313>……考虑要不要把`config.yaml`改回原来的格式重新生成一次站点……
 
 ---
 
@@ -124,10 +126,66 @@ params:
 
 ### 为PaperMod主题增加代码块高亮适应亮/暗模式
 
-本来只是自己嫌丑想加这个功能的，结果弄着弄着发现内容还不少，新开了一个文章讲了。可以移步：[为PaperMod主题增加代码语法高亮适应亮/暗模式](https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/)
-
+本来只是自己嫌丑想加这个功能的，结果弄着弄着发现坑还不少，新开了一个文章讲了。可以移步：[为PaperMod主题增加代码语法高亮适应亮/暗模式](https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/)。
 
 ---
+
+### 为站点添加评论功能（使用giscus）
+
+这个做起来其实挺简单的。我选择的是[giscus](https://giscus.app)，点进网站后直接就有新手指导，把自己仓库的信息填入、在Github上授权giscus bot访问你账户下的仓库，之后就可以一键复制配置了。
+
+```html
+<script src="https://giscus.app/client.js"
+        data-repo="[在此输入仓库]"
+        data-repo-id="[在此输入仓库 ID]"
+        data-category="[在此输入分类名]"
+        data-category-id="[在此输入分类 ID]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+```
+
+在`layouts\partials\`目录下新建一个`extend_footer.html`，先把这一段写进去：
+
+```
+{{if not .IsHome}}
+
+{{end}}
+```
+
+再将复制的`<script>`元素粘贴到中间的空行，站点的giscus评论区就基本可用了。但为了适配PaperMod，我们还要做一些改动：
+
+首先在选择主题时需要使用`noborder_light`或`noborder_dark`主题，这两个主题恰好与PaperMod的亮/暗主题完全适配；
+
+然后由于giscus默认是占满整个网页的，需要在`themes\PaperMod\assets\css\extended\custom.css`中加入如下样式：
+
+```css
+.giscus{
+  width: var(--main-width);
+  margin: auto;
+}
+```
+
+这两个样式的作用在于覆盖giscus默认的`width: 100%`，限制评论区`<iframe>`的宽度与正文保持一致，并使得评论区居中。
+
+之后还需要修改`themes\PaperMod\layouts\partials\footer.html`，在这个文件最顶端添加：
+
+```html
+<div class="giscus"></div>
+```
+
+这里的作用在于把评论区放在`© 2025 lisolaris's blog · Powered by Hugo & PaperMod`这行字上面。默认情况下giscus会在添加client脚本的位置插入评论区页面，但`extend_footer.html`中的内容会被插入到模板自带的`footer.html`之下，导致评论区会显示在版权声明之下；好在giscus会优先检索页面中具有`giscus`属性的元素并把评论区插入到那里，于是我们只要先手动建立一个空的`<div class="giscus"></div>`就可以指定评论区的位置了。
+
+之后重新生成站点，应该可以看到评论区出现在正确的位置了，访客可以使用自己的Github账号登录后留言！
+
+目前giscus还存在一个问题：评论区使用的主题在执行`client.js`时就已经确定，之后插入的页面是一个`<iframe>`，直接从站点下执行JavaScript无法跨域操作里面的内容。要增加主题动态加载功能可能需要fork一份giscus的`client.js`，有些麻烦暂且跳过。
 
 [^1]:<https://developers.cloudflare.com/fundamentals/reference/network-ports/>
 [^2]:<https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#custom-head--footer>

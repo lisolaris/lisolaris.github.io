@@ -113,7 +113,7 @@ Hugo会把这部分渲染成如下的HTML代码：
 
 在VSCode中子匹配不是用`\0` `\1`这样的语法，而是`$0` `$1`，比如下面：
 
-```regex
+```
 ^!\[(.+)\]\((.+)(#center)?\)
 ```
 
@@ -143,7 +143,7 @@ Hugo会把这部分渲染成如下的HTML代码：
 
 但是我刚刚注意到可能是由于这个主题是我在创建时直接用`git submodule`从PaperMod的仓库里拉取下来的，在commit完push上去之后GitHub似乎会自动尝试向PaperMod的主仓库push我的修改？还是因为刚刚不小心在VSCode里点到了checkout的原因，总之Github Pages的自动部署报错：
 
-```log
+```
 Run actions/checkout@v4
 Syncing repository: lisolaris/lisolaris.github.io
 Getting Git version info

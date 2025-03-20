@@ -19,31 +19,27 @@
 {{if site.Params.useExternalHLJS}}
 <!-- Enable highlight.js code syntax highlighter -->
 <link id="hljs-theme" rel="stylesheet" href=""/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js" integrity="sha512-EBLzUL8XLl+va/zAsmXwS7Z2B1F9HUHkZwyS/VKwh3S7T/U0nF4BaU29EP/ZSf6zgiIxYAnKLu6bJ8dqpmX5uw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function(){
         function SelectThemeAndRefresh(){
-            if (document.body.classList.contains("dark")) document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css";
-            else document.getElementById("hljs-theme").href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css";
+            for (let pre of document.getElementsByTagName("pre")){
+                pre.querySelector("code").classList.remove("hljs");
+                pre.querySelector("code").removeAttribute("data-highlighted");
+            }
+            let theme = document.body.classList.contains("dark") ? "dark" : "light";
+            document.getElementById("hljs-theme").href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-${theme}.min.css`;
             hljs.highlightAll();
         }
         SelectThemeAndRefresh();
-        const observer = new MutationObserver(mutations => {
+        const hljsObserver = new MutationObserver(mutations => {
             mutations.forEach(mutation => {
                 if (mutation.attributeName === "class"){
-                    for (let pre of document.getElementsByTagName("pre")){
-                        pre.querySelector("code").classList.remove("hljs");
-                        pre.querySelector("code").removeAttribute("data-highlighted");
-                    }
                     SelectThemeAndRefresh();
                 }
             });
         });
-        
-        observer.observe(document.body, {
-            attributes: true,
-            attributeFilter: ["class"]
-        });
+        hljsObserver.observe(document.body, {attributes: true, attributeFilter: ["class"]});
     });
 </script>
 {{end}}
