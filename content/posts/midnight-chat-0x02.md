@@ -152,9 +152,9 @@ params:
 </script>
 ```
 
-在`layouts\partials\`目录下新建一个`extend_footer.html`，先把这一段写进去：
+在`layouts\partials\`目录下新建一个`extend_footer.html`，先把这一段贴进去，作用是用Hugo语法排除掉首页：
 
-```
+```txt
 {{if not .IsHome}}
 
 {{end}}
@@ -164,7 +164,7 @@ params:
 
 首先在选择主题时需要使用`noborder_light`或`noborder_dark`主题，这两个主题恰好与PaperMod的亮/暗主题完全适配；
 
-然后由于giscus默认是占满整个网页的，需要在`themes\PaperMod\assets\css\extended\custom.css`中加入如下样式：
+然后由于giscus默认宽度是占满整个网页的，需要在`themes\PaperMod\assets\css\extended\custom.css`中加入如下样式：
 
 ```css
 .giscus{
@@ -181,7 +181,7 @@ params:
 <div class="giscus"></div>
 ```
 
-这里的作用在于把评论区放在`© 2025 lisolaris's blog · Powered by Hugo & PaperMod`这行字上面。默认情况下giscus会在添加client脚本的位置插入评论区页面，但`extend_footer.html`中的内容会被插入到模板自带的`footer.html`之下，导致评论区会显示在版权声明之下；好在giscus会优先检索页面中具有`giscus`属性的元素并把评论区插入到那里，于是我们只要先手动建立一个空的`<div class="giscus"></div>`就可以指定评论区的位置了。
+这里的作用在于把评论区放在`© 2025 lisolaris's blog · Powered by Hugo & PaperMod`这行字上面。默认情况下giscus会在添加client脚本的位置插入评论区页面，但`extend_footer.html`中的内容会被插入到模板自带的`footer.html`之后，导致评论区会显示在版权声明下面；好在giscus会优先检索页面中具有`giscus`属性的元素并把评论区插入到那里，于是我们只要先手动建立一个空的`<div class="giscus"></div>`就可以指定评论区的位置了。
 
 之后重新生成站点，应该可以看到评论区出现在正确的位置了，访客可以使用自己的Github账号登录后留言！
 
