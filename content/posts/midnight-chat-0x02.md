@@ -37,7 +37,7 @@ draft: false
 
 ### 改变Hugo生成的文章URL格式
 
-之前的文章都是按标题生成URL的（比如<https://blog.sorali.org/2024/08/%E7%A1%AC%E6%94%B9%E8%81%94%E6%83%B3m910q%E5%B0%8F%E4%B8%BB%E6%9C%BA%E5%A2%9E%E5%8A%A0%E7%AC%AC%E4%BA%8C%E4%B8%AAm.2%E6%8E%A5%E5%8F%A3/>），不仅不好复制搜索引擎收录的时候也不太好。于是把每个帖子的源Markdown文件都改成了英文名和连字符的形式，看起来就像这样：<https://blog.sorali.org/articles/2025/03/midnight-chat-0x02/>
+之前的文章都是按标题生成URL的（比如<https://blog.sorali.org/2024/08/硬改联想m910q小主机增加第二个m.2接口/>），不仅不好复制，对搜索引擎SEO也不太友好。于是把每个帖子的源Markdown文件都改成了英文名和连字符的形式，看起来就像这样：<https://blog.sorali.org/articles/2025/03/midnight-chat-0x02/>
 
 另外还加了分类，把帖子放在`content/posts`下，教程放在`content/tutorials`下。然后在`config.yaml`里配置站点文件结构后重新生成站点即可：
 
@@ -168,12 +168,14 @@ params:
 
 ```css
 .giscus{
-  width: var(--main-width);
+  /* width: var(--main-width); */
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  padding: var(--gap);
   margin: auto;
 }
 ```
 
-这两个样式的作用在于覆盖giscus默认的`width: 100%`，限制评论区`<iframe>`的宽度与正文保持一致，并使得评论区居中。
+一开始本来想用`width: var(--main-width);`强制规定giscus的宽度，在PC端页面上测试效果不错；但后来想起去移动端页面测试，发现由于写死了`width`的宽度导致评论区超出屏幕范围非常多。最后从PaperMod原生的css里抄了两句`max-width`和`padding`，成功解决移动端适配的问题。
 
 之后还需要修改`themes\PaperMod\layouts\partials\footer.html`，在这个文件最顶端添加：
 

@@ -33,7 +33,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   subtitle: 去抓住它吧 你所期望的那颗星
   subtitleForAllPages: false
-  description: "lisolaris的个人博客 - 分享感想与发现"
+  description: "lisolaris的个人博客 - 分享感想与发现！"
   keywords: [Blog, Portfolio, PaperMod, Technology]
   author: lisolaris
   # author: ["Me", "You"] # multiple authors
@@ -118,7 +118,8 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/lisolaris/lisolaris.github.io/issues/new"
+    # URL: "https://github.com/lisolaris/lisolaris.github.io/issues/new"
+    URL: "a#"
     Text: "Suggest Changes" # edit text
     appendFilePath: false # to append file path to Edit link
 
