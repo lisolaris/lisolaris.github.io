@@ -5,6 +5,8 @@ tags: ["2024-07", "DIY", "魔改", "MFF", "教程"]
 categories: ["教程"]
 toc: true
 draft: false
+aliases:
+  - /2024/08/硬改联想m910q小主机增加第二个m.2接口/
 ---
 
 ~~打开VSCode切到博客仓库想写点什么才发现这篇文章还没开始动笔，现在就开始写~~

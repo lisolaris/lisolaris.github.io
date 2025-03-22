@@ -5,6 +5,8 @@ tags: ["2024-12", "HAM", "教程", "业余无线电"]
 categories: [""]
 toc: true
 draft: false
+aliases:
+  - /2024/12/业余无线电从准备考试到设立电台2024/
 ---
 
 > CQ CQ CQ，这里是BA7IOC, Bravo Alpha Seven Italy Oscar Charlie, Bravo Alpha Seven Italy Oscar Charlie, Bravo Alpha Seven Italy Oscar Charlie, 呼叫频率上的友台，完毕。  

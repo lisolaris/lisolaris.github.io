@@ -5,6 +5,8 @@ tags: ["2024-03", "笔记本", "C++", "键盘"]
 categories: [""]
 toc: true
 draft: false
+aliases:
+  - /2024/03/使用LockWorkStation让笔记本的可编程按键发挥作用/
 ---
 
 总感觉已经许久没有写过blog了……虽然有在给域名续费，但都做的是DDNS方面的用途（顺便推荐一下Cloudflare的DNS解析服务，虽然在国内比较慢但还算方便）。写这个文章主要是想起来之前曾就怎么利用惠普笔记本上自带的F12可编程按键（可以通过系统中的HP Progrommable Key的UWP程序来编辑功能）实现按下即锁定计算机折腾过一番，特来灌水一篇（

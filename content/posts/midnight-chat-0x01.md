@@ -5,6 +5,8 @@ tags: ["2025-02", "杂谈", "深夜闲谈"]
 categories: ["深夜闲谈"]
 toc: false
 draft: false
+aliases:
+  - /2025/02/深夜闲谈0x01/
 ---
 
 ### 0x01

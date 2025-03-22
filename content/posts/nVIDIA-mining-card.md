@@ -5,6 +5,8 @@ tags: ["2025-02", "DIY", "魔改", "NVIDIA"]
 categories: [""]
 toc: true
 draft: true
+aliases:
+  - /2025/02/NVIDIA矿卡折腾记/
 ---
 
 ## 背景介绍

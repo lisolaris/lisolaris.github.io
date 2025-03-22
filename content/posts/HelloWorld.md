@@ -5,6 +5,8 @@ tags: ["2023-03"]
 categories: [""]
 toc: false
 draft: false
+aliases:
+  - /2023/03/HelloWorld/
 ---
 
 你好，欢迎来到我的博客!  

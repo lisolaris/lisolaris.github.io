@@ -5,6 +5,8 @@ tags: ["2024-06", "JavaScript", "知乎", "油猴"]
 categories: [""]
 toc: true
 draft: false
+aliases:
+  - /2024/06/使用额外的JavaScript脚本优化知乎推荐流的浏览体验/
 ---
 
 最近刷知乎的时候实在受不了首页给我推荐的低质量内容了，故学习了一番JavaScript，写了一个脚本（[知乎推荐流优化](https://greasyfork.org/zh-CN/scripts/498139-%E7%9F%A5%E4%B9%8E%E6%8E%A8%E8%8D%90%E6%B5%81%E4%BC%98%E5%8C%96)）来改善知乎网页端的浏览体验。现将学习过程记录一二，希望以后能够用上……
