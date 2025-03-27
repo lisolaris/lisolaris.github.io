@@ -59,6 +59,7 @@ params:
   tocopen: false
   math: true
   useExternalHLJS: true
+  moeICP: 20251096
 
   assets:
     disableFingerprinting: true

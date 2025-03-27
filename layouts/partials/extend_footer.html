@@ -20,12 +20,9 @@
 
 <script>
 (function (){
-    let footer = document.querySelector("footer.footer");
-    footer.insertAdjacentHTML("beforeend", "<br>");
-    footer.insertAdjacentHTML("beforeend", '<a href="https://icp.gov.moe/?keyword=20251096" target="_blank">萌ICP备20251096号</a>');
-
     document.querySelector("div.post-meta a").addEventListener("click", function(){
         document.querySelector("footer.footer").scrollIntoView({behavior: "smooth"});
+        setTimeout(() => {document.querySelector("div.giscus").scrollIntoView({behavior: "smooth"})}, 1000);
     });
 })();
 </script>

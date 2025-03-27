@@ -258,7 +258,7 @@ $$T_c = T_B + T_f = K_c \frac{\mathrm{d} \theta}{\mathrm{d} t} + T_f, $$
 
 ### 傅里叶级数与傅里叶变换
 
-在学习拉普拉斯变换之前，有必要先回顾一下傅里叶变换。
+在学习拉普拉斯变换之前，有必要先回顾一下傅里叶变换。数学家们一般用花体字母$\mathscr{F}$表示傅里叶变换，$\mathscr{L}$表示拉普拉斯变换。
 
 #### 连续时间周期信号的傅里叶级数展开
 
@@ -278,29 +278,29 @@ $$a_k = \frac{1}{T_0} \int_{0}^{T_0} x(t) e^{-j \omega_0 t} \mathrm{d} t$$
 
 对于**非周期信号**，我们可以将其视作周期为无限大的周期信号来应用傅里叶级数展开。这时x(t)的周期$T$满足$T \to + \infty$，则对应有$\frac{2 \pi}{T} = \omega_0 \to 0$。此时的$a_k$的计算转变为
 
-$$a_k = \frac{1}{T_0} \int_{- \infty}^{+ \infty} x(t) e^{j \omega_0 t} \mathrm{d} t , $$
+$$a_k = \frac{1}{T_0} \int_{- \infty}^{+ \infty} x(t) e^{j \omega_0 t} \mathrm{d} t \quad , $$
 
 我们定义
 
-$$X(j \omega) = \int_{- \infty}^{+ \infty} x(t) e^{j \omega_0 t} \mathrm{d} t , $$
+$$X(j \omega) = \int_{- \infty}^{+ \infty} x(t) e^{j \omega_0 t} \mathrm{d} t \quad , $$
 
 则$a_k$可以表示为
 
-$$a_k = \frac{1}{T_0} X(j \omega_0) . $$
+$$a_k = \frac{1}{T_0} X(j \omega_0) \quad . $$
 
 将其代回到$x(t)$的傅里叶级数展开式，有
 
-$$x(t) = \sum_{k = - \infty}^{+ \infty} a_k e^{j \omega_0 t} = \sum_{k = - \infty}^{+ \infty} \frac{1}{T_0} X(j \omega_0) e^{j \omega_0 t} = \frac{1}{2 \pi} \sum_{k = - \infty}^{+ \infty} \omega_0 X(j \omega_0) e^{j \omega_0 t} . $$
+$$x(t) = \sum_{k = - \infty}^{+ \infty} a_k e^{j \omega_0 t} = \sum_{k = - \infty}^{+ \infty} \frac{1}{T_0} X(j \omega_0) e^{j \omega_0 t} = \frac{1}{2 \pi} \sum_{k = - \infty}^{+ \infty} \omega_0 X(j \omega_0) e^{j \omega_0 t} \quad . $$
 
 当$\omega_0 \to 0$时，根据黎曼积分[^4]的定义将$\omega$视作积分微元，则上式可以表示为
 
 $$x(t) = \frac{1}{2 \pi} \int_{- \infty}^{+ \infty} X(j \omega_0) e^{j \omega_0 t} \mathrm{d} \omega$$
 
-于是我们得到了**傅里叶变换对**
+于是我们得到了**傅里叶变换对**$x(t) \overset{\mathscr{F}}{\longleftrightarrow}X(j \omega)$
 
-$$X(j \omega) = \int_{\infty}^{+ \infty} x(t) e^{-j \omega t} \mathrm{d} t , $$
+$$X(j \omega) = \int_{\infty}^{+ \infty} x(t) e^{-j \omega t} \mathrm{d} t \quad , $$
 
-$$x(t) = \frac{1}{2 \pi} \int_{- \infty}^{+ \infty} X(j \omega) e^{j \omega t} \mathrm{d} \omega . $$
+$$x(t) = \frac{1}{2 \pi} \int_{- \infty}^{+ \infty} X(j \omega) e^{j \omega t} \mathrm{d} \omega \quad . $$
 
 这里的$X(j \omega)$表示的是将时域信号$x(t)$展开为三角函数信号之叠加时，对应频率为$\omega$的复指数信号$e^{j \omega t}$的“复幅度”。当然，上面的过程只极简略地说明了$x(t)$与$X(j \omega)$是如何互相转换的，它们之间详细的物理意义请参考胡浩基老师的课程。
 
@@ -314,55 +314,286 @@ $$x(t) = \frac{1}{2 \pi} \int_{- \infty}^{+ \infty} X(j \omega) e^{j \omega t} \
 
 3. 在任意有限区间内，$x(t)$只有有限个不连续点，并且在每个不连续点上信号都是有限值。
 
-#### 使用傅里叶变换解微分方程
+#### 傅里叶变换与微分方程求解
 
-为什么说傅里叶变换和微分方程的求解有关？让我们回到高数课堂，回忆一下二阶线性常系数**非齐次**微分方程的求解。一般来说，二阶常系数非齐次微分方程可以写成如下形式：
+为什么说傅里叶变换和微分方程的求解有关？让我们回到高数课堂，回忆一下**二阶常系数线性非齐次微分方程**的求解。一般来说，二阶常系数非齐次微分方程可以写成如下形式：
 
-$$y^{\prime \prime} + p y^\prime + q y = f(x) , $$
+$$y^{\prime \prime} + p y^\prime + q y = f(x) \quad , $$
 
 其中$p$，$q$是常数。我们特别关心$f(x)$的两种形式：
 
-$$f(x) = e^{\lambda x} P_m (x) , $$
+$$f(x) = e^{\lambda x} P_m (x) \quad , $$
 
-$$f(x) = e^{\lambda x} [P_l (x) \cos(\omega x) + Q_n (x) \sin(\omega x)] , $$
+$$f(x) = e^{\lambda x} [P_l (x) \cos(\omega x) + Q_n (x) \sin(\omega x)] \quad , $$
 
-其中$P_m (x)$、$P_l (x)$与$Q_n (x)$分别是$m$、$l$、$n$次的多项式；这些特定$f(x)$形式对应的非齐次特解是有公式可循的，并且与齐次方程$y^{\prime \prime} + p y^\prime + q y = 0$的特征根强相关，即使在高于二阶的情形下也是如此。
+其中$P_m (x)$、$P_l (x)$与$Q_n (x)$分别是$m$、$l$、$n$次的多项式。这些特定$f(x)$形式对应的非齐次特解是有公式可循的，并且与齐次方程$y^{\prime \prime} + p y^\prime + q y = 0$的特征根强相关，即使在高于二阶的情形下也是如此。
 
 可惜的是现实中需要解决的实际物理问题大部分都没有这么好的形式。但我们自然会想，如果能通过某种数学变换将任意函数都转化成上面两种特殊形式，那就很容易可以求解这样的微分方程了。傅里叶所做的工作正式如此：他提出的傅里叶变换能将任意的函数变换成三角函数形式（前提是满足狄利克雷条件），那么求解这样的微分方程就变成了简单的分解$f(x)$成谐波组合形式 $\to$ 求解三角函数形式的非齐次方程 $\to$ 把所有分解结果对应的非齐次方程的解相加，当分解后保留的谐波次数足够多（类似于泰勒展开保留高次项），最终就能以足够精度得到原始微分方程的解了。
 
 ### 拉普拉斯变换
 
-狄利克雷条件限制了傅里叶变换所适用的对象，具体来说是要求$x(t)$的积分$\int_{- \infty}^{+ \infty} | x(t) | \mathrm{d} t$必须是收敛的。但这样好的性质并不是很常见，不如说现实世界中碰到的$x(t)$绝大部分都会发散；有没有办法绕过这个限制呢？我们说有的。回顾从时域到频域的傅里叶变换式
+狄利克雷条件限制了傅里叶变换所适用的对象，具体来说是要求$x(t)$的积分$\int_{- \infty}^{+ \infty} | x(t) | \mathrm{d} t$必须是收敛的。但这样好的性质并不常见，不如说现实世界中碰到的$x(t)$绝大部分都会发散。有没有办法绕过这个限制呢？我们说有的。回顾从时域到频域的傅里叶变换式
 
-$$X(j \omega) = \int_{- \infty}^{+ \infty} x(t) e^{-j \omega t} \mathrm{d} t , $$
+$$X(j \omega) = \int_{- \infty}^{+ \infty} x(t) e^{-j \omega t} \mathrm{d} t \quad , $$
 
-由于$x(t)$的积分不收敛，因此它的傅里叶变换不存在。按照之前的思路：能不能通过某种变换让$x(t)$变成可以收敛的形式呢？拉普拉斯仔细研究了这个问题，选择让$x(t)$乘以一个衰减因子$e^{- \sigma t}$使其积分收敛。在高等数学中我们知道在进行无穷小量阶的比较时，指数函数的收敛速度会远远将多项式和对数甩开：
+由于$x(t)$的积分不收敛，因此它的傅里叶变换不存在。按照之前的思路：能不能通过某种变换让$x(t)$变成可以收敛的形式呢？拉普拉斯仔细研究了这个问题，选择让$x(t)$乘以一个**衰减因子**$e^{- \sigma t}$使其积分收敛。在高等数学中我们知道在进行无穷小量阶的比较时，指数函数的收敛速度会远远将多项式和对数甩开：
 
 $$\lim_{x \to + \infty} \frac{a^{-x}}{x^{-n}} = \lim_{x \to + \infty} \frac{x^n}{a^x} = 0, a > 1, n > 0. $$
 
 也就是说当$\sigma$足够大时，$x(t)e^{- \sigma t}$的积分总是收敛的（即使在$x(t)$中含有$e^{at}$时也是如此，只要$\sigma > a$即可）。我们试着将它们视作一个整体进行傅里叶变换：
 
-$$X(\sigma + j \omega) = \int_{- \infty}^{+ \infty} [x(t)e^{- \sigma t}] e^{-j \omega t} \mathrm{d} t , $$
+$$X(\sigma + j \omega) = \int_{- \infty}^{+ \infty} [x(t)e^{- \sigma t}] e^{-j \omega t} \mathrm{d} t \quad , $$
 
-由于我们正在学习的是一门工科课程，现实世界中会碰到的信号$x(t)$总是因果的，在因果起点$t = 0$之前信号不存在；而且从数学上看，当$t < 0$时刚添加的这个收敛因子$e^{- \sigma t}$自己反而会发散，起不到收敛作用。因此，我们的积分下限可以从$0$开始。从数轴上看这时的积分范围只占整个实数域$(- \infty, + \infty)$的一半，称为单边拉普拉斯变换。
+由于我们正在学习的是一门工科课程，现实世界中会碰到的信号$x(t)$总是因果的，在因果起点$t = 0$之前信号不存在；而且从数学上看，当$t < 0$时刚添加的这个收敛因子$e^{- \sigma t}$自己反而会发散，起不到收敛作用。因此，我们的积分下限可以从$0$开始。从数轴上看这时的积分范围只占整个实数域$(- \infty, + \infty)$的一半，称为**单边拉普拉斯变换**。
 
 > 在信号与系统中，**因果信号** 是指在 **当前时间或未来时间不依赖于过去时间的信号**。换句话说，一个因果信号在$t < 0$时为零，即信号不会在因果起点（通常是$t = 0$）之前存在。
 
 另外注意到$e^{- \sigma t}$与$e^{-j \omega t}$可以合并；令$s = \sigma + j \omega$并统一符号表示，有
 
-$$X(s) = \int_{0}^{+ \infty} x(t) e^{-(\sigma + j \omega) t} \mathrm{d} t = \int_{0}^{+ \infty} x(t) e^{-st} \mathrm{d} t , $$
+$$X(s) = \int_{0}^{+ \infty} x(t) e^{-(\sigma + j \omega) t} \mathrm{d} t = \int_{0}^{+ \infty} x(t) e^{-st} \mathrm{d} t \quad , $$
 
-上式即为单边拉普拉斯变换的定义。从定义式可以看出来拉普拉斯变换某种程度上可以视作傅里叶变换的推广，它绕过了狄利克雷条件的限制，使傅里叶变换可以适用于任意函数（信号）。
+上式即为单边拉普拉斯变换的定义，记作$X(s) = \mathscr{L} [x(t)]$。实际上，在$(- \infty, + \infty)$上积分的双边拉普拉斯变换是存在的，并在信号的稳定性、系统频率响应和双边系统的研究上有广泛应用；但在经典控制理论中我们主要使用单边拉普拉斯变换。从定义式可以看出来拉普拉斯变换某种程度上可以视作傅里叶变换的推广，它绕过了狄利克雷条件的限制，使傅里叶变换可以适用于任意函数（信号）。
 
 需要指出的是我们在拉普拉斯变换中加入的衰减因子$e^{- \sigma t}$并不仅仅是数学上使$x(t)$收敛的trick，它有着明确的物理意义。在进行傅里叶变换时我们必须在$(- \infty, + \infty)$上对$t$积分（或对于因果信号在$(0, + \infty)$上积分结果也完全相同，此时傅里叶变换称为单边傅里叶变换），使输入信号$x(t)$的完整过程参与计算才能够得到结果。这种处理使得傅里叶变换主要突出信号的稳态频率特性，而难以直接分析其瞬态特性；而加入衰减因子$e^{- \sigma t}$的拉普拉斯变换为信号的早期部分赋予较大的权重，并使较晚部分衰减，因此适用于分析系统的瞬态响应和稳态响应。
 
 更具体地，拉普拉斯变换引入的$s = \sigma + j \omega$是一个复变量，输入信号$x(t)$与其积分本质是一个投影运算：类似于傅里叶变换将$x(t)$投影到一组三角函数组成的基函数上得到其在各个频率上的分量$X(j \omega)$，拉普拉斯变换把时域信号$x(t)$投影到以$e^{-st}$定义的基函数构成的复频域（$s$域）上，并得到信号在这些基上的加权系数$X(s)$；这个投影不仅考虑了信号的振荡行为（通过虚部$j \omega$表示），还考虑了信号的指数增长或衰减（由实部$\sigma$反映）。这让我们能同时分析$x(t)$的瞬态和稳态特性。
 
-从这个角度上也就不难理解系统闭环传递函数的零极点位置对系统稳定性的决定性作用了：当右半$s$平面（即$\sigma > 0$）上存在极点时，系统的自然响应中会包含$e^{\sigma t} e^{j \omega t}$的分量，导致信号随时间发散，系统变得不稳定。这部分内容会在后面系统的时域分析以及根轨迹分析中详细讨论。
+从这个角度上也就不难理解系统闭环传递函数的零极点位置对系统稳定性的决定性作用了：当右半$s$平面（即$\sigma > 0$）上存在极点时，系统的自然响应中会包含$e^{\sigma t} e^{j \omega t}$的分量，导致信号随时间发散，系统变得不稳定。这部分内容会在后面的时域分析以及根轨迹分析中详细讨论。
 
-### 线性时不变系统的微分方程求解
+#### 拉普拉斯变换的收敛域
 
-前面已经提到线性时不变系统可以用一个常系数线性微分方程描述。在高等数学中我们已经学习过用于求解高阶微分方程的特征方程法，即假设解的形式为$y=e^{\lambda t}$并代入原方程进行求解；但这种方式求解起来非常繁琐，并且对于不同的输入每次都要解对应的方程。
+这部分内容来源于郑君里，应启珩，杨为里《信号与系统（上册）》第三版的`4.2 拉普拉斯变换的定义、收敛域`。
+
+在前面的讨论中，我们说函数$f(t)$乘以衰减因子$e^{- \sigma t}$后，就有可能满足绝对可积条件使变换成立。现在来详细讨论这一点。
+
+假设当$\sigma > \sigma_0$时，函数$f(t) e^{- \sigma t}$在$t \to + \infty$时的值趋近于$0$，即
+
+$$\lim_{t \to + \infty} f(t) e^{- \sigma t} = 0 \quad (\sigma > \sigma_0) \quad , $$
+
+其中$\sigma_0$是与函数的性质有关的一个常数。根据$\sigma_0$的数值，可将$s$平面划分为两个区域：其中通过$\sigma_0$的垂直线是收敛区（收敛域）的边界，称为收敛轴；$\sigma_0$在$s$平面内称为收敛坐标。满足上式的函数称为“指数阶函数”。指数阶函数若具有发散特性可借助于$e^{- \sigma t}$的衰减压下去，使之成为收敛函数。凡是有始有终，能量有限的信号，如单个脉冲信号，其收敛坐标坐落于$- \infty$，全部$s$平面都属于收敛区。也就是说，有界的非周期函数其拉氏变换一定存在。
+
+{{< figure
+    src="https://z4a.net/images/2025/03/24/c32d2b5334cdee5d9c4eb124713ae0ca.png"
+    caption="收敛区的划分 《信号与系统（上册）》 郑君里，应启珩，杨为里 P189"
+    align=center
+>}}
+
+- 如果信号的幅度既不增长也不衰减而等于稳定值，则其收敛坐标落在原点，
+s右半平面属于收敛区。换句话说，对任何周期信号只要稍加衰减就可收敛。
+
+- 任何随时间成正比增长的信号，其收敛坐标落于原点。这是因为
+
+$$\lim_{t \to + \infty} t e^{- \sigma t} = 0 \quad (\sigma > 0) \quad . $$
+
+- 与$t^n$成比例增长之函数其收敛坐标也落在原点：
+
+$$\lim_{t \to + \infty} t^n e^{- \sigma t} = 0 \quad (\sigma > 0) \quad . $$
+
+- 如果函数按指数规律$e^{at}$增长，则只有当$\sigma > a$时才满足
+
+$$\lim_{t \to + \infty} e^{at} e^{- \sigma t} = 0 \quad (\sigma > 0) \quad , $$
+
+所以收敛坐标为
+
+$$\sigma_0 = a \quad . $$
+
+- 对于一些比指数函数增长得更快的函数，不能找到它们的收敛坐标，因而不能进行拉氏变换。例如$e^{t^2}$或$t e^{t^2}$ （定义域为$0 \leq t \leq + \infty$）就不是指数阶函数，但若把这种函数限定在有限时间范围之内，还是可以找到收敛坐标进行拉氏变换的。如
+
+$$
+f(t) =
+\begin{cases}
+e^{t^2} \quad (0 \leq t < T)
+\newline
+0 \quad \ \ (t < 0, t > T)
+\end{cases}
+$$
+
+它的收敛坐标存在。
+
+以上研究了单边拉氏变换的收敛条件。双边拉氏变换的收敛问题将比较复杂，收敛条件将受到更多限制，但在自动控制原理中我们主要研究单边拉氏变换；由于单边拉氏变换的收敛问题比较简单,一般情况下，求函数单边拉氏变换时不再加注其收敛范围。
+
+#### 拉普拉斯变换的性质
+
+这部分的内容来源于胡寿松《自动控制原理》第七版的`附录A 傅里叶变换和拉普拉斯变换`中的`5. 拉普拉斯变换定理`，各个定理的证明可以参见原书。
+
+##### 线性性质
+
+设$F_1 (s) = \mathscr{L} [f_1 (t)]$, $F_2 (s) = \mathscr{L} [f_2 (t)]$，$a$，$b$为常数，则有
+
+$$\mathscr{L} [a f_1 (t) + b f_2 (t)] = a \mathscr{L} [f_1 (t)] + b \mathscr{L} [f_2 (t)] = a F_1 (s) + b F_2 (s) \quad , $$
+
+即拉普拉斯变换满足叠加原理。
+
+##### 微分定理
+
+设$F(s) = \mathscr{L} [f(t)]$，则有
+
+$$\mathscr{L} [\frac{\mathrm{d} f(t)}{\mathrm{d} t}] = s F(s) - f(0) \quad . $$
+
+##### 积分定理
+
+设$F(s) = \mathscr{L} [f(t)]$，则有
+
+$$\mathscr{L} [\int f(t) \mathrm{d} t] = \frac{1}{s} F(s) + \frac{1}{s} f^{(-1)}(0) \quad , $$
+
+式中$f^{(-1)}(0)$是$\int f(t) \mathrm{d} t$在$t = 0$时的值。
+
+这个定理也可以推广到$n$重积分的情况：
+
+$$\mathscr{L} [\underbrace{\int ... \int}_{n} f(t)( \mathrm{d} t)^n] = \frac{1}{s^n} \quad , $$
+
+即原函数$f(t)$的$n$重积分的拉氏变换等于其象函数$F(s)$除以$s^n$。
+
+##### 初值定理
+
+若函数$f(t)$及其一阶导数$f^{\prime} (t)$都是可拉氏变换的，则函数$f(t)$的初值为
+
+$$f(0_+) = \lim_{t \to 0_+} f(t) = \lim_{s \to + \infty} s F(s) \quad , $$
+
+即原函数$f(t)$在自变量$t$趋于零（从正向趋于零）时的极限值取决于其象函数$F(s)$在自变量$s$趋于无穷大时的极限值。
+
+##### 终值定理
+
+若函数$f(t)$及其一阶导数都是可拉氏变换的，则其终值为
+
+$$\lim_{t \to + \infty} f(t) = \lim_{s \to 0} s F(s) \quad , $$
+
+即原函数$f(t)$在自变量$t$趋于无穷大时的极限值，取决于象函数$F(s)$在自变量$s$趋于零时的极限值。
+
+##### 位移定理
+
+设$F(s) = \mathscr{L} [f(t)]$，则有
+
+$$\mathscr{L} [f(t - \tau_0)] = e^{- \tau_0 s} F(s) \quad , $$
+
+$$\mathscr{L} [e^{\alpha t} f(t)] = F(s - \alpha) \quad , $$
+
+它们分别表示实域中的位移定理和复域中的位移定理（实位移定理和复位移定理）。实位移定理表示原函数$f(t)$沿时间轴平移$\tau_0$时，其对应的象函数$F(s)$要乘以$e^{- tau_0 s}$；复位移定理表示象函数$F(s)$的自变量$s$位移$\alpha$时，相应于其原函数$f(t)$乘以$e^{\alpha t}$，可用于求拉普拉斯反变换。
+
+##### 相似定理
+
+设$F(s) = \mathscr{L} [f(t)]$，则有
+
+$$\mathscr{L} [f(\frac{t}{a})] = a F(as) \quad , $$
+
+式中$a$为实常数。相似定理讲的是当原函数$f(t)$在时域上按比例展开/压缩时，对应的象函数$F(s)$会被压缩/展开。
+
+##### 卷积定理
+
+设$F_1 (s) = \mathscr{L} [f_1 (t)]$，$F_2 (s) = \mathscr{L} [f_2 (t)]$，则有
+
+$$F_1 (s) F_2 (s) = \mathscr{L} [\int_{0}^{t} f_1 (t - \tau) f_2 (\tau) \mathrm{d} \tau] \quad , $$
+
+式中$\mathscr{L} [\int_{0}^{t} f_1 (t - \tau) f_2 (\tau) \mathrm{d} \tau$称为$f_1 (t)$与$f_2 (t)$的卷积，可记作$f_1 (t) \ast f_2 (t)$。卷积定理讲的是两个原函数在时域上的卷积等于它们象函数在频域上的乘积。
+
+### 微分算子法
+
+前面已经提到线性时不变系统可以用一个常系数线性微分方程描述。在高等数学中我们已经学习过用于求解高阶微分方程的特征方程法，即假设解的形式为$y=e^{\lambda t}$并代入原方程进行求解；但这种方式求解起来非常繁琐，并且对于不同的输入（即非齐次方程右边的$x(t)$多项式）都要解对应的方程。
+
+在19世纪末，英国工程师赫维赛德（O.Heaviside, 1850 ~ 1925）发明了微分算子法解决了电工程计算中的一些基本问题。虽然这个方法简单好用，但在当时并没有经过严密的数学证明，为许多人所诟病；后来，人们从法国数学家拉普拉斯（P.S.Laplace, 1749 ~ 1825）的著作中为这个方法找到了可靠的数学依据，并将其取名为拉普拉斯变换方法。
+
+#### 欧拉方程的求解
+
+为了说明微分算子法，让我们回到高等数学课堂，回忆一下**欧拉方程**应当如何求解：
+
+> 形如$x^n y^{(n)} + P_1 x^{n-1} y^{(n-1)} + P_2 x^{n-2} y^{(n-2)} + ... +  + P_{n-1} x y^{\prime} + P_n y = f(x)$，其中$P_1, P_2, ..., P_{n-1}, P_n$为常数的方程称为欧拉方程。
+
+我们先做变量代换$x = e^t$，则可得$t = \ln(x)$。此时
+
+$$ \frac{\mathrm{d} x}{\mathrm{d} t} =  \frac{\mathrm{d} e^{t}}{\mathrm{d} t} = e^{t} = x \quad , $$
+
+相应地，
+
+$$ \frac{\mathrm{d} t}{\mathrm{d} x} =  \frac{\mathrm{d} \ln (x)}{\mathrm{d} x} = \frac{1}{x} \quad . $$
+
+则$y$对$x$的一阶导可以写为
+
+$$\frac{\mathrm{d} y}{\mathrm{d} x} = \frac{\mathrm{d} y}{\mathrm{d} t} \cdot \frac{\mathrm{d} t}{\mathrm{d} x} = \frac{1}{x} \cdot \frac{\mathrm{d} y}{\mathrm{d} t} = \frac{y^{\prime} (t)}{x} \quad , $$
+
+这时原关于$x$的函数$y(x)$转变为关于$t$的函数$y(t)$；在后面的表述中，我们在单独提及$y$时特指$y$关于$x$的函数。
+
+再来看二阶的情况：
+
+$$\frac{\mathrm{d}^2 y}{\mathrm{d} x^2} = \frac{\mathrm{d} \frac{\mathrm{d} y}{\mathrm{d} x}}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}]}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}]}{\mathrm{d} t} \cdot \frac{\mathrm{d} t}{\mathrm{d} x}= [\frac{y^{\prime} (t)}{x}]^{\prime}_{t} \cdot \frac{1}{x} = \frac{x y^{\prime \prime} (t) - x y^{\prime} (t)}{x^2} \cdot \frac{1}{x} = \frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2} \quad , $$
+
+注意看上式中将对$x$的二阶求导转换到对$t$的二阶求导时，分母和分子中$x$的对消关系。
+
+三阶情况下
+
+$$
+\frac{\mathrm{d}^3 y}{\mathrm{d} x^3} = \frac{\mathrm{d} \frac{\mathrm{d}^2 y}{\mathrm{d} x^2}}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]}{\mathrm{d} t} \cdot \frac{\mathrm{d} t}{\mathrm{d} x} = [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]^{\prime}_{t} \cdot \frac{1}{x}
+\newline
+\quad
+\newline
+= \frac {x^2 [y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2x^2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^4} \cdot \frac{1}{x} = \frac {[y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^3} = \frac {y^{\prime \prime \prime} (t) - 3 y^{\prime \prime} (t) + 2 y^{\prime} (t)}{x^3} \quad .
+$$
+
+回到欧拉方程的标准形式，我们注意到对于每一个$n$阶的导数项$y^{(n)}$，都有一个$x$的$n$次项$x^{n}$作为系数。将其代入到我们刚刚做过变量代换得到的方程，在一阶时为
+
+$$x y^{\prime} = x \cdot \frac{y^{\prime} (t)}{x} = \frac{\mathrm{d} y}{\mathrm{d} t} \quad , $$
+
+在二阶时
+
+$$x^2 y^{\prime \prime} = x^2 \cdot \frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2} = y^{\prime \prime} (t) - y^{\prime} (t) = \frac{\mathrm{d}^2 y}{\mathrm{d} t^2} - \frac{\mathrm{d} y}{\mathrm{d} t} \quad , $$
+
+在三阶时
+
+$$x^3 y^{\prime \prime \prime} = x^3 \cdot \frac {y^{\prime \prime \prime} (t) - 3 y^{\prime \prime} (t) + 2 y^{\prime} (t)}{x^3} = y^{\prime \prime \prime} (t) - 3 y^{\prime \prime} (t) + 2 y^{\prime} (t) = \frac{\mathrm{d}^3 y}{\mathrm{d} t^3} - 3 \frac{\mathrm{d}^2 y}{\mathrm{d} t^2} + 2 \frac{\mathrm{d} y}{\mathrm{d} t} \quad , $$
+
+现在到了关键环节：将对$t$求导的运算记作$D$，求二阶导记作$D^2$，依此类推。我们先不管为什么要这样做，试着把$D$表示的形式用在上面$x^{k} y^{(k)}$到$\frac{\mathrm{d}^{k} y}{\mathrm{d} t^{k}} - ...$的式子中，有
+
+一阶时
+
+$$x y^{\prime} =  \frac{\mathrm{d} y(t)}{\mathrm{d} t} = D y(t) \quad , $$
+
+二阶时
+
+$$x^2 y^{\prime \prime} =  \frac{\mathrm{d}^2 y(t)}{\mathrm{d} t^2} - \frac{\mathrm{d} y(t)}{\mathrm{d} t} = D^2 y(t) - Dy(t) = D(D-1)y(t) \quad , $$
+
+三阶时
+
+$$x^3 y^{\prime \prime \prime} =  \frac{\mathrm{d}^3 y(t)}{\mathrm{d} t^3} - 3 \frac{\mathrm{d}^2 y(t)}{\mathrm{d} t^2} + 2 \frac{\mathrm{d} y(t)}{\mathrm{d} t} = D^3 y(t) - 3 D^2 y(t) + 2Dy(t) = D(D-1)(D-2) y(t) \quad , $$
+
+可以证明，在k阶时也有类似的形式
+
+$$x^{k} y^{(k)} = D(D-1) ... (D-k+2)(D-k+1) y(t) \quad . $$
+
+对于$n$阶欧拉方程$x^n y^{(n)} + P_1 x^{n-1} y^{(n-1)} + P_2 x^{n-2} y^{(n-2)} + ... +  + P_{n-1} x y^{\prime} + P_n y = f(x)$，我们将上面得到的关系式代入并整理，可以得到类似于
+
+$$D^{n} y(t) + Q_1 D^{n-1} y(t) + ... + Q_{n-1} D y(t) + Q_n y = f(t)$$
+
+的形式，其中$Q_1, Q_2, ... ,Q_n$是将括号展开后得到的新常系数；之后将$D^{n} y(t)$变换回$\frac{\mathrm{d}^n y(t)}{\mathrm{d} t^n}$的形式即可按照常系数非齐次线性微分方程的方法对此方程进行求解，得到$y$关于$t$的结果后再以$t = \ln (x)$代入即可得到原方程的解。
+
+> 这里有点类似于对可降阶的微分方程$y^{\prime \prime} = f(y, y^{\prime})$的解法：令$y^{\prime} = p$，则
+> $$y^{\prime \prime} = \frac{\mathrm{d} p}{\mathrm{d} x} = \frac{\mathrm{d} p}{\mathrm{d} y} \cdot \frac{\mathrm{d} y}{\mathrm{d} x} = p \cdot \frac{\mathrm{d} p}{\mathrm{d} y} \quad . $$
+> 之后将原方程视作以$y$为自变量，$p$为因变量的一阶微分方程求解即可。
+
+#### 常微分方程的微分算子法
+
+实际上，欧拉方程的解法正是针对具有特定形式的变系数微分方程所适用的微分算子法；对于常微分方程，这个方法会简单得多。
+
+对一个常微分方程$a_n y^{(n)} + a_{n-1} y^{(n-1)} + ... + a_1 y' + a_0 y = f(x)$，我们用记号$D$代表对$x$求解，即
+
+$$D = \frac{\mathrm{d}}{\mathrm{d} x} \quad , $$
+
+则这个常微分方程可以表示为
+
+$$(a_{n} D^{n} + a_{n-1} D^{n-1} + ... + a_1 D + a_0) y = f(x) \quad , $$
+
+将y的系数部分视作关于D的代数方程，列出特征方程：
+
+$$a_{n} D^{n} + a_{n-1} D^{n-1} + ... + a_1 D + a_0 = 0 \quad , $$
+
+求出这个代数方程的根，即原方程的特征根即可得到原方程对应齐次方程的通解：
+
+|特征根形式|对应齐次方程解的形式|说明|
+|:-:|:-:|:-:|
+|$r_1, r_2, ..., r_k \newline$是不相等的实数（$k$个单根）|$y = C_1 e^{r_1 x} + C_2 e^{r_2 x} + ... +C_k e^{r_k x}$|$C_1, C_2, ..., C_k$为常数|
+|$r = r_1 = r_2 = ... = r_k \newline$是$k$个相等的实数（$k$重根）|$y = C_1 e^{r x} + C_2 x e^{r x} + ... + C_k x^{k-1} e^{r x}$|有$k$个$e^{r x}$项，每项中$x^{i}$的次数依次递加|
+|$r_{1, 2} = \alpha_i \plusmn j \beta_i$（共轭复根）|$y = e^{\alpha_i x} (C_1 \cos(\beta_i x) + C_2 \sin(\beta_i x))$|高阶方程可能存在多组共轭复根，对每一组均有此形式的特解|
+|$r_{1, 2} = r_{3, 4} = ... = \newline r_{u, v} = \alpha_i \plusmn j \beta_i \newline$是$k$个相等的共轭复数（$k$重复根）|$y = \newline e^{\alpha_i x} [(C_1 + C_2 x + ... + C_{k} x^{k-1}) \cos(\beta_i x) + \newline (C_{k+1} + C_{k+2} x + ... + C_{2k} x^{k-1}) \sin(\beta_i x)]$|$\cos(\beta_i x)$与$\sin(\beta_i x)$前的系数可参考$k$重根时的形式|
+
+对于高阶微分方程，其特征方程的根可能由以上的一种或多种形式构成。在列出对应的特征根时我们只需要将各个根简单相加即可得到结果。
 
 ### 运动的模态
 
