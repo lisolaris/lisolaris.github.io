@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>传递函数 on lisolaris&#39;s blog</title>
+    <link>https://blog.sorali.org/tags/%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0/</link>
+    <description>Recent content in 传递函数 on lisolaris&#39;s blog</description>
+    <image>
+      <title>lisolaris&#39;s blog</title>
+      <url>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</url>
+      <link>https://s.gravatar.com/avatar/ca6b899274fa556db7e5cf9c54325448</link>
+    </image>
+    <generator>Hugo -- 0.144.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 29 Mar 2025 16:11:07 +0800</lastBuildDate>
+    <atom:link href="https://blog.sorali.org/tags/%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自动控制原理 - 02 - 传递函数，典型环节与梅逊增益公式</title>
+      <link>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</link>
+      <pubDate>Sat, 29 Mar 2025 16:11:07 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</guid>
+      <description>自动控制原理的学习笔记。</description>
+    </item>
+  </channel>
+</rss>
