@@ -559,6 +559,8 @@ $$F(s) = \frac{c_1}{s - s_1} + \frac{c_2}{s - s_2} + ... + \frac{c_i}{s - s_i} +
 
 $$c_i = \lim_{s \to s_i} (s - s_i) F(s) ,$$
 
+或
+
 $$c_i = \frac{B(s)}{A^{\prime} (s)} \bigg |_{s = s_i} ,$$
 
 即我们可以先把$F(s)$写成如下形式
@@ -583,7 +585,7 @@ F(s) &= \frac{b^{m} s^{m} + b^{m-1} s^{m-1} + ... + b_1 s + b_0}{(s - s_1)^{r}(s
 \end{aligned}
 $$
 
-式中为的重根，为的个单根；其中仍可按无重根情形下的两个式子进行计算，重根则由下式进行计算
+式中$s_1$为$A(s) = 0$的$r$重根，$s_{r+1}, s_{r+2}, ..., s_n$为$n-r$个单根；其中$c_{r+1}, c_{r+2}, ..., c_{n}$仍可按无重根情形下的两个式子进行计算，重根的系数则可由下面的一组公式求得
 
 $$
 \begin{cases}
@@ -679,7 +681,7 @@ $$x^2 y^{\prime \prime} =  \frac{\mathrm{d}^2 y(t)}{\mathrm{d} t^2} - \frac{\mat
 
 $$x^3 y^{\prime \prime \prime} =  \frac{\mathrm{d}^3 y(t)}{\mathrm{d} t^3} - 3 \frac{\mathrm{d}^2 y(t)}{\mathrm{d} t^2} + 2 \frac{\mathrm{d} y(t)}{\mathrm{d} t} = D^3 y(t) - 3 D^2 y(t) + 2Dy(t) = D(D-1)(D-2) y(t) ,$$
 
-可以证明，在k阶时也有类似的形式
+可以证明，在$k$阶时也有类似的形式
 
 $$x^{k} y^{(k)} = D(D-1) ... (D-k+2)(D-k+1) y(t) .$$
 

@@ -11,21 +11,14 @@
     </image>
     <generator>Hugo -- 0.144.0</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 01 Apr 2025 20:01:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 29 Mar 2025 16:11:07 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/articles/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Flask-SQLAlchemy 学习笔记 01</title>
-      <link>https://blog.sorali.org/articles/2025/04/flask-sqlalchemy-learning-01/</link>
-      <pubDate>Tue, 01 Apr 2025 20:01:52 +0800</pubDate>
-      <guid>https://blog.sorali.org/articles/2025/04/flask-sqlalchemy-learning-01/</guid>
-      <description>&lt;p&gt;最近在学习Flask库和SQLAlchemy联动使用进行后端开发，在此把学习过程记录一二以备后面回顾。&lt;/p&gt;</description>
-    </item>
     <item>
       <title>自动控制原理 - 02 - 传递函数，典型环节与梅逊增益公式</title>
       <link>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</link>
       <pubDate>Sat, 29 Mar 2025 16:11:07 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</guid>
-      <description>自动控制原理的学习笔记。</description>
+      <description>&lt;p&gt;之前主要复习了控制系统的一般概念，数学模型与拉普拉斯变换。本篇主要讲系统传递函数，从元部件微分方程到典型环节，以及使用梅逊增益公式计算系统输入/输出端口之间的闭环传递函数。&lt;/p&gt;</description>
     </item>
     <item>
       <title>为PaperMod主题增加代码语法高亮适应亮/暗模式</title>
