@@ -18,7 +18,7 @@
       <link>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</link>
       <pubDate>Sat, 29 Mar 2025 16:11:07 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</guid>
-      <description>&lt;p&gt;之前主要复习了控制系统的一般概念，数学模型与拉普拉斯变换。本篇主要讲系统传递函数，从元部件微分方程到典型环节，以及使用梅逊增益公式计算系统输入/输出端口之间的闭环传递函数。&lt;/p&gt;</description>
+      <description>自动控制原理的学习笔记。之前主要复习了控制系统的一般概念，数学模型与拉普拉斯变换。本篇主要讲系统传递函数，从元部件微分方程到典型环节，以及使用梅逊增益公式计算系统输入/输出端口之间的闭环传递函数。</description>
     </item>
     <item>
       <title>为PaperMod主题增加代码语法高亮适应亮/暗模式</title>
@@ -42,7 +42,7 @@
       <link>https://blog.sorali.org/articles/2025/03/control-theory-review-01/</link>
       <pubDate>Mon, 17 Mar 2025 16:43:01 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2025/03/control-theory-review-01/</guid>
-      <description>自动控制原理的学习笔记。本篇主要介绍了自动控制的一般概念，包括开环控制与闭环、控制系统的分类方式、控制系统的性能目标；控制系统的数学模型，包括电路系统中的网孔法、节点电压法，机械系统所遵循的物理规律；傅里叶级数和傅里叶变换，从傅里叶变换到拉普拉斯变换，以及使用拉普拉斯变换求解常微分方程。最后给出了一些自动控制理论方面的参考书目。</description>
+      <description>自动控制原理的学习笔记。本篇主要介绍了自动控制的一般概念，包括控制系统的分类方式性能目标、数学模型，从傅里叶变换到拉普拉斯变换，以及使用拉普拉斯变换求解常微分方程。最后介绍了一些自动控制理论方面的参考书目。</description>
     </item>
   </channel>
 </rss>

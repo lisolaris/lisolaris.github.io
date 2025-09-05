@@ -18,7 +18,7 @@
       <link>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</link>
       <pubDate>Sat, 29 Mar 2025 16:11:07 +0800</pubDate>
       <guid>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</guid>
-      <description>&lt;p&gt;之前主要复习了控制系统的一般概念，数学模型与拉普拉斯变换。本篇主要讲系统传递函数，从元部件微分方程到典型环节，以及使用梅逊增益公式计算系统输入/输出端口之间的闭环传递函数。&lt;/p&gt;</description>
+      <description>自动控制原理的学习笔记。之前主要复习了控制系统的一般概念，数学模型与拉普拉斯变换。本篇主要讲系统传递函数，从元部件微分方程到典型环节，以及使用梅逊增益公式计算系统输入/输出端口之间的闭环传递函数。</description>
     </item>
   </channel>
 </rss>

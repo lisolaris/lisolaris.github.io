@@ -28,7 +28,7 @@ draft: false
 |电阻|0402|33R|1|可选|
 
 {{< figure
-    src="https://z4a.net/images/2024/12/25/287552988-81f812ed-ea7a-435d-8dc4-74975cfcf32c.jpg"
+    src="https://r2.sorali.org/blog/m910q_mod/component_position_m910q_itsmect.jpg"
     caption="Github用户its-me-ct在他的issue回复中贴出的原图"
     align=center
 >}}
@@ -42,7 +42,7 @@ draft: false
 **如果确实有必要焊接这两个电容请务必先测量焊盘极性**！钽电容有标线的一端是正极（和圆柱形的电解电容相反），焊接前务必注意，否则上电时轻则烧毁电容，重则连着桥片甚至CPU一起带走！
 
 {{< figure
-    src="https://z4a.net/images/2024/12/25/0777dc757bf387f416a990f0222d57f4.png"
+    src="https://r2.sorali.org/blog/m910q_mod/m2-mkey-4+5-3.2h.png"
     caption="M.2贴片插槽的类型"
     align=center
 >}}
@@ -51,7 +51,7 @@ draft: false
 背面应使用M.2 M-Key 4+5 pin的插槽，在淘宝上非常便宜只要一块多就可以买一个。~~看GitHub上的讨论国外这个小东西似乎非常贵而且没得卖，以至于改机得从旧板子上拆一个下来~~ 由于每个焊盘间距太小，个人推荐使用小刀头+锡膏+助焊剂使劲堆，最后用吸锡带清理干净的焊法。完成焊接后最好使用万用表二极管档测试相邻pin之间是否短路，以及各个GND引脚是否良好导通（可以在网上找到M.2的引脚定义[^2]，有相当多的GND脚）。
 
 {{< figure
-    src="https://z4a.net/images/2025/03/17/QQ20241225190520.jpg"
+    src="https://r2.sorali.org/blog/m910q_mod/slot_on_the_back_of_motherboard.jpg"
     caption="应在主板背面焊接的插槽（红框为可选滤波电容的焊盘）"
     align=center
 >}}
@@ -61,7 +61,7 @@ draft: false
 在焊接好和电阻电容后装机，应当可以在BIOS中主菜单-系统概述内看到新出现的M.2 Drive 2和M.2驱动器两项，分别对应的是NVMe和SATA固态。由于M.2 M-KEY中SATA和NVMe（即PCIe）引脚存在复用，因此不能通过转接板之类的手段将二者分离，只能择其一使用。把硬盘装上后即可在BIOS引导菜单中设置从此盘位启动，这里不再赘述。
 
 {{< figure
-    src="https://z4a.net/images/2024/12/25/BV1452DK4X156YO3.png"
+    src="https://r2.sorali.org/blog/m910q_mod/sysinfo-with-m.2-drive2.png"
     caption="接在新焊接的M.2插槽上的Intel 傲腾 M10固态"
     align=center
 >}}
@@ -71,7 +71,7 @@ draft: false
 在同一个issue下，还有另一位用户[evil2k2](https://github.com/evil2k2)提供了[联想M710系列的改机方案](https://github.com/badger707/m920q-dual-NVME/issues/2#issuecomment-1925888323)。实际上M710和M910的主板设计非常相似（芯片组都属于同一代，很可能引脚定义也差不多所以联想直接把两个系列的几款机器主板做的基本相同），因此要做的修改也十分相似：  
 
 {{< figure
-    src="https://z4a.net/images/2024/12/25/302452107-3df6a5fe-ee5e-4043-9209-4daca722efb3.jpg"
+    src="https://r2.sorali.org/blog/m910q_mod/component_position_m710q_evil2k2.jpg"
     caption="Github用户evil2k2在他的issue回复中贴出的原图"
     align=center
 >}}

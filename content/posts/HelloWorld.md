@@ -19,7 +19,7 @@ aliases:
 
 ## 关于本站  
 
-本站使用了[ImgURL](https://www.imgurl.org)与[Z4A](https://z4a.net)提供的免费图床服务。如果你在访问时发现看不到图片，可能是网络问题或者图床服务故障，可以试试用一些魔法手段加速访问（
+本站使用了[ImgURL](https://www.imgurl.org)与[Z4A](https://z4a.net)提供的免费图床服务，以及[Cloudflare R2](https://developers.cloudflare.com/r2/)提供的对象存储服务。如果你在访问时发现看不到图片，可能是网络问题或者图床服务故障，可以试试用一些魔法手段加速访问（
 
 站点还使用了[giscus](https://giscus.app/)提供的基于Github Discussions的开源评论服务。你可以使用Github账号授权giscus并留下评论；请放心，本站为静态页面，不会保存你的用户信息。具体的信息请参见[giscus仓库](https://github.com/giscus/giscus)。
 
@@ -45,5 +45,6 @@ aliases:
 - 2025-03-19 增加站点内代码块主题自适应
 - 2025-03-20 增加giscus评论区（基于Github Discussions）
 - 2025-03-22 为旧的中文URL帖子增加兼容性适配
+- 2025-09-04 换用Cloudflare R2存储站内的图片
 
 其实作为第一篇博文应该写长一些，但我还没想到要写什么……就先这样吧:-)  
