@@ -1,0 +1,47 @@
+{{- $r2BaseUrl := "https://r2.sorali.org/blog/" -}}
+{{- $r2Path := .Get "r2path" -}}
+{{- $align := .Get "align" | default "" -}}
+
+{{- $src := printf "%s%s" $r2BaseUrl $r2Path -}}
+{{- if $align -}}
+  {{- $src = printf "%s#%s" $src $align -}}
+{{- end -}}
+
+{{- $caption := .Get "caption" -}}
+{{- $link := .Get "link" -}}
+{{- $alt := .Get "alt" | default $caption -}}
+{{- $class := .Get "class" -}}
+{{- $attr := .Get "attr" -}}
+{{- $attrlink := .Get "attrlink" -}}
+{{- $alt := .Get "alt" | default $caption -}}
+{{- $title := .Get "title" | default $caption -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+{{- $loading := .Get "loading" -}}
+{{- $decoding := .Get "decoding" | default "async" -}}
+
+<figure>
+    {{- with $link -}}
+        <a href="{{ . }}"{{ with $alt }} title="{{ . }}"{{ end }} target="_blank" rel="noopener noreferrer">
+    {{- end -}}
+    <img src="{{ $src }}"{{ with $width }} width="{{ . }}"{{ end }}{{ with $height }} height="{{ . }}"{{ end }}{{ with $alt }} alt="{{ . }}"{{ end }}{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}{{ with $loading }} loading="{{ . }}"{{ end }}{{ with $decoding }} decoding="{{ . }}"{{ end }} />
+    {{- with $link -}}
+        </a>
+    {{- end -}}
+    {{- with $caption -}}
+        <figcaption>
+            <p>
+            {{- if or $caption $attr -}}
+                {{- $caption -}}
+                {{- with $attr -}}
+                    {{- with $attrlink -}}
+                        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $attr }}</a>
+                    {{- else -}}
+                        {{- $attr -}}
+                    {{- end -}}
+                {{- end -}}
+            {{- end -}}
+            </p>
+        </figcaption>
+    {{- end -}}
+</figure>
