@@ -20,7 +20,7 @@
 {{- $loading := .Get "loading" -}}
 {{- $decoding := .Get "decoding" | default "async" -}}
 
-<figure>
+<figure {{ with $align }} class="align-{{$align}}" {{ end }}>
     {{- with $link -}}
         <a href="{{ . }}"{{ with $alt }} title="{{ . }}"{{ end }} target="_blank" rel="noopener noreferrer">
     {{- end -}}
