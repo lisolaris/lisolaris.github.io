@@ -136,8 +136,8 @@ params:
 
 保存所有文件并重新生成部署站点，现在点击左上角主页旁切换亮/暗配色的按钮时，文章里的代码块也应当一起跟着变色了。如果在本地测试一切正常，但服务器的静态站点上始终不生效，并且在开发人员工具中看到样式表还是旧的（`.post-content pre code`中仍然存在`background`、`color`等应该已经被注释掉了的属性），很可能是CDN缓存了css之类的静态资源，可以在后台手动清除[^4]：
 
-{{< figure
-    src="https://z4a.net/images/2025/03/20/f3069c7aab158c9fb1d999ac4c9a1c31.png"
+{{< r2figure
+    r2path="code-highlight-adjusting/caching_configuration_cloudflare.png"
     caption="在Cloudflare管理面板中清除域名下的CDN缓存文件"
     align=center
 >}}

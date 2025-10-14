@@ -262,7 +262,7 @@ $$T_c = T_B + T_f = K_c \frac{\mathrm{d} \theta}{\mathrm{d} t} + T_f, $$
 
 连续时间傅里叶级数是一种将任意**连续时间周期信号**表示成无穷多个周期函数的线性组合，可以表示为复指数形式和三角函数形式如下：
 
-$$x(t) = \sum_{k = - \infty}^{+ \infty} a_k e^{j \omega_0 t} = \sum_{k = 0}^{+ \infty} B_k \cos(j \omega_0 t) + C_k \sin(j \omega_0 t). $$
+$$x(t) = \sum_{k = - \infty}^{+ \infty} a_k e^{j \omega_0 t} = B_0 + \sum_{k = 1}^{+ \infty} B_k \cos(k \omega_0 t) + C_k \sin(k \omega_0 t). $$
 
 其中$\omega_0 = \frac{2 \pi}{T_0}$是输入信号的角频率，$T_0$是输入信号的周期。$k = 0$的项被称为直流分量，$k = 1$为基波分量，$k = N$的分量被称为$N$次谐波分量。
 
@@ -362,7 +362,7 @@ $$X(s) = \int_{0}^{+ \infty} x(t) e^{-(\sigma + j \omega) t} \mathrm{d} t = \int
 
 需要指出的是我们在拉普拉斯变换中加入的衰减因子$e^{- \sigma t}$并不仅仅是数学上使$x(t)$收敛的trick，它有着明确的物理意义。在进行傅里叶变换时我们必须在$(- \infty, + \infty)$上对$t$积分（或对于因果信号在$(0, + \infty)$上积分结果也完全相同，此时傅里叶变换称为单边傅里叶变换），使输入信号$x(t)$的完整过程参与计算才能够得到结果。这种处理使得傅里叶变换主要突出信号的稳态频率特性，而难以直接分析其瞬态特性；而加入衰减因子$e^{- \sigma t}$的拉普拉斯变换为信号的早期部分赋予较大的权重，并使较晚部分衰减，因此适用于分析系统的瞬态响应和稳态响应。
 
-更具体地，拉普拉斯变换引入的$s = \sigma + j \omega$是一个复变量，输入信号$x(t)$与其积分本质是一个投影运算：类似于傅里叶变换将$x(t)$投影到一组三角函数组成的基函数上得到其在各个频率上的分量$X(j \omega)$，拉普拉斯变换把时域信号$x(t)$投影到以$e^{-st}$定义的基函数构成的复频域（$s$域）上，并得到信号在这些基上的加权系数$X(s)$；这个投影不仅考虑了信号的振荡行为（通过虚部$j \omega$表示），还考虑了信号的指数增长或衰减（由实部$\sigma$反映）。这让我们能同时分析$x(t)$的瞬态和稳态特性。
+更具体地，拉普拉斯变换引入的$s = \sigma + j \omega$是一个复变量，输入信号$x(t)$与其积分本质是一个投影运算：类似于傅里叶变换将$x(t)$投影到一组三角函数组成的基函数上从而得到其在各个频率的分量$X(j \omega)$，拉普拉斯变换把时域信号$x(t)$投影到以$e^{-st}$定义的基函数构成的复频域（$s$域）里，并得到信号在这些基上的加权系数$X(s)$；这个投影不仅考虑了信号的振荡行为（通过虚部$j \omega$表示），还考虑了信号的指数增长或衰减（由实部$\sigma$反映）。这让我们能同时分析$x(t)$的瞬态和稳态特性。
 
 从这个角度出发也就不难理解系统闭环传递函数的零极点位置对系统稳定性的决定性作用了：当右半$s$平面（即$\sigma > 0$）上存在极点时，系统的自然响应中会包含$e^{\sigma t} e^{j \omega t}$的分量，导致信号随时间发散，系统变得不稳定。这部分内容会在后面的时域分析以及根轨迹分析中详细讨论。
 
@@ -639,7 +639,15 @@ $$\frac{\mathrm{d} y}{\mathrm{d} x} = \frac{\mathrm{d} y}{\mathrm{d} t} \cdot \f
 
 再来看二阶的情况：
 
-$$\frac{\mathrm{d}^2 y}{\mathrm{d} x^2} = \frac{\mathrm{d} \frac{\mathrm{d} y}{\mathrm{d} x}}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}]}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}]}{\mathrm{d} t} \cdot \frac{\mathrm{d} t}{\mathrm{d} x}= [\frac{y^{\prime} (t)}{x}]^{\prime}_{t} \cdot \frac{1}{x} = \frac{x y^{\prime \prime} (t) - x y^{\prime} (t)}{x^2} \cdot \frac{1}{x} = \frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2} ,$$
+$$
+\frac{\mathrm{d}^2 y}{\mathrm{d} x^2}
+= \frac{\mathrm{d}}{{\mathrm{d} x}}(\frac{\mathrm{d} y}{\mathrm{d} x})
+= \frac{\mathrm{d}}{\mathrm{d} x} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}]
+= \frac{\mathrm{d}}{\mathrm{d} t} [\frac{1}{x} \cdot \frac{\mathrm{d} y(t)}{\mathrm{d} t}] \cdot \frac{\mathrm{d} t}{\mathrm{d} x}
+= [\frac{y^{\prime} (t)}{x}]^{\prime}_{t} \cdot \frac{1}{x}
+= \frac{x y^{\prime \prime} (t) - x y^{\prime} (t)}{x^2} \cdot \frac{1}{x}
+= \frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2} ,
+$$
 
 注意看上式中将对$x$的二阶求导转换到对$t$的二阶求导时，分母和分子中$x$的对消关系。
 
@@ -647,9 +655,14 @@ $$\frac{\mathrm{d}^2 y}{\mathrm{d} x^2} = \frac{\mathrm{d} \frac{\mathrm{d} y}{\
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}^3 y}{\mathrm{d} x^3} &= \frac{\mathrm{d} \frac{\mathrm{d}^2 y}{\mathrm{d} x^2}}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]}{\mathrm{d} x} = \frac{\mathrm{d} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]}{\mathrm{d} t} \cdot \frac{\mathrm{d} t}{\mathrm{d} x} = [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]^{\prime}_{t} \cdot \frac{1}{x}
+\frac{\mathrm{d}^3 y}{\mathrm{d} x^3}
+&= \frac{\mathrm{d}}{\mathrm{d} x} \frac{\mathrm{d}^2 y}{\mathrm{d} x^2}
+= \frac{\mathrm{d}}{\mathrm{d} x} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]
+= \frac{\mathrm{d}}{\mathrm{d} t} [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}] \cdot \frac{\mathrm{d} t}{\mathrm{d} x}
+= [\frac{y^{\prime \prime} (t) - y^{\prime} (t)}{x^2}]^{\prime}_{t} \cdot \frac{1}{x}
 \newline \quad \newline
-&= \frac {x^2 [y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2x^2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^4} \cdot \frac{1}{x} = \frac {[y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^3}
+&= \frac {x^2 [y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2x^2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^4} \cdot \frac{1}{x}
+= \frac {[y^{\prime \prime \prime} (t) - y^{\prime \prime} (t)] - 2 [y^{\prime \prime} (t) - y^{\prime} (t)]}{x^3}
 \newline \quad \newline
 &= \frac {y^{\prime \prime \prime} (t) - 3 y^{\prime \prime} (t) + 2 y^{\prime} (t)}{x^3} .
 \end{aligned}
@@ -784,7 +797,7 @@ $$G(s) = \frac{Y(s)}{X(s)}$$
 
 类似地，$n$阶齐次常系数线性微分方程的所有解构成一个$n$维**解空间**[^8]，该空间由$n$个线性无关的基函数（即模态函数，如$e^{\lambda t}, t^k e^{\lambda t}$等）张成。这也就是说，模态即是组成系统自由响应的基底，系统的所有可能的自由响应都存在于此解空间中。
 
-需要注意的是，系统的受迫响应并不一定由模态组成。，例如多项式形态的输入信号会使得受迫响应中有额外的多项式项；但如果系统的输入信号类似于本身的模态（复指数部分接近使得输入信号频率与系统的模态频率匹配），则其受迫响应可能会被投影到该模态上，甚至导致系统共振（可联系二阶系统的谐振频率理解）。
+需要注意的是，系统的受迫响应并不一定由模态组成，例如多项式形态的输入信号会使得受迫响应中有额外的多项式项；但如果系统的输入信号类似于本身的模态（复指数部分接近使得输入信号频率与系统的模态频率匹配），则其受迫响应可能会被投影到该模态上，甚至导致系统共振（可联系二阶系统的谐振频率理解）。
 
 从模态角度来看，系统的稳定性取决于所有特征根的实部。如果所有特征根的实部都小于零（$\mathrm{Re}(\lambda) < 0$），则所有模态都会随时间衰减，系统是渐进稳定的。如果存在至少一个特征根的实部为正（$\mathrm{Re}(\lambda) > 0$），则相应的模态 $e^{\lambda t}$ 会随时间指数增长，使得系统不稳定。如果特征根的实部恰好为零，则系统处于边界稳定状态，其响应可能不会发散但也不会衰减。
 
@@ -803,7 +816,7 @@ $$G(s) = \frac{Y(s)}{X(s)}$$
 
 3. 吴麒, 王诗宓. 自动控制原理[M]. 第二版. 清华大学出版社, 2006：看网上说是清华本校用的教材，最大的特色是自控和现控穿插着讲。比如第一章先介绍传统时域微分方程——拉普拉斯变换——复域代数方程，紧接着马上开始介绍状态变量和状态空间方程。对于初学者不是很友好~~也有可能是我太笨了~~，但是频域分析的部分感觉写的不错。上下册加在一起比胡寿松那本还厚。另外这本书还用了数十页的篇幅讲了国内外控制理论的研究发展史，可以很清晰地看到这门学科的发展脉络。
 
-4. 王天威. 控制之美（卷1）——控制理论从传递函数到状态空间[M]. 第二版. 清华大学出版社, 2022：B站一位做机器人控制的UP主[DR_CAN](https://space.bilibili.com/230105574)出的书，实际上初学者可能看不太明白，需要在学习完经典+现代控制理论，或至少学完经典控制理论后再作阅读会得到对控制理论的更统一的认识。他的视频讲的非常简明易懂，很适合新学或者复习。
+4. 王天威. 控制之美（卷1）——控制理论从传递函数到状态空间[M]. 第二版. 清华大学出版社, 2022：B站一位做机器人控制的UP主[DR_CAN](https://space.bilibili.com/230105574)出的书，实际上初学者可能看不太明白，需要在学习经典+现代控制理论，或至少学完经典控制理论后再作阅读会得到对控制理论的更统一的认识。他的视频讲的非常简明易懂，很适合新学或者复习。
 
 以上图书都可以很容易地在[Z-Library](https://z-lib.fm/)上找到下载，当然如果有能力还是购买一本实体书支持一下各位老师。
 
