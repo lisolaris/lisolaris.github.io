@@ -10,8 +10,8 @@ draft: false
 
 打算开个系列内容记录一下学习自动控制原理时我的一些理解和体会，也顺便在这个过程中再复习一遍经典控制理论。由于是复习，所以会假设读者已经大致学习过一遍本课程，着重点会在于（我本人）学习过程中一些困惑的地方。学习进程主要跟着西北工业大学卢京潮老师的录播课程[^1]进行的（相信大部分同学也是看这个课程学习的自控），中间会穿插一些高等数学、信号与系统（虽然我觉得信号与系统这门课程的基础架构完全依托于自动控制原理，但有些自控中一笔带过的概念会在信号与系统中有非常详尽的讲解，不仅要知其然还要知其所以然）的知识；使用的教材是卢老师主编的《自动控制原理》，后面的文章也基本按照会卢老师教材中的目录安排；当然还有一些其他的图书值得参考，附列在这篇文章的最后。可以自行查阅。
 
-{{< figure
-    src="https://z4a.net/images/2025/03/17/cdc3a92b7d69ceb1db93a769d9cbaa1e.md.png"
+{{< r2figure
+    r2path="control-theory-review/01/automatic-control-theory_lujingchao.jpg"
     caption="卢京潮. 自动控制原理[M]. 第一版. 清华大学出版社, 2013"
     align=center
 >}}
@@ -55,9 +55,9 @@ draft: false
 
 为何最小化偏差就能使系统稳定？我们先来看课本上的一幅图：
 
-{{< figure
-    src="https://z4a.net/images/2025/03/20/593c420aa0c329beee4ef16abe3a0667.png"
-    caption="典型的反馈控制系统方框图（教材P8 图1.5）"
+{{< r2figure
+    r2path="control-theory-review/01/lu_figure_1-5.png"
+    caption="典型的反馈控制系统方框图（第8页 图1-5）"
     align=center
 >}}
 
@@ -127,9 +127,9 @@ $$a_n\frac{\mathrm{d}^n y}{\mathrm{d} t^n} + a_{n-1}\frac{\mathrm{d}^{n-1} y}{\m
 
 由于闭环控制系统有反馈作用，控制过程有可能出现振荡或发散。回到之前在引言中提到的压力锅泄压阀的例子：它泄压时的振动正是来源于压力锅-泄压阀系统自身的不稳定性。更具体地，这个系统可以被简化为带有阻尼与弹性恢复力的二阶系统。在临界状态时蒸汽流速会随阀门开度增加而显著增大，使系统进入负阻尼状态；但是泄压阀中限位器（钢锭内卡住泄压孔的弹片，防止压力过大把泄压阀吹走）的存在引入了非线性因素，最终二者共同作用形成了一个稳定的振荡。
 
-{{< figure
-    src="https://z4a.net/images/2025/03/21/c0fb18b1c9116c928e5d010ec56b3559.png"
-    caption="不同系统的单位阶跃响应过程 《自动控制原理》 卢京潮 P15"
+{{< r2figure
+    r2path="control-theory-review/01/lu_figure_1-14.png"
+    caption="不同系统的单位阶跃响应过程（第15页 图1-14）"
     align=center
 >}}
 
@@ -155,8 +155,8 @@ $$a_n\frac{\mathrm{d}^n y}{\mathrm{d} t^n} + a_{n-1}\frac{\mathrm{d}^{n-1} y}{\m
 
 先来看裴润老师教材中总结的常用电路元件的微分方程描述：
 
-{{< figure
-    src="https://z4a.net/images/2025/03/21/0725f10ab4f196c080c38fcc3b4ffac1.png"
+{{< r2figure
+    src="control-theory-review/01/pei_table_2.1.1.png"
     caption="电阻、电容、电感两端电压电流的关系 《自动控制原理（上册）》 裴润 P12"
     align=center
 >}}
@@ -212,8 +212,8 @@ $$\sum_{k=1}^{n}{i_k} = 0, $$
 
 同样地，裴润老师已经为我们总结了常见的机械系统要素：
 
-{{< figure
-    src="https://z4a.net/images/2025/03/21/dce52a0aad8547161ccd97787bbdc2a1.png"
+{{< r2figure
+    r2path="control-theory-review/01/pei_table_2.1.2.png"
     caption="机械系统中的基本要素 《自动控制原理（上册）》 裴润 P13"
     align=center
 >}}
@@ -380,8 +380,8 @@ $$\lim_{t \to + \infty} f(t) e^{- \sigma t} = 0 \quad (\sigma > \sigma_0) ,$$
 
 其中$\sigma_0$是与函数的性质有关的一个常数。根据$\sigma_0$的数值，可将$s$平面划分为两个区域：其中通过$\sigma_0$的垂直线是收敛区（收敛域）的边界，称为收敛轴；$\sigma_0$在$s$平面内称为收敛坐标。满足上式的函数称为“指数阶函数”。指数阶函数若具有发散特性可借助于$e^{- \sigma t}$的衰减压下去，使之成为收敛函数。凡是有始有终，能量有限的信号，如单个脉冲信号，其收敛坐标坐落于$- \infty$，全部$s$平面都属于收敛区。也就是说，有界的非周期函数其拉氏变换一定存在。
 
-{{< figure
-    src="https://z4a.net/images/2025/03/24/c32d2b5334cdee5d9c4eb124713ae0ca.png"
+{{< r2figure
+    r2path="control-theory-review/01/zheng_figure_4-2.png"
     caption="收敛区的划分 《信号与系统（上册）》 郑君里，应启珩，杨为里 P189"
     align=center
 >}}
