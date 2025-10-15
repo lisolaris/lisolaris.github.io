@@ -102,9 +102,9 @@ $$K = \frac{K^* \prod_{j=1}^{m} |z_j|}{\prod_{i=1}^{n} |p_i|} \ .$$
 
 我们以振荡环节为例，分析一下为什么说典型环节是对不同系统基本单元的抽象。先来看R-L-C无源电网络的结构：
 
-{{< figure
-    src="https://z4a.net/images/2025/04/13/fc82756d0de5e9b3c3c9568d1ac01971.png"
-    caption="R-L-C无源网络 卢京潮《自动控制原理》23页 图2-1"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_2-1.png"
+    caption="R-L-C无源网络（23页 图2-1）"
     align=center
 >}}
 
@@ -132,9 +132,9 @@ $$LC \ddot{u_c} (t) + RC \dot{u_c} (t) + u_c (t) = u_r (t) \ .$$
 
 $$F(t) - f \dot{y} (t) - k y(t) = m \ddot{y} (t) \ ,$$
 
-{{< figure
-    src="https://z4a.net/images/2025/04/13/af003c8474346db04d03575ea107c919.png"
-    caption="弹簧-质块-阻尼器系统 卢京潮《自动控制原理》24页 图2-2"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_2-2.png"
+    caption="弹簧-质块-阻尼器系统（24页 图2-2）"
     align=center
 >}}
 
@@ -170,17 +170,17 @@ $$G(s) = \frac{C(s)}{R(s)} = \frac{1}{T^2 s^2 + 2 \zeta T s + 1} \ ,$$
 
 有了拉普拉斯变换这一工具，我们就可以按系统的实际结构与信号流向绘制其方框图后将方框图中每个子部分的传递函数求出，最终使用传递函数替代方框图中对应部分即得系统总的结构图。下面以函数记录仪控制系统方框图为例绘制其系统结构图。
 
-{{< figure
-    src="https://z4a.net/images/2025/04/19/9a6086d4b37d57d0d8db5f77aa17534f.png"
-    caption="函数记录仪控制系统方框图 卢京潮《自动控制原理》37页 图1-9"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_1-9.png"
+    caption="函数记录仪控制系统方框图 （37页 图1-9）"
     align=center
 >}}
 
 将上图中各部分的传递函数求出，可以得到以下结构图：
 
-{{< figure
-    src="https://z4a.net/images/2025/04/19/53073e8285789cb3beb65e1d4eff094c.png"
-    caption="函数记录仪控制系统结构图 卢京潮《自动控制原理》38页 图2-21"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_2-21.png"
+    caption="函数记录仪控制系统结构图 （38页 图2-21）"
     align=center
 >}}
 
@@ -226,17 +226,17 @@ $$
 
 可以画出以上各个环节的结构图
 
-{{< figure
-    src="https://z4a.net/images/2025/04/19/f439726b710d0987e0a3d7a8efeed94e.png"
-    caption="直流电机各子部分结构图 卢京潮《自动控制原理》37页 图2-20(a)"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_2-20-a.png"
+    caption="直流电机各子部分结构图（37页 图2-20(a)）"
     align=center
 >}}
 
 把这些环节串联起来，即得直流电机系统的结构图
 
-{{< figure
-    src="https://z4a.net/images/2025/04/19/a61b716244156a317300bf69a2eebfaf.png"
-    caption="直流电机系统结构图 卢京潮《自动控制原理》37页 图2-20(b)"
+{{< r2figure
+    r2path="control-theory-review/02/lu_figure_2-20-b.png"
+    caption="直流电机系统结构图（37页 图2-20(b)）"
     align=center
 >}}
 
@@ -246,9 +246,9 @@ $$
 
 在介绍结构图等效变换之前，我觉得有必要说明结构图与系统传递函数的关联。
 
-{{< figure
-    src="https://z4a.net/images/2025/04/19/dff88929adbc83b20711baa6c33b3cf1.png"
-    caption="典型系统结构图 裴润《自动控制原理》34页图2.3.16"
+{{< r2figure
+    r2path="control-theory-review/02/pei_figure_2.3.16.png"
+    caption="典型系统结构图（裴润《自动控制原理》 34页 图2.3.16）"
     align=center
 >}}
 

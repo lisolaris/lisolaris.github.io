@@ -57,7 +57,7 @@ draft: false
 
 {{< r2figure
     r2path="control-theory-review/01/lu_figure_1-5.png"
-    caption="典型的反馈控制系统方框图（第8页 图1-5）"
+    caption="典型的反馈控制系统方框图（8页 图1-5）"
     align=center
 >}}
 
@@ -129,7 +129,7 @@ $$a_n\frac{\mathrm{d}^n y}{\mathrm{d} t^n} + a_{n-1}\frac{\mathrm{d}^{n-1} y}{\m
 
 {{< r2figure
     r2path="control-theory-review/01/lu_figure_1-14.png"
-    caption="不同系统的单位阶跃响应过程（第15页 图1-14）"
+    caption="不同系统的单位阶跃响应过程（15页 图1-14）"
     align=center
 >}}
 
@@ -157,7 +157,7 @@ $$a_n\frac{\mathrm{d}^n y}{\mathrm{d} t^n} + a_{n-1}\frac{\mathrm{d}^{n-1} y}{\m
 
 {{< r2figure
     src="control-theory-review/01/pei_table_2.1.1.png"
-    caption="电阻、电容、电感两端电压电流的关系 《自动控制原理（上册）》 裴润 P12"
+    caption="电阻、电容、电感两端电压电流的关系（《自动控制原理（上册）》 裴润 12页 表2.1.1）"
     align=center
 >}}
 
@@ -214,7 +214,7 @@ $$\sum_{k=1}^{n}{i_k} = 0, $$
 
 {{< r2figure
     r2path="control-theory-review/01/pei_table_2.1.2.png"
-    caption="机械系统中的基本要素 《自动控制原理（上册）》 裴润 P13"
+    caption="机械系统中的基本要素（《自动控制原理（上册）》 裴润 13页 表2.1.2）"
     align=center
 >}}
 
@@ -382,7 +382,7 @@ $$\lim_{t \to + \infty} f(t) e^{- \sigma t} = 0 \quad (\sigma > \sigma_0) ,$$
 
 {{< r2figure
     r2path="control-theory-review/01/zheng_figure_4-2.png"
-    caption="收敛区的划分 《信号与系统（上册）》 郑君里，应启珩，杨为里 P189"
+    caption="收敛区的划分（《信号与系统（上册）》 郑君里，应启珩，杨为里 189页 图4-2）"
     align=center
 >}}
 
