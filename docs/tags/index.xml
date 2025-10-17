@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 29 Mar 2025 16:11:07 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 16:19:50 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025-10</title>
+      <link>https://blog.sorali.org/tags/2025-10/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/2025-10/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloudflare</title>
+      <link>https://blog.sorali.org/tags/cloudflare/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://blog.sorali.org/tags/hugo/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PaperMod</title>
+      <link>https://blog.sorali.org/tags/papermod/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/papermod/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>杂谈</title>
+      <link>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>深夜闲谈</title>
+      <link>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</guid>
+      <description></description>
+    </item>
     <item>
       <title>2025-03</title>
       <link>https://blog.sorali.org/tags/2025-03/</link>
@@ -63,45 +105,10 @@
       <description></description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>https://blog.sorali.org/tags/hugo/</link>
-      <pubDate>Wed, 19 Mar 2025 18:33:26 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>JavaScript</title>
       <link>https://blog.sorali.org/tags/javascript/</link>
       <pubDate>Wed, 19 Mar 2025 18:33:26 +0800</pubDate>
       <guid>https://blog.sorali.org/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PaperMod</title>
-      <link>https://blog.sorali.org/tags/papermod/</link>
-      <pubDate>Wed, 19 Mar 2025 18:33:26 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/papermod/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloudflare</title>
-      <link>https://blog.sorali.org/tags/cloudflare/</link>
-      <pubDate>Tue, 18 Mar 2025 00:50:15 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/cloudflare/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>杂谈</title>
-      <link>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</link>
-      <pubDate>Tue, 18 Mar 2025 00:50:15 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>深夜闲谈</title>
-      <link>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</link>
-      <pubDate>Tue, 18 Mar 2025 00:50:15 +0800</pubDate>
-      <guid>https://blog.sorali.org/tags/%E6%B7%B1%E5%A4%9C%E9%97%B2%E8%B0%88/</guid>
       <description></description>
     </item>
     <item>

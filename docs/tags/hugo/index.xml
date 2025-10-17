@@ -11,8 +11,19 @@
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 19 Mar 2025 18:33:26 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 16:19:50 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>深夜闲谈 0x03</title>
+      <link>https://blog.sorali.org/articles/2025/10/midnight-chat-0x03/</link>
+      <pubDate>Wed, 15 Oct 2025 16:19:50 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/10/midnight-chat-0x03/</guid>
+      <description>&lt;h3 id=&#34;0x03&#34;&gt;0x03&lt;/h3&gt;
+&lt;p&gt;已经很久没有写过博客了。其实也没什么特别想写的，单纯记录一下最近干了些什么（&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;使用cloudflare-workers反向代理docker-hub&#34;&gt;使用Cloudflare Workers反向代理Docker Hub&lt;/h3&gt;
+&lt;p&gt;由于某些神秘原因，在国内是无法直连Docker Hub的，并且各个公开镜像站也都消失了。那么如果要访问Docker Hub就有两种方式：为docker本身配置镜像地址，或为守护进程&lt;code&gt;dockerd&lt;/code&gt;配置代理。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>为PaperMod主题增加代码语法高亮适应亮/暗模式</title>
       <link>https://blog.sorali.org/articles/2025/03/add-code-highlight-adjust-light-dark-theme/</link>
