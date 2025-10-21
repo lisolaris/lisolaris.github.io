@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.144.2</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 15 Oct 2025 16:19:50 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Oct 2025 15:43:12 +0800</lastBuildDate>
     <atom:link href="https://blog.sorali.org/tags/2025-10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自动控制原理 - 03 - 线性控制系统的时域分析法</title>
+      <link>https://blog.sorali.org/articles/2025/10/control-theory-review-03/</link>
+      <pubDate>Mon, 20 Oct 2025 15:43:12 +0800</pubDate>
+      <guid>https://blog.sorali.org/articles/2025/10/control-theory-review-03/</guid>
+      <description>自动控制原理的学习笔记。本篇主要复习自动控制原理的时域分析法，包括典型一阶系统的时间响应，不同阻尼状态下的典型二阶系统时间响应，高阶系统时间响应的估计，静态/动态误差系数法，以及在时域上做简单反馈/前馈校正的方法。</description>
+    </item>
     <item>
       <title>深夜闲谈 0x03</title>
       <link>https://blog.sorali.org/articles/2025/10/midnight-chat-0x03/</link>

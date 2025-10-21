@@ -828,8 +828,6 @@ $$G(s) = \frac{Y(s)}{X(s)}$$
 
 下一篇文章[自动控制原理 - 02 - 传递函数，典型环节与梅逊增益公式]({{<siteurl>}}articles/2025/03/control-theory-review-02/)预计介绍一下传递函数、梅逊增益公式等等把第一二章完结，之后就该进入时域分析、频域分析和根轨迹法的正题了。
 
----
-
 [^1]:<https://www.bilibili.com/video/av811394492/>  
 [^2]:Hayt W H, Jr, EKemmerly J, etal. 工程电路分析[M]. 第八版. 电子工业出版社, 2012.  
 [^3]:<https://zh.wikipedia.org/wiki/%E8%BD%89%E5%8B%95%E6%85%A3%E9%87%8F>  

@@ -3,10 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.sorali.org/tags/2025-10/</loc>
-    <lastmod>2025-10-15T16:19:50+08:00</lastmod>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/categories/</loc>
-    <lastmod>2025-10-15T16:19:50+08:00</lastmod>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E6%A2%85%E9%80%8A%E5%A2%9E%E7%9B%8A%E5%85%AC%E5%BC%8F/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E7%BB%93%E6%9E%84%E5%9B%BE/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/categories/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.sorali.org/articles/2025/10/control-theory-review-03/</loc>
+    <lastmod>2025-10-20T15:43:12+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/cloudflare/</loc>
     <lastmod>2025-10-15T16:19:50+08:00</lastmod>
@@ -14,16 +47,7 @@
     <loc>https://blog.sorali.org/tags/hugo/</loc>
     <lastmod>2025-10-15T16:19:50+08:00</lastmod>
   </url><url>
-    <loc>https://blog.sorali.org/</loc>
-    <lastmod>2025-10-15T16:19:50+08:00</lastmod>
-  </url><url>
     <loc>https://blog.sorali.org/tags/papermod/</loc>
-    <lastmod>2025-10-15T16:19:50+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/articles/</loc>
-    <lastmod>2025-10-15T16:19:50+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/</loc>
     <lastmod>2025-10-15T16:19:50+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/%E6%9D%82%E8%B0%88/</loc>
@@ -39,27 +63,6 @@
     <lastmod>2025-10-15T16:19:50+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/tags/2025-03/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E6%A2%85%E9%80%8A%E5%A2%9E%E7%9B%8A%E5%85%AC%E5%BC%8F/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E7%BB%93%E6%9E%84%E5%9B%BE/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2025-03-29T16:11:07+08:00</lastmod>
-  </url><url>
-    <loc>https://blog.sorali.org/categories/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2025-03-29T16:11:07+08:00</lastmod>
   </url><url>
     <loc>https://blog.sorali.org/articles/2025/03/control-theory-review-02/</loc>
