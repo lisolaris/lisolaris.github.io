@@ -272,11 +272,11 @@ $$Y(s) = \frac{1}{1 + G_1 G_2 H (s)} R(s) \ ,$$
 
 则系统传递函数为
 
-$$\it{\large \Phi (s)} = \frac{Y(s)}{R(s)} = \frac{1}{1 + G_1 G_2 H (s)} = \frac{1}{1 + GH (s)} \ ,$$
+$$\mathit{\large \Phi (s)} = \frac{Y(s)}{R(s)} = \frac{1}{1 + G_1 G_2 H (s)} = \frac{1}{1 + GH (s)} \ ,$$
 
-$\it \Phi (s)$称为系统的闭环传递函数。闭环是与开环相对的，我们接下来马上会介绍到这个概念；但在此之前，我们可以很容易地看出闭环传递函数表达的是系统控制输入$R(s)$对系统输出$Y(s)$的作用。可以验证，对于任意负反馈控制系统，只要将其前向通路传递函数简化为$G(s)$，反馈通路传递函数简化为$H(s)$，那么这个控制系统的传递函数（从输入到输出）就是
+$\mathit{\Phi (s)}$称为系统的闭环传递函数。闭环是与开环相对的，我们接下来马上会介绍到这个概念；但在此之前，我们可以很容易地看出闭环传递函数表达的是系统控制输入$R(s)$对系统输出$Y(s)$的作用。可以验证，对于任意负反馈控制系统，只要将其前向通路传递函数简化为$G(s)$，反馈通路传递函数简化为$H(s)$，那么这个控制系统的传递函数（从输入到输出）就是
 
-$$\it{\large \Phi (s)} = \frac{1}{1 + GH (s)} \ .$$
+$$\mathit{\large \Phi (s)} = \frac{1}{1 + GH (s)} \ .$$
 
 ### 结构图等效变换
 
@@ -318,11 +318,11 @@ $$C(s) = \frac{G(s)}{1 - G(s)H(s)} \ . $$
 
 因此反馈连接后的等效（闭环）传递函数为
 
-$$\it{\large \Phi (s)} = \frac{1}{1 \mp G(s) H(s)} \ .$$
+$$\mathit{\large \Phi (s)} = \frac{1}{1 \mp G(s) H(s)} \ .$$
 
 分母中的 $\mp$ 与反馈通路为正反馈/负反馈有关，负反馈为 $1 + G(s) H(s)$，正反馈为 $1 - G(s) H(s)$. 特别地，当反馈通道的传递函数 $H(s) = 1$ 时，称相应系统为单位反馈系统，此时闭环传递函数为
 
-$$\it{\large \Phi (s)} = \frac{1}{1 \mp G(s)} \ .$$
+$$\mathit{\large \Phi (s)} = \frac{1}{1 \mp G(s)} \ .$$
 
 #### 比较点和引出点的移动
 
@@ -355,11 +355,11 @@ $$\it{\large \Phi (s)} = \frac{1}{1 \mp G(s)} \ .$$
 
 ## 梅逊增益公式
 
-利用梅逊增益公式，不进行结构图变换就能够直接写出系统的（闭环）传递函数$\it \large \Phi(s)$.
+利用梅逊增益公式，不进行结构图变换就能够直接写出系统的（闭环）传递函数$\mathit{\large \Phi(s)}$.
 
 梅逊增益公式的一般形式为
 
-$$\it{\large \Phi(s)} = \frac{1}{\Delta}\sum_{k=1}^{n} P_k \Delta_k \ ,$$
+$$\mathit{\large \Phi(s)} = \frac{1}{\Delta}\sum_{k=1}^{n} P_k \Delta_k \ ,$$
 
 式中的$\Delta$称为特征式，其计算公式为
 
@@ -408,9 +408,9 @@ $$C(s) = E(s)G_1(s)G_2(s) = [R(s) - C(s)H(s)] G_1(s) G_2(s) \ ,$$
 
 整理后可得
 
-$$\frac{C(s)}{R(s)} = \frac{G_1(s)G_2(s)}{1 + G_1(s)G_2(s)H(s)} = \it{\large \Phi(s)} \ ,$$
+$$\frac{C(s)}{R(s)} = \frac{G_1(s)G_2(s)}{1 + G_1(s)G_2(s)H(s)} = \mathit{\large \Phi(s)} \ ,$$
 
-此即为系统的闭环传递函数，记作 $\it{\large \Phi(s)} .$
+此即为系统的闭环传递函数，记作 $\mathit{\large \Phi(s)} .$
 
 系统闭环传递函数是对于整个系统而言的。当只考虑从输入 $r(t)$ 到输出 $c(t)$ 的过程，闭环传递函数可以很好地刻画系统在复频域上的固有性质。
 
@@ -426,7 +426,7 @@ $$L_1 = -G_1(s)G_2(s)H(s) \ ,$$
 
 可得
 
-$$\it \Delta \rm = 1 + \it {\sum L_a} = 1 + G_1(s)G_2(s)H(s) \ ,$$
+$$\mathit{\Delta} = 1 + \mathit{\sum L_a} = 1 + G_1(s)G_2(s)H(s) \ ,$$
 
 从 $N(s)$ 到 $C(s)$ 有一条前向通路
 
@@ -434,13 +434,13 @@ $$P_1 = G_2(s) \ ,$$
 
 对应有
 
-$$\it \Delta_1 \rm = 1 \ ,$$
+$$\mathit{\Delta_1} = 1 \ ,$$
 
 由梅逊增益公式，从 $N(s)$ 到 $C(s)$ 的传递函数为
 
 $$
-\it{\large \Phi_{\rm n}(s)}
-= \frac{1}{\it{\Delta}}\sum{P_k\Delta_k}
+\mathit{\large \Phi_{\mathrm n}(s)}
+= \frac{1}{\mathit{\Delta}}\sum{P_k\Delta_k}
 = \frac{G_2(s)}{1 + G_1(s)G_2(s)H(s)}
 \ .
 $$
@@ -449,7 +449,7 @@ $$
 
 $$
 C(s)
-= R(s) \it{\large \Phi(s)} + N(s) \it{\large \Phi_n(s)}
+= R(s) \mathit{\large \Phi(s)} + N(s) \mathit{\large \Phi_n(s)}
 = \frac{G_1(s)G_2(s)R(s) + G_2(s)N(s)}{1 + G_1(s)G_2(s)H(s)}
 \ .
 $$
@@ -461,7 +461,7 @@ $$
 闭环误差传递函数同样分控制输入  与扰动输入  引起的，此处分别列出其传递函数：
 
 $$
-\it{\large \Phi_{\rm e}(s)}
+\mathit{\large \Phi_{\mathrm{e}}(s)}
 = \frac{E(s)}{R(s)}
 = \frac{R(s) - C(s)H(s)}{R(s)}
 = \frac{1}{1 + G_1(s)G_2(s)H(s)}
@@ -469,7 +469,7 @@ $$
 $$
 
 $$
-\it{\large \Phi_{\rm{en}}(s)}
+\mathit{\large \Phi_{\mathrm{en}}(s)}
 = \frac{E(s)}{N(s)}
 = \frac{-G_2(s)H(s)}{1 + G_1(s)G_2(s)H(s)}
 \ ,
@@ -479,16 +479,32 @@ $$
 
 $$
 E(s)
-= R(s) \it{\large \Phi_{\rm e}(s)} + N(s) \it{\large \Phi_{\rm en}(s)}
+= R(s) \mathit{\large \Phi_{\mathrm{e}}(s)} + N(s) \mathit{\large \Phi_{\mathrm{en}}(s)}
 = \frac{R(s) - G_2(s)H(s)N(s)}{1 + G_1(s)G_2(s)H(s)}
 \ .
 $$
+
+#### 闭环传递函数与系统的特征根
+
+若我们将闭环传递函数写成
+
+$$
+\mathit{\large \Phi(s)}
+= \frac{G_1(s)G_2(s)}{1 + G_1(s)G_2(s)H(s)}
+= \frac{G(s)}{1 + G(s)H(s)}
+= \frac{M(s)}{D(s)}
+\ ,
+$$
+
+此时我们令 $D(s) = 0$ 即得到系统的特征方程，这个方程的根就称为系统的特征根或极点。
+
+<!-- TODO: 完善系统特征根的解释 -->
 
 ---
 
 从上一次开始动笔这篇文章开始，已经过去好几个月了。最近一直都很忙，现在才有时间和心情完成剩下的部分。
 
-本篇文章对应的是卢老师《自动控制原理》的第二章 控制系统的数学模型，仍然是相对基础和简单的部分；下一篇文章将要介绍时域法，包括分析和校正两个方面。~~不知又要到何时才能写完了~~
+本篇文章对应的是卢老师《自动控制原理》的第二章 控制系统的数学模型，仍然是相对基础和简单的部分；下一篇文章 [自动控制原理 - 03 - 线性控制系统的时域分析]({{<siteurl>}}articles/2025/10/control-theory-review-03/) 将要介绍时域法，包括分析和校正两个方面。~~不知又要到何时才能写完了~~
 
 [^1]: 实际上也可以由电流$i$的定义：单位时间内通过导线某一截面的电荷量$q$得$i = \frac{\mathrm{d} q}{\mathrm{d} t}$，从而得$u_r (t) = L \ddot{q} (t) + R\dot{q}(t) + \frac{1}{C} q(t)$。虽然同样能得到描述系统的二阶常微分方程，但这种形式中$q(t)$与我们要研究的输出$u_c (t)$之间的关联并不明显，故不使用。
 
