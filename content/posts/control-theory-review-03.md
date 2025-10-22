@@ -80,8 +80,31 @@ $$\mathit{\large \Phi (s)} = \frac{K}{s + K} = \frac{1}{Ts+1}\ ,$$
 
 可以解得系统特征根[^1] $\lambda = -\frac{1}{T} \ .$
 
-上式中 $T=\frac{1}{K}$ 称为一阶系统的时间常数，zaifen
+上式中 $T=\frac{1}{K}$ 称为一阶系统的时间常数，在分析一阶系统时有重要意义。
 
+对于一阶系统，在复频域上计算其单位阶跃响应为
+
+$$
+C(s)
+= \mathit{\Phi (s)} \cdot R(s)
+= \frac{1}{Ts+1} \frac{1}{s}
+= \frac{1}{s} - \frac{1}{s + \frac{1}{T}}
+\ ,
+$$
+
+通过拉普拉斯变换即得到时域响应
+
+$$h(t) = \mathscr{L}^{-1}[C(s)] = 1-e^{- \frac{t}{T}} .$$
+
+### 一阶系统的动态性能指标
+
+一阶系统的单位阶跃响应如下图所示，是一条单调的指数上升曲线。
+
+{{< r2figure
+    r2path="control-theory-review/03/lu_figure_3-3.png"
+    caption="一阶系统的单位阶跃响应（56页 图3-3）"
+    align=center
+>}}
 
 [^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#%E9%97%AD%E7%8E%AF%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81%E6%A0%B9) 回顾一下系统特征根的意义。
 
