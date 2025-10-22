@@ -18,7 +18,7 @@ draft: false
 
 线性时不变系统的微分方程一般可写为
 
-$$a_n \frac{\mathrm{d}^{n} c(t)}{\mathrm{d} t^{n}} + a_{n - 1} \frac{\mathrm{d}^{n - 1} c(t)}{\mathrm{d} t^{n - 1}} + ... + a_1 \frac{\mathrm{d}^ c(t)}{\mathrm{d} t} + a_0 c(t) = b_m \frac{\mathrm{d}^{m} r(t)}{\mathrm{d} t^{m}} + b_{m - 1} \frac{\mathrm{d}^{m - 1} r(t)}{\mathrm{d} t^{m - 1}} + ... + b_1 \frac{\mathrm{d}^ r(t)}{\mathrm{d} t} + b_0 r(t) \ ,$$
+$$a_n \frac{\mathrm{d}^{n} c(t)}{\mathrm{d} t^{n}} + a_{n - 1} \frac{\mathrm{d}^{n - 1} c(t)}{\mathrm{d} t^{n - 1}} + ... + a_1 \frac{\mathrm{d} c(t)}{\mathrm{d} t} + a_0 c(t) = b_m \frac{\mathrm{d}^{m} r(t)}{\mathrm{d} t^{m}} + b_{m - 1} \frac{\mathrm{d}^{m - 1} r(t)}{\mathrm{d} t^{m - 1}} + ... + b_1 \frac{\mathrm{d} r(t)}{\mathrm{d} t} + b_0 r(t) \ ,$$
 
 式中$c(t)$为输出量，$r(t)$为输入量，$a_n, a_{n - 1}, ..., a_1$及$b_m, b_{m - 1}, ..., b_1$均为由系统结构、参数决定的常系数。对于给定的输入信号$r_0 (t)$，将其代入到系统微分方程中即可得到有关系统输出$c_0 (t)$的一个微分方程；亦即，求解这个微分方程就能得到系统在输入信号$r_0 (t)$激励作用下产生的输出$c_0 (t)$。
 
@@ -486,6 +486,8 @@ $$
 
 #### 闭环传递函数与系统的特征根
 
+系统极点在后面的根轨迹法和频域法中有重要应用，在此先做一个简单的介绍。
+
 若我们将闭环传递函数写成
 
 $$
@@ -496,9 +498,31 @@ $$
 \ ,
 $$
 
-此时我们令 $D(s) = 0$ 即得到系统的特征方程，这个方程的根就称为系统的特征根或极点。
+此时我们令 $D(s) = 0$ 即得到系统的特征方程，这个方程的根就称为系统的特征根或极点。[在本章的开头我们提到](#传递函数)，线性系统在时域上的方程为
 
-<!-- TODO: 完善系统特征根的解释 -->
+$$a_n \frac{\mathrm{d}^{n} c(t)}{\mathrm{d} t^{n}} + a_{n - 1} \frac{\mathrm{d}^{n - 1} c(t)}{\mathrm{d} t^{n - 1}} + ... + a_1 \frac{\mathrm{d} c(t)}{\mathrm{d} t} + a_0 c(t) = b_m \frac{\mathrm{d}^{m} r(t)}{\mathrm{d} t^{m}} + b_{m - 1} \frac{\mathrm{d}^{m - 1} r(t)}{\mathrm{d} t^{m - 1}} + ... + b_1 \frac{\mathrm{d} r(t)}{\mathrm{d} t} + b_0 r(t) \ ,$$
+
+对其两边取拉普拉斯变换（假设零初始条件）并整理可得系统的传递函数
+
+$$G(s) = \frac{C(s)}{R(s)} = \frac{b_m s^m + b_{m - 1} s^{m - 1} + ... + b_1 s + b_0}{a_n s^n + a_{n - 1} s^{n - 1} + ... + a_1 s + a_0} \ ,$$
+
+为了研究系统的性质，我们假设输入 $r(t) = 0 ,$ 此时系统产生的响应 $c(t)$ 称为零输入响应，反映了系统固有的一系列特性。这时系统的微分方程为齐次方程
+
+$$a_n \frac{\mathrm{d}^{n} c(t)}{\mathrm{d} t^{n}} + a_{n - 1} \frac{\mathrm{d}^{n - 1} c(t)}{\mathrm{d} t^{n - 1}} + ... + a_1 \frac{\mathrm{d} c(t)}{\mathrm{d} t} + a_0 c(t) = 0 \ ,$$
+
+对应为
+
+$$(a_n s^n + a_{n-1} s^{n-1} + \cdots + a_0)C(s) = 0 \ ,$$
+
+假设这个方程对应解的形式为 $c(t) = e^{st} \neq 0,$ 为了使齐次方程成立，则必有
+
+$$a_n s^n + a_{n-1} s^{n-1} + \cdots + a_0 = 0 \ ,$$
+
+这就是系统的特征方程，对应即为系统传递函数分母 $D(s) = 0 .$ 求解此方程后代回并做拉普拉斯逆变换将会得到系统在时域上的零输入响应表达式
+
+$$c_h(t) = C_1 e^{s_1 t} + C_2 e^{s_2 t} + \cdots + C_n e^{s_n t} \ ,$$
+
+每一个 $s_i$ 对应一个独立的**自然模态**，这些 $s_i$ 的集合决定了系统随时间的**增长、衰减、振荡特性**。
 
 ---
 
