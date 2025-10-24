@@ -10,10 +10,20 @@
             delimiters: [
                 {left: "$$", right: "$$", display: true},
                 {left: "$", right: "$", display: false}
-            ]
+            ],
+            macros: {
+                // "\\zeta": "\\mathord{\\text{ζ}}"
+            }
         });
     });
 </script>
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/stixfonts/css/stix.css">
+<style>
+.katex .mathnormal {
+    font-family: "STIXGeneral", "STIX Math", "STIX Two Math", "Times New Roman", serif !important;
+}
+</style>
 {{ end }}
 
 {{if site.Params.useExternalHLJS}}
