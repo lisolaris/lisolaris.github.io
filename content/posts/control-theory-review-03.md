@@ -159,17 +159,25 @@ $$
 
 二阶系统闭环特征方程为
 
-$$D(s) = s^2 + 2\zeta\omega s + \omega_\mathrm{n}^2 = 0 \ ,$$
+$$D(s) = s^2 + 2\zeta\omega_\mathrm{n} s + \omega_\mathrm{n}^2 = 0 \ ,$$
 
 对应的特征根为
 
 $$\lambda_{1, 2} = -\zeta \omega_\mathrm{n} \pm \mathrm{j} \omega_\mathrm{n} \sqrt{1 - \zeta^2} \qquad (0 < \zeta < 1),$$
 
-上式为欠阻尼情况的系统特征根。当改变二阶系统的阻尼比 $\zeta$ 时，特征根在 $s$ 平面上的分布随之改变，系统特性会有比较明显的变化。我们将在后面讨论这一点。
+上式为欠阻尼情况的系统特征根。一般可以根据阻尼比 $\zeta$ 的不同，将二阶系统区分为零阻尼，欠阻尼，临界阻尼和过阻尼系统；当改变 $\zeta$ 时，二阶系统的特征根在 $s$ 平面上的分布随之改变，系统特性会有比较明显的变化。我们将在后面讨论这一点。
+
+{{< r2figure
+    r2path="control-theory-review/03/lu_table_3-3.png"
+    caption="二阶系统（按阻尼比 $\zeta$ ）分类表（59页 表3-3）"
+    align=center
+>}}
 
 ### 欠阻尼二阶系统的动态过程分析
 
 一般教材都会先介绍过阻尼和临界阻尼的二阶系统分析，再来用长篇幅介绍欠阻尼的情况；但作为复习，我们先研究欠阻尼二阶系统是如何分析的，再考虑临界阻尼和过阻尼这样的特殊情况。
+
+当二阶系统阻尼比参数 $0 < \zeta < 1$ 时，我们称这个二阶系统处于欠阻尼状态。
 
 先来看一张重要的图：
 
@@ -338,6 +346,80 @@ $$\lambda_{1, 2} = -\zeta \omega_\mathrm{n} \pm \mathrm{j} \omega_\mathrm{n} \sq
 >}}
 
 从上面的讨论中我们可以看出，要获得满意的系统动态性能，应该适当选择参数，使二阶系统的闭环极点位于$\beta = 45 \degree$ 线附近，使系统具有合适的超调量，并根据情况尽量使其远离虚轴，以提高系统的快速性。
+
+### 临界阻尼二阶系统的动态过程分析
+
+当阻尼比 $\zeta = 1$ 时，系统处于临界阻尼状态。
+
+临界阻尼二阶系统的闭环特征方程为
+
+$$D(s) = s^2 + 2 \omega_\mathrm{n} s + \omega_\mathrm{n}^2 = 0 \ ,$$
+
+从中可以解出一对相等的实特征根：
+
+$$\lambda_1 = \lambda_2 = -\omega_\mathrm{n} = - \frac{1}{T_1} \ ,$$
+
+此时系统单位阶跃响应的拉普拉斯变换为
+
+$$C(s) = \varPhi(s) R(s) = \frac{\omega_\mathrm{n}^2}{(s + \omega_\mathrm{n})^2} \frac{1}{s} \ ,$$
+
+对应的时域单位阶跃响应为
+
+$$h(t) = 1 - (1 + \omega_\mathrm{n} t) \mathrm{e}^{- \omega_\mathrm{n} t} \ ,$$
+
+临界阻尼系统的时域响应是一条单调上升的对数曲线，即临界阻尼系统不存在超调量。令 $h(t) = 0.95$ 可以解得 $5 \char37$ 误差带的调节时间
+
+$$t_\mathrm{s} = 4.75 T_1 \ ,$$
+
+即临界阻尼二阶系统的调节时间只与系统时间常数 $T_1$ 有关。在有些不允许时间响应出现超调，而又希望响应速度较快的场景中，例如在指示仪表系统和记录仪表系统中，需要采用临界阻尼系统。
+
+### 过阻尼二阶系统的动态过程分析
+
+当阻尼比 $\zeta > 1$ 时，系统处于过阻尼状态。
+
+过阻尼二阶系统的闭环特征方程为
+
+$$D(s) = s^2 + 2 \zeta \omega_\mathrm{n} s + \omega_\mathrm{n}^2 = 0 \ ,$$
+
+从中可以解出一对不等的实特征根：
+
+$$\lambda_{1, 2} = -\zeta \omega_\mathrm{n} \pm \omega_\mathrm{n} \sqrt{\zeta^2 - 1} \qquad \qquad \left ( \zeta > 1 \right ) $$
+
+不妨设
+
+$$
+\lambda_1 = \frac{1}{T_1} = - (\zeta - \sqrt{\zeta^2 - 1} ) \omega_\mathrm{n}
+\qquad
+\lambda_2 = \frac{1}{T_2} = - (\zeta + \sqrt{\zeta^2 - 1} ) \omega_\mathrm{n}
+\qquad \qquad
+\left ( T_1 > T_2 \right )
+$$
+
+可得系统单位阶跃响应的拉普拉斯变换
+
+$$C(s) = \varPhi(s) R(s) = \frac{\omega_\mathrm{n}^2}{(s + \frac{1}{T_1})(s + \frac{1}{T_2})} \frac{1}{s} \ ,$$
+
+反变换回时域，得到系统的时域单位阶跃响应
+
+$$h(t) = 1 + \frac{e^{-\frac{t}{T_1}}}{\frac{T_2}{T_1} - 1} + \frac{e^{-\frac{t}{T_2}}}{\frac{T_1}{T_2} - 1} \qquad \qquad \left ( t \geq 0 \right)$$
+
+过阻尼二阶系统单位阶跃响应也是无振荡的单调上升曲线，同样不存在超调量。令 $\dfrac{T_1}{T_2}$ 取不同的值，可以分别求解对应的无量纲调节时间 $\dfrac{t_\mathrm{s}}{T_1}$ 如下图所示。
+
+{{< r2figure
+    r2path="control-theory-review/03/lu_figure_3-7.png"
+    caption="过阻尼二阶系统的调节时间特性（66页 图3-7）"
+    align=center
+>}}
+
+上图中的 $\zeta$ 为参变量，由系统特征方程
+
+$$D(s) = s^2 + 2 \zeta \omega_\mathrm{n} s + \omega_\mathrm{n}^2 = (s + \frac{1}{T_1})(s + \frac{1}{T_2}) = 0$$
+
+可以解得
+
+$$\zeta = \frac{1 + \frac{T_1}{T_2}}{2 \sqrt{\frac{T_1}{T_2}}} \ ,$$
+
+当 $\dfrac{T_1}{T_2}$（或 $\zeta$）很大时，特征根 $\lambda_2 = \dfrac{1}{T_2}$ 比 $\lambda_1 = \dfrac{1}{T_1}$ 远离虚轴，其所对应模态 $\mathrm{e}^{-\frac{t}{T_2}}$ 很快衰减为零，系统调节时间主要由 $\lambda_1$ 对应的模态 $\mathrm{e}^{-\frac{t}{T_1}}$ 决定。此时可将过阻尼二阶系统近似看作由 $\lambda_1$ 确定的一阶系统，估算其动态性能指标。上图中的曲线体现了这一规律性。
 
 [^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#%E9%97%AD%E7%8E%AF%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81%E6%A0%B9) 回顾一下系统特征根的意义。
 
