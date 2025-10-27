@@ -94,7 +94,7 @@ $$
 
 通过拉普拉斯变换即得到时域响应
 
-$$h(t) = \mathscr{L}^{-1}[C(s)] = 1-e^{- \frac{t}{T}} .$$
+$$h(t) = \mathscr{L}^{-1}[C(s)] = 1-\mathrm{e}^{- \frac{t}{T}} .$$
 
 ### 一阶系统的动态性能指标
 
@@ -108,7 +108,7 @@ $$h(t) = \mathscr{L}^{-1}[C(s)] = 1-e^{- \frac{t}{T}} .$$
 
 由调节时间 $t_\mathrm{s}$ 的定义可得
 
-$$h(t_\mathrm{s}) = 1 - e^{\frac{t_\mathrm{s}}{T}} = 0.95 \ ,$$
+$$h(t_\mathrm{s}) = 1 - \mathrm{e}^{\frac{t_\mathrm{s}}{T}} = 0.95 \ ,$$
 
 可以解得
 
@@ -263,11 +263,35 @@ $$\sqrt{1 - \zeta^2} \omega_\mathrm{n} t = 0, \pi, 2 \pi, 3 \pi, ...$$
 
 峰值时间指的是第一次达到峰值使 $h^\prime (t) = 0$ 的时刻，故取上式右边为 $\pi$ 可得欠阻尼二阶系统的峰值时间计算公式
 
-$$t_\mathrm{p} = \frac{\pi}{\sqrt{1 - \zeta^2} \omega_\mathrm{n}} = \frac{\pi}{\omega_\mathrm{d}}$$
+$$t_\mathrm{p} = \frac{\pi}{\sqrt{1 - \zeta^2} \omega_\mathrm{n}} = \frac{\pi}{\omega_\mathrm{d}} \ ,$$
+
+##### 超调量 $\sigma \char37$
+
+将峰值时间 $t_\mathrm{p}$ 代入系统单位阶跃响应的计算公式可得
+
+$$
+\begin{aligned}
+h(t_\mathrm{p}) &= 1 - \frac{\mathrm{e}^{-t_\mathrm{p} \cot \beta}}{\sin \beta} \sin \left ( \omega_d t_\mathrm{p} + \beta \right )
+\newline
+&= 1 + \mathrm{e}^{-\frac{\zeta \pi}{\sqrt{1 - \zeta^2}}}
+\newline
+&= 1 + \mathrm{e}^{-\pi \cot{\beta}}
+\ ,
+\end{aligned}
+$$
+
+从而可求得超调量
+
+$$\sigma \char37 = \frac{h(t_\mathrm{p}) - h(\infin)}{h(\infin)} \times 100 \char37 = \mathrm{e}^{-\pi \cot{\beta}} \times 100 \char37 \ ,$$
+
+从上式可知典型欠阻尼二阶系统的超调量 $\sigma \char37$ 只与阻尼比 $\zeta$ 有关。
+
+##### 调节时间 $t_\mathrm{s}$
+
 
 
 [^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#%E9%97%AD%E7%8E%AF%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81%E6%A0%B9) 回顾一下系统特征根的意义。
 
-[^2]: 当 $T$ 越小时，$e^{- \frac{t_\mathrm{s}}{T}}$ 的指数部分的绝对值就会越大，对应使 $e^{- \frac{t_\mathrm{s}}{T}}$ 收敛速度更快。
+[^2]: 当 $T$ 越小时，$\mathrm{e}^{- \frac{t_\mathrm{s}}{T}}$ 的指数部分的绝对值就会越大，对应使 $\mathrm{e}^{- \frac{t_\mathrm{s}}{T}}$ 收敛速度更快。
 
 [^3]: 我个人比较喜欢把 $\mathrm{e}^{-\zeta \omega_\mathrm{n} t}$ 记作 $\mathrm{e}^{-t \cot \beta} \ ,$ $\sqrt{1 - \zeta^2} \omega_\mathrm{n}$ 记作 $\omega_d \ ,$ 因为比较容易记住 :D
