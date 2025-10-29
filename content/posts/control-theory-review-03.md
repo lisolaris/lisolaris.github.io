@@ -30,7 +30,7 @@ draft: true
 
 ### 性能指标
 
-这部分内容来自卢京潮《自动控制原理》第三章 线性系统的时域分析与校正 3.1.3 系统的常用时域性能指标。
+这部分内容来自*卢京潮《自动控制原理》第3章 线性系统的时域分析与校正 3.1.3 系统的常用时域性能指标*。
 
 #### 动态性能指标
 
@@ -75,7 +75,7 @@ $$\sigma \char37 = \frac{h(t_\mathrm{p}) - h(\infin)}{h(\infin)} \times 100 \cha
 
 系统的传递函数为
 
-$$\mathit{\large \Phi (s)} = \frac{K}{s + K} = \frac{1}{Ts+1}\ ,$$
+$$\varPhi(s) = \frac{K}{s + K} = \frac{1}{Ts+1}\ ,$$
 
 可以解得系统特征根[^1] $\lambda = -\dfrac{1}{T} \ .$
 
@@ -127,7 +127,7 @@ $$t_\mathrm{s} = 2.9957T \approx 3T \ .$$
 
 ## 二阶系统的时域分析
 
-这部分内容基本来自于卢京潮《自动控制原理》第3章 线性系统的时域分析与校正 3.3 二阶系统的时间响应及动态性能。
+这部分内容基本来自于*卢京潮《自动控制原理》第3章 线性系统的时域分析与校正 3.3 二阶系统的时间响应及动态性能*。
 
 二阶系统分析是本章的重点。相比一阶系统，二阶系统引入的额外极点会使得系统不再稳定地趋于收敛，而是依阻尼比不同产生震荡甚至发散；下面我们来详细讨论这一点。
 
@@ -141,16 +141,17 @@ $$t_\mathrm{s} = 2.9957T \approx 3T \ .$$
 
 系统的闭环传递函数为
 
-$$\large \varPhi (s) = \frac{K}{T_0 s^2 + s + K} \ ,$$
+$$\varPhi (s) = \frac{K}{T_0 s^2 + s + K} \ ,$$
 
 化为标准形式
 
 $$
-\begin{alignedat}{2}
+\begin{aligned}
 \varPhi(s) &= \frac{\omega_\mathrm{n}^2}{s^2 + 2\zeta\omega s + \omega_\mathrm{n}^2} &\qquad& (\text{首1型})
-\\[1em]
+\newline
+\newline
 \varPhi(s) &= \frac{K}{T_0 s^2 + s + K} &\qquad& (\text{尾1型})
-\end{alignedat}
+\end{aligned}
 $$
 
 式中 $\displaystyle T = \sqrt{\frac{T_0}{K}}, \quad \omega_\mathrm{n} = \frac{1}{T} = \sqrt{\frac{K}{T_0}}, \quad \zeta = \frac{1}{2} \sqrt{\frac{1}{K T_0}} \quad .$
@@ -421,8 +422,88 @@ $$\zeta = \frac{1 + \frac{T_1}{T_2}}{2 \sqrt{\frac{T_1}{T_2}}} \ ,$$
 
 当 $\dfrac{T_1}{T_2}$（或 $\zeta$）很大时，特征根 $\lambda_2 = \dfrac{1}{T_2}$ 比 $\lambda_1 = \dfrac{1}{T_1}$ 远离虚轴，其所对应模态 $\mathrm{e}^{-\frac{t}{T_2}}$ 很快衰减为零，系统调节时间主要由 $\lambda_1$ 对应的模态 $\mathrm{e}^{-\frac{t}{T_1}}$ 决定。此时可将过阻尼二阶系统近似看作由 $\lambda_1$ 确定的一阶系统，估算其动态性能指标。上图中的曲线体现了这一规律性。
 
-[^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#%E9%97%AD%E7%8E%AF%E4%BC%A0%E9%80%92%E5%87%BD%E6%95%B0%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%89%B9%E5%BE%81%E6%A0%B9) 回顾一下系统特征根的意义。
+---
+
+*卢老师的书中还提及了对二阶系统附加闭环零极点的时域分析。此段内容比较长而且并不如根轨迹分析来得直观，故在本文中跳过了这部分。*
+
+---
+
+## 高阶系统的时域分析
+
+这部分内容主要来自*卢京潮《自动控制原理》第3章 线性系统的时域分析与校正 3.4 高阶系统的阶跃响应及动态性能*。
+
+在进入高阶系统的时域分析前，我们先引入主导极点的概念。
+
+### 闭环主导极点
+
+对稳定的闭环系统，远离虚轴的极点对应的模态因为收敛较快，只影响阶跃响应的起始段，而距虚轴近的极点对应的模态衰减缓慢，系统动态性能主要取决于这些极点对应的响应分量。此外，各瞬态分量的具体值还与其系数大小有关。
+
+根据部分分式理论，各瞬态分量的系数与零、极点的分布有如下关系：
+
+1. 若某极点远离原点，则相应项的系数很小；
+
+2. 若某极点接近一零点，而又远离其他极点和零点，则相应项的系数也很小；
+
+3. 若某极点远离零点又接近原点或其他极点，则相应项系数就比较大。
+
+系数大而且衰减慢的分量在瞬态响应中起主要作用。因此，距离虚轴最近而且附近又没有零点的极点对系统的动态性能起主导作用，称相应极点为主导极点。
+
+### 高阶系统的单位阶跃响应
+
+现在我们来讨论高阶系统在时域上的单位阶跃响应，其实就是在 $s$ 域中求解代数方程后反变换回时域从而得到系统时域微分方程的解。
+
+高阶系统的传递函数一般可以表示为
+
+$$
+\begin{aligned}
+\varPhi (s) &= \frac{M(s)}{D(s)} = \frac{b_m s^m + b_{m - 1} s^{m - 1} + ... + b_1 s + b_0}{a_n s^n + a_{n - 1} s^{n - 1} + ... + a_1 s + a_0}
+\newline
+&= \frac{\displaystyle K \prod_{i=1}^{m} (s - z_i)}{\displaystyle \prod_{j=1}^{q} (s - \lambda_j) \prod_{k=1}^{r} (s^2 + 2 \zeta_k \omega_k s + \omega_k^2)} \qquad \qquad \left ( n \geq m \right)
+\end{aligned}
+$$
+
+此处假设所研究的高阶系统有 $q$ 个闭环实极点与 $r$ 对闭环共轭复极点，及 $m$ 个闭环实零点。拥有更多复极点/复零点的系统也可以类似的形式分析。
+
+上式中 $K = \frac{b_m}{a_n} , q + 2r = n \ .$ 由于 $M(s)$ 和 $D(s)$ 均为实系数多项式，故闭环零点 $z_i$、极点 $\lambda_j$ 只能是实根或共轭复根。系统单位阶跃响应的拉普拉斯变换可表示为
+
+$$
+\begin{aligned}
+C(s) &= \varPhi(s) \frac{1}{s} = \frac{\displaystyle K \prod_{i=1}^{m} (s - z_i)}{s \displaystyle \prod_{j=1}^{q} (s - \lambda_j) \prod_{k=1}^{r} (s^2 + 2 \zeta_k \omega_k s + \omega_k^2)}
+\newline
+&= \frac{A_0}{s} + \sum_{j=1}^{q} \frac{A_j}{s - \lambda_j} + \sum_{k=1}^{r} \frac{B_k s + C_k}{s^2 + 2 \zeta_k \omega_k s + \omega_k^2}
+\end{aligned}
+$$
+
+式中 $A_0 = \displaystyle \lim_{s \to 0} s C(s) = \frac{M(0)}{D(0)}, A_j = \lim_{s \to j} (s - \lambda_j) C(s)$ 是 $C(s)$ 在闭环实极点 $\lambda_j$ 处的留数[^4]； $B_k$ 和 $C_k$ 是 $C(s)$ 在闭环复极点 $- \zeta_k \omega_k \pm \mathrm{j} \omega_k \sqrt{1 - \zeta_k^2}$ 处的留数有关的常系数。对上式做拉普拉斯反变换可得
+
+$$c(t) = A_0 + \sum_{j=1}^{q} A_j \cdot \mathrm{e}^{\lambda_j t} + \sum_{k=1}^r D_k \cdot \mathrm{e}^{- \sigma_k t} \sin (\omega_{\mathrm{d} k} t + \varphi_k)$$
+
+式中 $D_k$ 是 $C(s)$ 在闭环复极点 $- \zeta_k \omega_k \pm \mathrm{j} \omega_k \sqrt{1 - \zeta_k^2}$ 处的留数有关的常系数
+
+$$\sigma_k = \zeta_k \omega_k, \qquad \omega_{\mathrm{d} k} = \omega_k \sqrt{1 - \zeta_k^2} \ .$$
+
+从上面的讨论可以看出除常数项 $A_0 = \frac{M(0)}{D(0)}$ 外，高阶系统的单位阶跃响应是系统模态的组合，组合系数即部分分式系数。
+
+模态由闭环极点确定，而部分分式系数与闭环零点、极点分布有关，所以，闭环零点、极点对系统动态性能均有影响。当所有闭环极点均具有负的实部，即所有闭环极点均位于左半 $s$ 平面时，随时间 $t$ 的增加所有模态均趋于零（对应瞬态分量），系统的单位阶跃响应最终稳定在 $\frac{M(0)}{D(0)}$。很明显，闭环极点负实部的绝对值越大，相应模态趋于零的速度越快。在系统存在重根的情况下，以上结论仍然成立。
+
+这里相当于复述了一遍我们在前两篇文章讨论拉普拉斯变换和系统微分方程/传递函数的关系时所得到的结论。
+
+### 估算高阶系统动态性能指标的零点极点法
+
+一般规定，**若某极点的实部大于主导极点实部的5～6倍以上时，则可以忽略相应分量的影响；若两相邻零、极点间的距离比它们本身的模值小一个数量级时，则称该零、极点对为“偶极子”，其作用近似抵消，可以忽略相应分量的影响。**
+
+在绝大多数实际系统的闭环零、极点中，可以选留最靠近虚轴的一个或几个极点作为主导极点，略去比主导极点距虚轴远5倍以上的闭环零、极点，以及不十分接近虚轴的相互靠得很近（该零、极点距虚轴距离是其相互之间距离的10倍以上）的偶极子，忽略其对系统动态性能的影响，然后按下表中相应的公式估算高阶系统的动态性能指标。
+
+{{< r2figure
+    r2path="control-theory-review/03/lu_table_3-7.png"
+    caption="动态性能指标估算公式表（78页 图3-7）"
+    align=center
+>}}
+
+[^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#闭环传递函数与系统的特征根) 回顾一下系统特征根的意义。
 
 [^2]: 当 $T$ 越小时，$\mathrm{e}^{- \frac{t_\mathrm{s}}{T}}$ 的指数部分的绝对值就会越大，对应使 $\mathrm{e}^{- \frac{t_\mathrm{s}}{T}}$ 收敛速度更快。
 
 [^3]: 我个人比较喜欢把 $\mathrm{e}^{-\zeta \omega_\mathrm{n} t}$ 记作 $\mathrm{e}^{-t \sin \beta} \ ,$ $\mathrm{e}^{-\frac{\zeta}{\sqrt{1 - \zeta^2}} \pi}$ 记作 $\mathrm{e}^{-\pi \cot \beta} \ ,$ $\sqrt{1 - \zeta^2} \omega_\mathrm{n}$ 记作 $\omega_d \ ,$ 因为比较容易记住 :D
+
+[^4]: 有关留数法解部分分式，可以回顾 [部分分式法展开]({{<siteurl>}}articles/2025/03/control-theory-review-01/#部分分式法展开) 。
