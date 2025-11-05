@@ -19,10 +19,14 @@
 {{- $height := .Get "height" -}}
 {{- $loading := .Get "loading" -}}
 {{- $decoding := .Get "decoding" | default "async" -}}
+{{- $anchor := .Get "anchor" -}}
 
+{{- if $anchor -}}
+<span id="{{ $anchor }}"></span>
+{{- end -}}
 <figure {{ with $align }} class="align-{{$align}}" {{ end }}>
     {{- with $link -}}
-        <a href="{{ . }}"{{ with $alt }} title="{{ . }}"{{ end }} target="_blank" rel="noopener noreferrer">
+        <a id="{{.anchor}}" href="{{ . }}"{{ with $alt }} title="{{ . }}"{{ end }} target="_blank" rel="noopener noreferrer">
     {{- end -}}
     <img src="{{ $src }}"{{ with $width }} width="{{ . }}"{{ end }}{{ with $height }} height="{{ . }}"{{ end }}{{ with $alt }} alt="{{ . }}"{{ end }}{{ with $title }} title="{{ . }}"{{ end }}{{ with $class }} class="{{ . }}"{{ end }}{{ with $loading }} loading="{{ . }}"{{ end }}{{ with $decoding }} decoding="{{ . }}"{{ end }} />
     {{- with $link -}}
