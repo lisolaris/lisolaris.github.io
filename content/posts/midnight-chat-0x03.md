@@ -23,8 +23,15 @@ draft: true
 
 如果不想折腾太多，则只需要在Cloudflare上注册开通Workers，之后直接将[cloudflare-docker-proxy](https://github.com/ciiiii/cloudflare-docker-proxy)部署到自己账户下的Workers就可以了。
 
-对于未托管在
+##### 为反向代理的Workers配置其他路由实现复用
 
+使用上面开源项目的默认配置会占用一整个Workers，如果我们还想用此域名做其他的事有两种方法：一是在Cloudflare后台为Workers配置路由，而是直接在Workers逻辑中实现不同路由访问不同的功能。第一种方法我暂时还没试过，此处介绍一下第二种方法。
+
+首先我们可以将刚刚项目里的`src/index.js`导入到我们的Workers项目中，命名为docker.js;
+
+
+
+需要注意的是，对使用免费计划的Workers, Cloudflare会限制此Workers单次连接能够使用的流量大小为100MB，因此我们自建的这个docker反向代理只能缓解有没有的问题，好不好用还是另说（
 
 #### 为守护进程配置代理
 
