@@ -1,2 +1,4 @@
 docs/
-!docs/404.html
+debug.log
+.hugo_build.lock
+
