@@ -24,9 +24,7 @@ draft: false
 
 - **单位脉冲函数 $\delta(t)$**：得到的响应即为系统的闭环传递函数。
 
-- **单位阶跃函数 $1(t)$**：又称为位置输入，是工程上最常用的输入信号。由于单位阶跃输入容易实现、对系统稳定能力的要求比较高，故后续的时域分析多以单位阶跃为输入信号展开研究。
-
-- **单位斜坡函数 $t$**：又称为速度输入。
+- **单位阶跃函数 $1(t)$**：又称为位置输入，是工程上最常用的输入信号。由于单位阶跃输入容易实现、对系统的要求比较高（具有陡峭的信号突变，且在 $t > 0$ 时始终存在输入），故后续的时域分析多以单位阶跃为输入信号展开研究。
 
 ### 性能指标
 
@@ -706,13 +704,43 @@ $$G(s)H(s) = \frac{K (\tau_1 s + 1)(\tau_2 s + 1) ... (\tau_m s + 1)}{s^v (T_1 s
 
 当 $v = 2$ 时，相应闭环系统为 $\mathrm{II}$ 型系统，也称为“二阶无差系统”。
 
-上述系统的型别有何意义？ TODO: 补充完成静态误差系数法
+在控制输入作用下，系统的误差传递函数可写为
+
+$$\varPhi_\mathrm{e} (s) = \frac{E(s)}{R(s)} = \frac{1}{1 + G(s) H(s)} = \frac{1}{1 + \frac{K}{s^v} G_0 (s)}$$
+
+阶跃（位置）输入时，$r(t) = A \times 1(t)$
+
+$$e_\mathrm{ssp} = \lim_{s \to 0} s \varPhi_\mathrm{e} (s) R(s) = \lim_{s \to 0} \frac{A}{s} \frac{1}{1 + G(s) H(s)} = \frac{A}{1 + \lim_{s \to 0} G(s) H(s)} \ ,$$
+
+定义静态位置（position）误差系数
+
+$$K_\mathrm{p} = \lim_{s \to 0} G(s) H(s) = \lim_{s \to 0} \frac{K}{s^v} \ ,$$
+
+则系统的稳态位置误差
+
+$$e_\mathrm{ssp} = \frac{A}{1 + K_\mathrm{p} } \ ,$$
+
+上式即为系统在单位阶跃输入时产生的时域误差表达式。
+
+类似地，可以定义系统在斜坡（速度）输入 $r(t) = A t$ 时的静态速度（velocity）误差系数与相应的稳态速度误差
+
+$$K_\mathrm{v} = \lim_{s \to 0} \frac{K}{ s^{\mathrm{v} - 1} }, \qquad e_\mathrm{ssv} = \frac{A}{ K_\mathrm{v} }; $$
+
+以及加速度（acceleration）输入 $r(t) = \dfrac{A}{2} t^2$ 时的静态加速度误差系数与稳态加速度误差
+
+$$K_\mathrm{a} = \lim_{s \to 0} \frac{K}{ s^{\mathrm{v} - 2} }, \qquad e_\mathrm{ssa} = \frac{A}{ K_\mathrm{a} }. $$
+
+综合以上讨论可得到下表
 
 {{< r2figure
     r2path="control-theory-review/03/lu_table_3-9.png"
     caption="典型输入信号作用下的稳态误差（88页 表3-9）"
     align=center
 >}}
+
+上表揭示了控制输入作用下，系统稳态误差随系统结构、参数及输入形式变化的规律。在输入一定时，增大开环增益 $K$，可以减小稳态误差；增加开环传递函数中的积分环节数 $v$，可以消除稳态误差。更具体地，对于 $n$ 型系统，时域上小于 $n$ 次的控制输入信号 $r(t) = \dfrac{1}{k!} t^k$ 产生的稳态误差总是为$0$.
+
+
 
 [^1]: 可以看回 [上篇文章的结尾]({{<siteurl>}}articles/2025/03/control-theory-review-02/#闭环传递函数与系统的特征根) 回顾一下系统特征根的意义。
 
