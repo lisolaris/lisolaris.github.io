@@ -84,6 +84,45 @@ $$\lambda_{1, 2} = -1 \pm \sqrt{1 - K^\ast} \ .$$
 
 由以上讨论我们可以看出，根轨迹与系统性能之间有着密切的联系，利用根轨迹可以分析当系统参数（如 $K$ 或 $K^\ast$）增大时系统动态性能的变化趋势。
 
+### 闭环零极点与开环零极点的关系
+
+考虑下图(a)所示的典型系统。
+
+{{< r2figure
+    r2path="control-theory-review/03/lu_figure_3-30.png"
+    caption="典型系统结构图（85页 图3-30）"
+    align=center
+    anchor="fig3-30"
+>}}
+
+假设其有 $m$ 个开环零点、$n$ 个开环极点，则
+
+$$
+G(s) = \frac{K_\mathrm{G}^\ast \displaystyle \prod_{i=1}^{f} (s - z_i)}{\displaystyle \prod_{i=1}^{g} (s - p_i)},
+\qquad
+H(s) = \frac{K_\mathrm{H}^\ast \displaystyle \prod_{j=f+1}^{m} (s - z_j)}{\displaystyle \prod_{j=g+1}^{g} (s - p_j)}
+$$
+
+注意看各个 $\prod$ 的上限：$G(s)$ 中有 $f$ 个开环零点与 $g$ 个开环极点，相应地 $H(s)$ 中有 $m-f$ 个开环零点与 $n-g$ 个开环极点。于是此系统的开环传递函数
+
+$$
+G(s)H(s)
+= \frac{K^\ast \displaystyle \prod_{i=1}^{f} (s - z_i) \displaystyle \prod_{j=f+1}^{m} (s - z_j)}{\displaystyle \prod_{i=1}^{g} (s - p_i) \displaystyle \prod_{j=g+1}^{g} (s - p_j)}
+= \frac{K^\ast \displaystyle \prod_{i=1}^{m} (s - z_i)}{\displaystyle \prod_{j=1}^{n} (s - p_j)}
+\ ,
+$$
+
+式中 $K^\ast = K_\mathrm{G}^\ast K_\mathrm{H}^\ast$ 为系统的根轨迹增益，$z_i$ 表示开环零点，$p_j$ 表示开环极点。系统闭环传递函数为
+
+$$
+\varPhi(s) = \frac{1}{1 + G(s) H(s)}
+= \frac{K^\ast \displaystyle \prod_{i=1}^{f} (s - z_i) \displaystyle \prod_{j=g+1}^{g} (s - p_j)}{\displaystyle \prod_{j=1}^{n} (s - p_j) + K^\ast \displaystyle \prod_{i=1}^{m} (s - z_i)}
+$$
+
+从上式可知：
+
+- **闭环零点由前向通路传递函数 $G(s)$ 的零点和反馈通路传递函数 $H(s)$ 的极点组成。** 对于单位反馈系统 $H(s) = 1 \ ,$ 闭环零点就是开环零点。闭环零点不随 $K^\ast$ 变化，不必专门讨论之。
+
+- **闭环极点与开环零点、开环极点以及根轨迹增益 $K^\ast$ 均有关。** 闭环极点随 $K^\ast$ 而变化，所以研究闭环极点随 $K^\ast$ 的变化规律是必要的。
 
 [^1]: 欠阻尼二阶系统的 $t_s \approx \frac{3.5}{\zeta \omega_\mathrm{n}} = \frac{3.5}{\omega_\mathrm{d}}\ ,$ 即只和共轭复根的实部有关；此处系统的特征根实部不变，之所以说“$t_s$ 基本不变”是因为上式为估算值，与实际值多少有些误差。
-
