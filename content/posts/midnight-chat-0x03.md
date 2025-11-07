@@ -66,7 +66,7 @@ sudo systemctl restart docker
 
 ### 使用 Cloudflare R2 作为博客图床并自定义 Hugo Shortcode 快速使用
 
-本站之前使用的图床是 <https://z4a.net>, 似乎从几个月前主站就无法访问了 ~~存储在站上的图片也全都消失了~~ 。由于主要的文字页面托管在 Cloudflare 上，此次正好统一将页面和图片都托管在 Cloudflare 上。
+本站之前使用的图床是 <https://z4a.net>, 似乎从几个月前主站就无法访问了 ~~存储在站上的图片也全都消失了~~ 。由于主要的文字页面托管在 Cloudflare，此次正好统一将页面和图片都迁移到 CF 上。
 
 [Cloudflare R2](https://developers.cloudflare.com/r2/) 是 Cloudflare 推出的对象存储服务，类似于 AWS S3 与阿里云 OSS, 但价格更加便宜并且有免费计划（免费用户有10GB的存储空间且流量不限），对于博客附图来说还是挺足够的。使用 R2 只需要在 Cloudflare 控制台 Storage & Databases - R2 object storage 中开通并创建一个 bucket 即可。
 
