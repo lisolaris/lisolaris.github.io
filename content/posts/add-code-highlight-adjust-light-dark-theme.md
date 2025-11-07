@@ -95,7 +95,7 @@ params:
   useExternalHLJS: true
 ```
 
-之后依[为PaperMod主题增加LaTeX支持]({{<siteurl>}}articles/2025/03/midnight-chat-0x02/#%E4%B8%BApapermod%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0latex%E6%94%AF%E6%8C%81)的经验，修改站点目录中的`layouts\partials\extend_head.html`，加入这段代码：
+之后依[为PaperMod主题增加LaTeX支持]({{<siteurl>}}/articles/2025/03/midnight-chat-0x02/#%E4%B8%BApapermod%E4%B8%BB%E9%A2%98%E5%A2%9E%E5%8A%A0latex%E6%94%AF%E6%8C%81)的经验，修改站点目录中的`layouts\partials\extend_head.html`，加入这段代码：
 
 ```html
 {{if site.Params.useExternalHLJS}}
@@ -128,7 +128,7 @@ params:
 {{end}}
 ```
 
-上面的代码结合了一些我之前编写[知乎推荐流优化]({{<siteurl>}}articles/2024/06/optimize-zhihu-web-page-with-additional-javascript/)JavaScript脚本时的经验。这里选用了`Atom One`主题，这是Atom编辑器[^2]默认的配色方案，在cdnjs上亮/暗两种配色css文件的URL恰好只有`light`和`dark`的区别。我们首先封装一个`SelectThemeAndRefresh()`函数，根据`document.body.classList`中是否有`dark`属性决定使用哪一种配色方案的css并随之渲染页面上的所有代码块。
+上面的代码结合了一些我之前编写[知乎推荐流优化]({{<siteurl>}}/articles/2024/06/optimize-zhihu-web-page-with-additional-javascript/)JavaScript脚本时的经验。这里选用了`Atom One`主题，这是Atom编辑器[^2]默认的配色方案，在cdnjs上亮/暗两种配色css文件的URL恰好只有`light`和`dark`的区别。我们首先封装一个`SelectThemeAndRefresh()`函数，根据`document.body.classList`中是否有`dark`属性决定使用哪一种配色方案的css并随之渲染页面上的所有代码块。
 
 等待页面加载完成后我们在`document.body`上插入一个`MutationObserver`监视器，当它的`class`属性发生变动时即清除所有代码块的已渲染标记（由`highlight.js`在渲染后自动生成），再次调用`SelectThemeAndRefresh()`以新的css主题渲染代码块。由于`MutationObserver` API是JavaScript规范、浏览器实现的，加上博客只是一个静态页面，所以并不会对性能产生多少影响。
 
@@ -148,7 +148,7 @@ Enjoy it :D
 
 ---
 
-如果对更多关于PaperMod的魔改感兴趣，可以看看我之前写的文章[深夜闲谈 0x02]({{<siteurl>}}articles/2025/03/midnight-chat-0x02/)，我在那里写了如添加$\LaTeX$支持、增加评论功能等的方法。
+如果对更多关于PaperMod的魔改感兴趣，可以看看我之前写的文章[深夜闲谈 0x02]({{<siteurl>}}/articles/2025/03/midnight-chat-0x02/)，我在那里写了如添加$\LaTeX$支持、增加评论功能等的方法。
 
 [^1]:<https://highlightjs.org/>
 [^2]:<https://github.com/atom/atom/tree/master/packages/one-light-syntax>
